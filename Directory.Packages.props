@@ -1,0 +1,55 @@
+<Project>
+  <!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — CENTRAL PACKAGE REGISTRY
+    ═══════════════════════════════════════════════════════════════
+    Identity: Dependency Sovereignty
+    Law Anchor: F-GOV-001
+    Description: This file centralizes all NuGet dependency versions 
+                 to prevent version drift across the PMCRO services.
+    
+    Any addition to this file must be justified by a micro-intent 
+    and validated by the Checker phase.
+    ═══════════════════════════════════════════════════════════════
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Aspire & Infrastructure -->
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="13.2.4" />
+    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="13.2.4" />
+    <PackageVersion Include="CommunityToolkit.Aspire.Hosting.Ollama" Version="13.2.1-beta.532" />
+    <PackageVersion Include="CommunityToolkit.Aspire.OllamaSharp" Version="13.2.1-beta.532" />
+    <PackageVersion Include="Google.Protobuf" Version="3.35.0-rc1" />
+    <PackageVersion Include="Grpc.Net.Client" Version="2.80.0" />
+    <PackageVersion Include="Grpc.Tools" Version="2.80.0" />
+    <PackageVersion Include="Microsoft.Agents.AI" Version="1.3.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.Hosting" Version="1.3.0-preview.260423.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Workflows" Version="1.3.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Abstractions" Version="11.0.0-preview.3.26207.106" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.5.0" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="10.5.0" />
+    <PackageVersion Include="Microsoft.Playwright" Version="1.59.0" />
+    <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <!-- API & Documentation -->
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
+    <PackageVersion Include="ModelContextProtocol" Version="1.2.0" />
+    <PackageVersion Include="ModelContextProtocol.AspNetCore" Version="1.2.0" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
+    <PackageVersion Include="Scalar.AspNetCore" Version="2.14.9" />
+    <!-- gRPC Phase Services -->
+    <PackageVersion Include="Grpc.AspNetCore" Version="2.80.0" />
+    <!-- OpenTelemetry & Observability -->
+    <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
+    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.15.3" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.2" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.15.1" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
+  </ItemGroup>
+</Project>

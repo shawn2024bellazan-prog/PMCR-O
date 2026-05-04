@@ -1,22 +1,80 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — SERVICE DEFAULTS
+    ═══════════════════════════════════════════════════════════════
+    Identity: Infrastructure Foundation
+    Law Anchor: MAAI-001, MAAI-002, ARCH-021, F-GOV-001/002/003
+    Description: Standardizes OpenTelemetry, Resilience, Service
+                 Discovery, and AI (Ollama + MAF) across all nodes.
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <IsAspireSharedProject>true</IsAspireSharedProject>
-  </PropertyGroup>
+    PACKAGE RATIONALE — validated 2026-04-27:
 
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+      CommunityToolkit.Aspire.OllamaSharp 9.9.0
+        → AddOllamaApiClient (IHostApplicationBuilder extension)
+        → .AddChatClient()  (chained, registers IChatClient in DI)
+        → Transitively provides: OllamaSharp, Microsoft.Extensions.AI
+        → Version: 9.9.0 is latest stable for Aspire 9.x.
+          Your AppHost uses Aspire.AppHost.Sdk/13.1.0 — bump to
+          CommunityToolkit.Aspire.OllamaSharp 13.1.1 if targeting
+          the 13.x SDK and the beta is acceptable.
 
-    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.5.0" />
-    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="10.5.0" />
-    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
-    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.15.3" />
-    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.2" />
-    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.15.1" />
-    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
-  </ItemGroup>
+      Microsoft.Agents.AI
+        → AIAgent (abstract base class)
+        → ChatClientAgent (concrete — wraps any IChatClient)
+        → AgentSession, AgentRunResponse
+        → ChatClientAgentOptions (Name + ChatOptions.Instructions)
+        → NOTE: IAIAgent does NOT exist. Always use AIAgent.
 
+      Microsoft.Agents.AI.Hosting
+        → AddAIAgent(IHostApplicationBuilder, string, Func<...>) extension
+        → Two-arg overload: AddAIAgent(name, instructions) also available
+        → Returns IHostApplicationBuilder (NOT a fluent agent builder).
+          WithInMemorySessionStore() is NOT on the return value.
+
+      DO NOT add Microsoft.Extensions.AI separately.
+      It arrives transitively from CommunityToolkit.Aspire.OllamaSharp.
+
+      DO NOT add Microsoft.Extensions.AI.Abstractions separately.
+      Also transitive.
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+	<PropertyGroup>
+		<IsAspireSharedProject>true</IsAspireSharedProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="Grpc.Net.Client" />
+
+		<!-- Standard Aspire service-defaults packages (versions from Directory.Packages.props) -->
+		<PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+		<PackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" />
+
+		<!--
+      Ollama client integration for Aspire.
+      Provides: AddOllamaApiClient() + .AddChatClient() → IChatClient in DI.
+      Transitively provides: OllamaSharp, Microsoft.Extensions.AI.
+      Version pinned in Directory.Packages.props — NO Version= here (F-GOV-001).
+    -->
+		<PackageReference Include="CommunityToolkit.Aspire.OllamaSharp" />
+
+		<!--
+      MAF core — AIAgent, ChatClientAgent, AgentSession, AgentRunResponse,
+      ChatClientAgentOptions. No DI extensions here, those are in .Hosting.
+    -->
+		<PackageReference Include="Microsoft.Agents.AI" />
+
+		<!--
+      MAF hosting — AddAIAgent(IHostApplicationBuilder, name, factory) extension.
+      This is the ONLY package needed to register agents in the DI container.
+    -->
+		<PackageReference Include="Microsoft.Agents.AI.Hosting" />
+	</ItemGroup>
 </Project>

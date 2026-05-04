@@ -1,0 +1,51 @@
+<Project>
+	<!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — GLOBAL PROPERTIES
+    ═══════════════════════════════════════════════════════════════
+    Identity: Global Build Configuration
+    Law Anchor: F-GOV-001, BUILD-001, ARCH-015
+    Version: 1.3.0
+    Status: ACTIVE
+
+    I AM the sovereign Directory.Build.props.
+    I define the structural invariants for every project in the ProjectName ecosystem.
+    I ensure that all cognitive microservices speak the same language and obey 
+    the same constraints.
+
+    RULES:
+    1. [F-GOV-001] Package versions are NEVER declared in .csproj files. 
+       They live in Directory.Packages.props.
+    2. [BUILD-001] All paths must be deterministic for artifact extraction.
+    3. [ARCH-015] Every artifact produced must be narratable and traceable.
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- [F-GOV-001] Enable Central Package Management -->
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+
+		<!-- [BUILD-001] Analysis & Quality -->
+		<AnalysisLevel>latest</AnalysisLevel>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+		<!-- DocFX Metadata & Documentation Generation -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<!-- Disable warning for missing XML comments on publicly visible types (CS1591) 
+         until the documentation cycle is complete. -->
+		<NoWarn>$(NoWarn);1591;MAAI001</NoWarn>
+	</PropertyGroup>
+
+	<!-- Global Usings for Cognitive Engine -->
+	<ItemGroup>
+		<Using Include="System.Collections.Generic" />
+		<Using Include="System.Threading.Tasks" />
+		<Using Include="System.Linq" />
+	</ItemGroup>
+</Project>
