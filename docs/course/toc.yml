@@ -1,0 +1,24 @@
+- name: Course Overview
+  href: index.md
+- name: "Module 00 — Orientation"
+  href: 00-orientation.md
+- name: "Module 01 — PMCRO Fundamentals"
+  href: 01-pmcro-fundamentals.md
+- name: "Module 02 — MAF to PMCRO Mapping"
+  href: 02-maf-mapping.md
+- name: "Module 03 — The Federation Board"
+  href: 03-federation-board.md
+- name: "Module 04 — The Workflow Engine"
+  href: 04-workflow-engine.md
+- name: "Module 05 — The MCP Layer"
+  href: 05-mcp-layer.md
+- name: "Module 06 — The Cognitive Trail"
+  href: 06-cognitive-trail.md
+- name: "Module 07 — Writing Skills"
+  href: 07-writing-skills.md
+- name: "Module 08 — Earned Laws"
+  href: 08-earned-laws.md
+- name: "Module 09 — Prompt Engineering as Skills"
+  href: 09-prompt-engineering-as-skills.md
+- name: "Module 10 — The AI Agent Company"
+  href: 10-ai-agent-company.md

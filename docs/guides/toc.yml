@@ -1,0 +1,10 @@
+- name: Guides Overview
+  href: index.md
+- name: First Cycle Walkthrough
+  href: first-cycle.md
+- name: Adding an Earned Law
+  href: adding-earned-law.md
+- name: DocFX Build (CL-007)
+  href: docfx-build.md
+- name: XML Doc Comment Standard
+  href: xml-doc-comments.md

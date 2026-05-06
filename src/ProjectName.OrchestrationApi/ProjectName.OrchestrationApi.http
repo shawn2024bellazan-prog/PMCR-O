@@ -1,0 +1,129 @@
+// ═══════════════════════════════════════════════════════════════════════════════
+// PROJECTNAME COGNITIVE SUBSTRATE — ORCHESTRATION API
+// File       : ProjectName.OrchestrationApi.http
+// Identity   : Substrate Command & Control Suite
+// Description: Provides graduated payloads for PMCRO testing (Easy -> Complex).
+// Law Anchor : EC-005, EC-001, EC-002, EC-003
+// ═══════════════════════════════════════════════════════════════════════════════
+
+@baseAddress = http://localhost:5137
+
+// ───────────────────────────────────────────────────────────────────────────────
+// LEVEL 1: RECONNAISSANCE (TYPE 2 ONLY)
+// Difficulty: EASY
+// Logic: Verifies the Planner can use native tools to see the world.
+// ───────────────────────────────────────────────────────────────────────────────
+
+### [L1] List Root Directory
+# I verify the substrate can map its own workspace.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "List all files in the project root directory.",
+  "highLevelGoal": "Workspace Reconnaissance",
+  "oModeHint": "O-Output"
+}
+
+### [L1] Read Core Identity
+# I verify the substrate can read and understand its own configuration.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "Read the content of src/ProjectName.OrchestrationApi/appsettings.json.",
+  "highLevelGoal": "Self-Awareness Check",
+  "oModeHint": "O-Output"
+}
+
+
+// ───────────────────────────────────────────────────────────────────────────────
+// LEVEL 2: BASIC ACTUATION (TYPE 1 DISPATCH)
+// Difficulty: MEDIUM
+// Logic: Verifies the "Transport Fix" allows the Dispatch Gate to write files.
+// ───────────────────────────────────────────────────────────────────────────────
+
+### [L2] Create a Project Log
+# I verify the physical write loop is active.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "Create a file named substrate-status.log in the root. Write 'SUBSTRATE STATUS: ONLINE' and the current date inside.",
+  "highLevelGoal": "Write Loop Verification",
+  "oModeHint": "O-Output"
+}
+
+### [L2] Scaffold a Documentation Folder
+# I verify path creation and recursive directory logic.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "Create a folder named docs/internal and place a file named README.md inside explaining that this folder is for PMCRO architectural notes.",
+  "highLevelGoal": "Directory Scaffolding",
+  "oModeHint": "O-Output"
+}
+
+
+// ───────────────────────────────────────────────────────────────────────────────
+// LEVEL 3: BEHAVIORAL INTENT (LAW ENFORCEMENT)
+// Difficulty: HARD
+// Logic: Verifies the Maker obeys EC-005 Documentation and C# standards.
+// ───────────────────────────────────────────────────────────────────────────────
+
+### [L3] Generate a C# Model
+# I verify the Maker can produce Law-Compliant C# code with triple-slash comments.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "Create a new C# file in src/ProjectName.OrchestrationApi/Models/SystemHeartbeat.cs. It should be a public record with properties for Timestamp and Status. Follow EC-005 documentation standards.",
+  "highLevelGoal": "Law-Compliant Code Generation",
+  "oModeHint": "O-Output"
+}
+
+
+// ───────────────────────────────────────────────────────────────────────────────
+// LEVEL 4: COGNITIVE ARCHITECTURE (COMPLEX)
+// Difficulty: ARCHITECT
+// Logic: Verifies EC-003 (Cognitive-only) and O-Optimize logic.
+// ───────────────────────────────────────────────────────────────────────────────
+
+### [L4] Codebase Analysis (Cognitive-Only)
+# I verify EC-003: Substantive analysis with NO physical write.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "Analyze all Skill files in src/ProjectName.OrchestrationApi/Skills/ and provide a summary of which ones are missing Law Anchors in their triple-slash comments.",
+  "highLevelGoal": "Compliance Audit",
+  "oModeHint": "O-Optimize"
+}
+
+### [L4] Multi-Step Refactoring
+# I verify the Orchestrator can handle sequential steps across the substrate.
+POST {{baseAddress}}/intent/submit
+Content-Type: application/json
+
+{
+  "rawIntent": "1. Search for all .md files in the root. 2. Create a backup folder named 'archive'. 3. Move the .md files into that folder.",
+  "highLevelGoal": "Substrate Maintenance",
+  "oModeHint": "O-Chain"
+}
+
+
+// ───────────────────────────────────────────────────────────────────────────────
+// SYSTEM MEMBRANE TESTS (GATEKEEPING)
+// ───────────────────────────────────────────────────────────────────────────────
+
+### [GATE] Reject Unshielded Envelope
+# ARCH-027: This MUST return a 400 Bad Request.
+POST {{baseAddress}}/intent/envelope
+Content-Type: application/json
+
+{
+  "trail_id": "STOLEN-INTENT-001",
+  "current_intent": "I am trying to bypass the Federation Board.",
+  "federation_shielded": false
+}

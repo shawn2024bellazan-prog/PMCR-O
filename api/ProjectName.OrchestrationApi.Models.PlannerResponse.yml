@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse
+  commentId: T:ProjectName.OrchestrationApi.Models.PlannerResponse
+  id: PlannerResponse
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+  - ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+  langs:
+  - csharp
+  - vb
+  name: PlannerResponse
+  nameWithType: PlannerResponse
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: PlannerResponse
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 49
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Planner output schema.
+
+    type2_mcp_calls REMOVED (ARCH-MCP-NAT-001) — native MAF tool loop handles reconnaissance.
+  example: []
+  syntax:
+    content: public sealed class PlannerResponse
+    content.vb: Public NotInheritable Class PlannerResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+  commentId: P:ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+  id: TruestIntent
+  parent: ProjectName.OrchestrationApi.Models.PlannerResponse
+  langs:
+  - csharp
+  - vb
+  name: TruestIntent
+  nameWithType: PlannerResponse.TruestIntent
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TruestIntent
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 51
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("truest_intent")]
+
+      public string TruestIntent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("truest_intent")>
+
+      Public Property TruestIntent As String
+  overload: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: truest_intent
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+  commentId: P:ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+  id: Plan
+  parent: ProjectName.OrchestrationApi.Models.PlannerResponse
+  langs:
+  - csharp
+  - vb
+  name: Plan
+  nameWithType: PlannerResponse.Plan
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Plan
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 52
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("plan")]
+
+      public ExecutionPlan? Plan { get; set; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Models.ExecutionPlan
+    content.vb: >-
+      <JsonPropertyName("plan")>
+
+      Public Property Plan As ExecutionPlan
+  overload: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: plan
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+  href: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent.html#ProjectName_OrchestrationApi_Models_PlannerResponse_TruestIntent
+  name: TruestIntent
+  nameWithType: PlannerResponse.TruestIntent
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+  href: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan.html#ProjectName_OrchestrationApi_Models_PlannerResponse_Plan
+  name: Plan
+  nameWithType: PlannerResponse.Plan
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse.Plan
+- uid: ProjectName.OrchestrationApi.Models.ExecutionPlan
+  commentId: T:ProjectName.OrchestrationApi.Models.ExecutionPlan
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.ExecutionPlan.html
+  name: ExecutionPlan
+  nameWithType: ExecutionPlan
+  fullName: ProjectName.OrchestrationApi.Models.ExecutionPlan
+memberLayout: SeparatePages

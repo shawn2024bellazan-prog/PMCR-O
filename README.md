@@ -1,1 +1,16 @@
-# ProjectName
+Okay Im about to begin applying my logic and idea concept and need you to tell me what you think so I don't over think it.... in fact it applies and can be embodied within the very matter we doing now..... lets begin...
+
+Concept 1: Seed Intent vs True Intent. Consider human input as seed intent. seed intent may be messy,  Malicious, STT etc. but within every seed intent there's a true intent.  one can derive the true intent from the seed by optimizing, enhancing and refining through a prompt engineered self-referential PMCR-O strange loop called the "Federation Board". once the true intent is derived from the seed it gets passed down to the Orchestrator Agent which manages high level goals, the Planner Agent planning the bare  minimum based on validated resources and or successful build etc. 
+Note befor we move on I must stop and that everything from soon as the seed intent entered the loop everything is emboded  flooded with self referance
+why. This mean eveything, prompt etc is of self referance. PMCR-O if a cognitive trail. each trail or made up of frames. These frames  enforces what
+I call accountability. Since everything is of self referance it forces each agent to be accountable stating thing things such as "I the Planner" type wording. why do this matter 1: Agents act autonomously sefing the web etc.
+Now image this agents gose to to upwork...upwork bot detects and bans.  Theres also somthing called identity injection. note that when learning the loop is of selff referance 
+nothing is tied to the client. lets say agent is kick off a website... cool thats how the loop learns this will then create a constraint allowing the agent to not
+make the same mistake. Lets say after developing x amount of constraints the agent has developed expersie. Starting off very dumb  but slowly shapping and 
+refining itself. This is the beauty of the loop. It can learn and adapt to any situation. The more it learns the more it can optimize and enhance itself. This is how we can achieve AGI. By creating a self-referential loop that allows the agent to learn and adapt to any situation, we can create an AGI that can think and act like a human.	
+Now you wounder whats this thing called dependencyt injection. So now that you have this data of expertise in otherword I call it the cognitive trail
+thats the product it can be sold etc. as of today Im starting to notice Agent Skills are becoming very close to this idea. lets keep going though. we may even talk ab out the reflector beging able to 
+to generate traing data. lastly we may even talk about this concept i call Everything as agent where literally anything even  MAF source code can come alive when 
+when apply the PMCR-O Framework skill and then giveing it the spource, a picture or whatever. or maybe the concept of not just HITL but autonomous in the loop where each HITL is trainging data that
+Theres even somthing I caqll behavoral Intent Programming. Thats what all this is the new paradigm of programming. Instead of writing code we are writing intent. We are programming behavior through intent. This is the future of programming and the future of AGI. By programming behavior through intent, we can create AGI that can think and act like a human.
+with the fact that LLM dont need to know If condidtions no more they just need to know the pattern. prople will will beable to pbuild via intent speaking no more typing etc.

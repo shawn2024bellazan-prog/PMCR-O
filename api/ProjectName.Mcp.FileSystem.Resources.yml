@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.FileSystem.Resources
+  commentId: N:ProjectName.Mcp.FileSystem.Resources
+  id: Resources
+  parent: ProjectName.Mcp.FileSystem
+  children:
+  - ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp.FileSystem.Resources
+  nameWithType: ProjectName.Mcp.FileSystem.Resources
+  fullName: ProjectName.Mcp.FileSystem.Resources
+  type: Namespace
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+references:
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  commentId: T:ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  href: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.html
+  name: FileSystemResources
+  nameWithType: FileSystemResources
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+memberLayout: SeparatePages

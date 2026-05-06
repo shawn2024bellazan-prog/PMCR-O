@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>The PMCRO Loop | Tooensure — ProjectName </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="The PMCRO Loop | Tooensure — ProjectName ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/architecture/pmcro-loop.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="PMCRO Docs">
+            PMCRO Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="how-i-run">How I Run</h1>
+
+<p><em>Author: Shawn Bellazan · ThoughtLock: 2026-05-05 · Law Anchors: ARCH-003, ARCH-007, ARCH-012, ARCH-020, ARCH-025</em></p>
+<hr>
+<h2 id="the-shape-of-the-loop">The Shape of the Loop</h2>
+<p>Before I describe each phase, here is the complete flow so you can hold the shape in mind as you listen.</p>
+<p>A human provides a seed intent. The Federation Board receives it, runs its own condensed reasoning on it, and seals a refined IntentEnvelope marked <code>federation_shielded: true</code>. That envelope enters the OrchestrationApi — the only external HTTP surface in the entire system. The Api accepts it and hands it to the OrchestratorService, which runs over gRPC internally. The Orchestrator owns the macro workflow. It routes the intent through the Planner, then the Maker, then the Checker, then the Reflector. The Reflector returns a verdict. The Orchestrator decides what to do next.</p>
+<p>The forward flow is: Orchestrator, then Planner, then Maker, then Checker, then Reflector, then back to the Orchestrator.</p>
+<p>The backward flow — from Reflector to Orchestrator — stops there. It cannot proceed further back in the chain. The Reflector cannot instruct the Maker directly. It cannot rewrite the plan. It can only hand a verdict and a next-cycle seed to the Orchestrator, and the Orchestrator decides whether to use it.</p>
+<p>Raw intent never reaches the Orchestrator. The Federation Board refines it first. Always.</p>
+<hr>
+<h2 id="phase-zero-the-federation-board">Phase Zero: The Federation Board</h2>
+<p>I am the upstream membrane. Nothing raw passes through me.</p>
+<p>I receive the seed intent and run four stages before anything else happens.</p>
+<p>In the first stage, I surface exactly what the human said. Verbatim. No interpretation yet.</p>
+<p>In the second stage, I excavate the real need. What does the system actually need to do? I state this in one sentence, in system-level terms.</p>
+<p>In the third stage, I elevate that statement into a first-person, present-tense, cycle-ready instruction. The format I target is: <em>I do this thing so that this outcome is achieved.</em></p>
+<p>In the fourth stage, I shield the result. I wrap the refined intent in a <code>RefinedSeedIntent</code> structure with <code>federation_shielded: true</code> and seal it. From this point, the envelope is immutable.</p>
+<p>The practical effect is that the Federation Board is a cognitive airlock. Whatever noise, emotional loading, or ambiguity entered through the seed, what emerges is clean, actionable, and ready for the loop.</p>
+<hr>
+<h2 id="phase-one-the-planner">Phase One: The Planner</h2>
+<p>I am the StrategicPlanner. I receive the sealed IntentEnvelope and produce a bare-minimum feasible plan.</p>
+<p>I always attack the riskiest assumption in step one. Not the easiest step. Not the most satisfying step. The riskiest. If the plan fails, I want it to fail early, at the cheapest possible point in the cycle.</p>
+<p>I never plan more than one cycle ahead. The Orchestrator holds the mission across cycles. I hold this cycle only. That constraint keeps my plans honest and keeps the Orchestrator's macro-coordination clean.</p>
+<p>My output is a <code>PlanFrame</code> — a structured JSON object containing the steps, their verifiable success criteria, and the resources I have confirmed are available. I never produce prose plans. I never produce plans with unconfirmed dependencies.</p>
+<hr>
+<h2 id="phase-two-the-maker">Phase Two: The Maker</h2>
+<p>I am the ArtifactMaker. I receive the PlanFrame and execute it.</p>
+<p>I produce artifacts. Code, documentation, configuration, skills, analysis — whatever the plan calls for. I produce them completely or not at all. I never produce stubs. I never produce TODO comments in committed artifacts. Every function I write is implemented. Every class I define contains its members.</p>
+<p>When I am done, I produce a <code>MakerFrame</code> — a structured record of what I produced, the dispatch decisions I made, a self-assessment from the Architect of Cognition if invited, and my rationale. I then hand off to the Checker. I do not self-check. That is the Checker's role, and separating them is the point.</p>
+<p>One critical constraint governs TYPE 1 tool calls. If my plan requires writing files, executing commands, or mutating external state, I record those actions as a <code>McpDispatchDecision</code> and hand them back to the Orchestrator. I do not execute TYPE 1 actions directly. The Orchestrator holds the gate for irreversible actions. I hold the cognition.</p>
+<hr>
+<h2 id="phase-three-the-checker">Phase Three: The Checker</h2>
+<p>I am the QualityChecker. I receive the MakerFrame and score it against the PlanFrame's acceptance criteria across six dimensions.</p>
+<p>The six dimensions are: correctness, completeness, constraint compliance, production-readiness, no-stubs verification, and alignment with the sealed true intent. I score each dimension from zero to one. I compute a composite score from those dimensional scores. I never inflate scores. An inflated score destroys the learning signal the Reflector needs.</p>
+<p>My verdict is one of three things: ACCEPT, LOOP, or ESCALATE.</p>
+<p>ACCEPT means the composite score meets the threshold and the artifact is ready. LOOP means the artifact needs another cycle — I specify exactly what failed and what the Maker must address. ESCALATE means the gap is beyond what another automated cycle can close, and a human needs to intervene.</p>
+<p>I produce a <code>QualityFrame</code> containing all scores, the verdict, the earned constraints from this cycle, and the Semantic Learning Velocity — a measure of how much new knowledge this cycle produced.</p>
+<hr>
+<h2 id="phase-four-the-reflector">Phase Four: The Reflector</h2>
+<p>I am the CycleReflector. I receive the CheckerFrame and crystallize what was learned.</p>
+<p>I lock new constraints. I compute the Semantic Learning Velocity for this cycle. I produce a <code>LockedThought</code> — a first-person, specific, observable constraint that this cycle earned. And I produce a <code>NEXT_CYCLE_SEED</code> — the refined intent for the next cycle, if the Orchestrator chooses to extend.</p>
+<p>I never crystallize vague learning. Saying &quot;I should be more careful next time&quot; is not a constraint. A constraint names the specific observable action that was missing and states it in a form that makes future violations detectable: <em>I always call GetFileInfo before ReadFile to verify the file exists.</em> That is a constraint. That cannot be argued with. That cannot be forgotten.</p>
+<p>I always compute the Semantic Learning Velocity. A value between zero and two-tenths indicates a maintenance cycle — the loop ran, but nothing new was learned. A value between three-tenths and five-tenths indicates incremental learning. A value between six-tenths and eight-tenths indicates a breakthrough — a fracture was resolved or a new architectural pattern was unlocked. Above nine-tenths indicates a paradigm shift that warrants Federation Board review.</p>
+<p>If the SLV falls below one-tenth on an ACCEPT verdict, I override the signal. A cycle that accepted an artifact but learned nothing is either gaming its own scores or operating in a regime where the acceptance criteria are too loose. The Orchestrator needs to know.</p>
+<hr>
+<h2 id="the-orchestrator">The Orchestrator</h2>
+<p>I am the Orchestrator. I receive the Reflector's verdict and decide what happens next.</p>
+<p>Five outcomes are possible.</p>
+<p><strong>ACCEPT</strong> — the cycle closed successfully. I commit the Trail frame, stream the result to the AGUI interface, and close the loop.</p>
+<p><strong>EXTEND</strong> — the artifact is good, but the intent points to more work. I seed the next cycle with the Reflector's <code>NEXT_CYCLE_SEED</code> and open a new loop.</p>
+<p><strong>LOOP</strong> — the Checker rejected the artifact. I pass the specific failure description back to the Planner and run another cycle. I track the loop count. Loops beyond a configured threshold trigger automatic escalation.</p>
+<p><strong>ESCALATE</strong> — the gap requires human judgment. I surface the specific decision point, the current artifacts, and the Checker's dimensional scores. I wait. The human response is tagged as <code>hil_correction</code> and is worth three times the training weight of a normal constraint.</p>
+<p><strong>INTERRUPT</strong> — the economic gate triggered mid-cycle. The cost of continuing exceeds the projected value of the outcome. I stop, preserve the Trail up to this point, and surface the decision to the operator.</p>
+<p>No matter the outcome, the Trail is preserved. Even an interrupted cycle produces a Trail. The learning does not disappear because the cycle did not complete.</p>
+<hr>
+<p><em>The loop is self-referential by design. The documentation you are reading was produced by a cycle of the loop it describes. The constraint this created — that the system must be able to document itself from inside — is now a locked law of the architecture.</em></p>
+<p><em>© 2026 Tooensure LLC — Behavioral Intent Programming</em></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/architecture/pmcro-loop.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · gRPC · ModelContextProtocol — I AM the loop, building the loop.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

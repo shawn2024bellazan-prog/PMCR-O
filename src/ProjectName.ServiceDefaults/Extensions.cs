@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Http.Resilience;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.ServiceDiscovery;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
+using System;
 
 namespace Microsoft.Extensions.Hosting
 {
@@ -28,8 +30,18 @@ namespace Microsoft.Extensions.Hosting
 
             builder.Services.ConfigureHttpClientDefaults(http =>
             {
-                // Turn on resilience by default
-                http.AddStandardResilienceHandler();
+                // Extend the underlying socket timeout for LLM inference
+                http.ConfigureHttpClient(client => client.Timeout = TimeSpan.FromMinutes(10));
+
+                // Turn on resilience by default, but extend timeouts for local LLM inference
+                http.AddStandardResilienceHandler().Configure(options =>
+                {
+                    options.AttemptTimeout.Timeout = TimeSpan.FromMinutes(10);
+                    options.TotalRequestTimeout.Timeout = TimeSpan.FromMinutes(10);
+
+                    // The Circuit Breaker sampling duration must be at least double the AttemptTimeout
+                    options.CircuitBreaker.SamplingDuration = TimeSpan.FromMinutes(20);
+                });
 
                 // Turn on service discovery by default
                 http.AddServiceDiscovery();

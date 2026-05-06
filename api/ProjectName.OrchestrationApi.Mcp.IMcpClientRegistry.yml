@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  commentId: T:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  id: IMcpClientRegistry
+  parent: ProjectName.OrchestrationApi.Mcp
+  children:
+  - ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+  - ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+  - ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+  - ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+  - ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+  langs:
+  - csharp
+  - vb
+  name: IMcpClientRegistry
+  nameWithType: IMcpClientRegistry
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  type: Interface
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: IMcpClientRegistry
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 40
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    I AM the IMcpClientRegistry.
+
+    I hold the live AITool collections for each MCP actuator, loaded at startup
+
+    via McpClientFactory + SseClientTransport.
+
+    Phase agents pull their tool sets from here at registration time.
+  example: []
+  syntax:
+    content: 'public interface IMcpClientRegistry : IAsyncDisposable'
+    content.vb: Public Interface IMcpClientRegistry Inherits IAsyncDisposable
+  derivedClasses:
+  - ProjectName.OrchestrationApi.Mcp.McpClientRegistry
+  inheritedMembers:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+  commentId: P:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+  id: FilesystemTools
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  langs:
+  - csharp
+  - vb
+  name: FilesystemTools
+  nameWithType: IMcpClientRegistry.FilesystemTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: FilesystemTools
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 47
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    All tools available from the Filesystem MCP actuator.
+
+    TYPE 2 (ReadFile, ListDirectory, GetFileInfo) safe for all phases.
+
+    TYPE 1 (WriteFile, DeletePath) — included but only dispatched via Orchestrator gate.
+  example: []
+  syntax:
+    content: IReadOnlyList<AITool> FilesystemTools { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+    content.vb: ReadOnly Property FilesystemTools As IReadOnlyList(Of AITool)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools*
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+  commentId: P:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+  id: TerminalTools
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  langs:
+  - csharp
+  - vb
+  name: TerminalTools
+  nameWithType: IMcpClientRegistry.TerminalTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TerminalTools
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 54
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    All tools available from the Terminal MCP actuator.
+
+    TYPE 2 (RunReadOnlyCommand) — safe for Planner reconnaissance.
+
+    TYPE 1 (RunCommand) — Orchestrator gate required.
+  example: []
+  syntax:
+    content: IReadOnlyList<AITool> TerminalTools { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+    content.vb: ReadOnly Property TerminalTools As IReadOnlyList(Of AITool)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools*
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+  commentId: P:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+  id: PlaywrightTools
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  langs:
+  - csharp
+  - vb
+  name: PlaywrightTools
+  nameWithType: IMcpClientRegistry.PlaywrightTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: PlaywrightTools
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 60
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    All tools available from the Playwright MCP actuator.
+
+    TYPE 2 (NavigateTo, GetPageContent, TakeScreenshot) — reconnaissance.
+  example: []
+  syntax:
+    content: IReadOnlyList<AITool> PlaywrightTools { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+    content.vb: ReadOnly Property PlaywrightTools As IReadOnlyList(Of AITool)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools*
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+  commentId: P:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+  id: AllType2Tools
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  langs:
+  - csharp
+  - vb
+  name: AllType2Tools
+  nameWithType: IMcpClientRegistry.AllType2Tools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: AllType2Tools
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 66
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    Aggregated TYPE 2 (read-only) tools from all actuators.
+
+    Safe to inject into Planner, Checker, Reflector.
+  example: []
+  syntax:
+    content: IReadOnlyList<AITool> AllType2Tools { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+    content.vb: ReadOnly Property AllType2Tools As IReadOnlyList(Of AITool)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools*
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+  commentId: P:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+  id: AllTools
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  langs:
+  - csharp
+  - vb
+  name: AllTools
+  nameWithType: IMcpClientRegistry.AllTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: AllTools
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpClientRegistry.cs
+    startLine: 72
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    Full tool set from all actuators.
+
+    Use only for the Maker, which may dispatch TYPE 1 with Orchestrator approval.
+  example: []
+  syntax:
+    content: IReadOnlyList<AITool> AllTools { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+    content.vb: ReadOnly Property AllTools As IReadOnlyList(Of AITool)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools*
+references:
+- uid: ProjectName.OrchestrationApi.Mcp
+  commentId: N:ProjectName.OrchestrationApi.Mcp
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Mcp
+  nameWithType: ProjectName.OrchestrationApi.Mcp
+  fullName: ProjectName.OrchestrationApi.Mcp
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools.html#ProjectName_OrchestrationApi_Mcp_IMcpClientRegistry_FilesystemTools
+  name: FilesystemTools
+  nameWithType: IMcpClientRegistry.FilesystemTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.AI.AITool}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<AITool>
+  nameWithType: IReadOnlyList<AITool>
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.Extensions.AI.AITool>
+  nameWithType.vb: IReadOnlyList(Of AITool)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Microsoft.Extensions.AI.AITool)
+  name.vb: IReadOnlyList(Of AITool)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - uid: Microsoft.Extensions.AI.AITool
+    name: AITool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.AI.AITool
+    name: AITool
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools.html#ProjectName_OrchestrationApi_Mcp_IMcpClientRegistry_TerminalTools
+  name: TerminalTools
+  nameWithType: IMcpClientRegistry.TerminalTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools.html#ProjectName_OrchestrationApi_Mcp_IMcpClientRegistry_PlaywrightTools
+  name: PlaywrightTools
+  nameWithType: IMcpClientRegistry.PlaywrightTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools.html#ProjectName_OrchestrationApi_Mcp_IMcpClientRegistry_AllType2Tools
+  name: AllType2Tools
+  nameWithType: IMcpClientRegistry.AllType2Tools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools.html#ProjectName_OrchestrationApi_Mcp_IMcpClientRegistry_AllTools
+  name: AllTools
+  nameWithType: IMcpClientRegistry.AllTools
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools
+memberLayout: SeparatePages

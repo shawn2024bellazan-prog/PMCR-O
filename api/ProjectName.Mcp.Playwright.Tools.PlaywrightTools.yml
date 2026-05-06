@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  commentId: T:ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  id: PlaywrightTools
+  parent: ProjectName.Mcp.Playwright.Tools
+  children:
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager,ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig,Microsoft.Extensions.Logging.ILoggerFactory)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync(System.String)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync(System.String,System.String,System.Int32)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync(System.String,System.String)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync(System.String)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync(System.String)
+  - ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PlaywrightTools
+  nameWithType: PlaywrightTools
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  type: Class
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: PlaywrightTools
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 15
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerToolType]
+
+      public sealed class PlaywrightTools
+    content.vb: >-
+      <McpServerToolType>
+
+      Public NotInheritable Class PlaywrightTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolTypeAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolTypeAttribute.#ctor
+    arguments: []
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager,ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager,ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager,ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig,Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: PlaywrightTools(PlaywrightSessionManager, PlaywrightConfig, ILoggerFactory)
+  nameWithType: PlaywrightTools.PlaywrightTools(PlaywrightSessionManager, PlaywrightConfig, ILoggerFactory)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.PlaywrightTools(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager, ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: .ctor
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 15
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: public PlaywrightTools(PlaywrightSessionManager session, PlaywrightConfig config, ILoggerFactory loggerFactory)
+    parameters:
+    - id: session
+      type: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+    - id: config
+      type: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Public Sub New(session As PlaywrightSessionManager, config As PlaywrightConfig, loggerFactory As ILoggerFactory)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor*
+  nameWithType.vb: PlaywrightTools.New(PlaywrightSessionManager, PlaywrightConfig, ILoggerFactory)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.New(ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager, ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig, Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: New(PlaywrightSessionManager, PlaywrightConfig, ILoggerFactory)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync(System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync(System.String)
+  id: NavigateToAsync(System.String)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: NavigateToAsync(string)
+  nameWithType: PlaywrightTools.NavigateToAsync(string)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: NavigateToAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 23
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "NavigateTo")]
+
+      public Task<string> NavigateToAsync(string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="NavigateTo")>
+
+      Public Function NavigateToAsync(url As String) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: NavigateTo
+  nameWithType.vb: PlaywrightTools.NavigateToAsync(String)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync(String)
+  name.vb: NavigateToAsync(String)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync
+  id: GetPageUrlAsync
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: GetPageUrlAsync()
+  nameWithType: PlaywrightTools.GetPageUrlAsync()
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: GetPageUrlAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 40
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "GetPageUrl")]
+
+      public Task<string> GetPageUrlAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="GetPageUrl")>
+
+      Public Function GetPageUrlAsync() As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetPageUrl
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync
+  id: GetPageTitleAsync
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: GetPageTitleAsync()
+  nameWithType: PlaywrightTools.GetPageTitleAsync()
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: GetPageTitleAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 48
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "GetPageTitle")]
+
+      public Task<string> GetPageTitleAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="GetPageTitle")>
+
+      Public Function GetPageTitleAsync() As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetPageTitle
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync
+  id: GetPageContentAsync
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: GetPageContentAsync()
+  nameWithType: PlaywrightTools.GetPageContentAsync()
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: GetPageContentAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 56
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "GetPageContent")]
+
+      public Task<string> GetPageContentAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="GetPageContent")>
+
+      Public Function GetPageContentAsync() As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetPageContent
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync(System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync(System.String)
+  id: ClickElementAsync(System.String)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: ClickElementAsync(string)
+  nameWithType: PlaywrightTools.ClickElementAsync(string)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ClickElementAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 64
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "ClickElement")]
+
+      public Task<string> ClickElementAsync(string selector)
+    parameters:
+    - id: selector
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="ClickElement")>
+
+      Public Function ClickElementAsync(selector As String) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: ClickElement
+  nameWithType.vb: PlaywrightTools.ClickElementAsync(String)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync(String)
+  name.vb: ClickElementAsync(String)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync(System.String,System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync(System.String,System.String)
+  id: FillInputAsync(System.String,System.String)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: FillInputAsync(string, string)
+  nameWithType: PlaywrightTools.FillInputAsync(string, string)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: FillInputAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 78
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "FillInput")]
+
+      public Task<string> FillInputAsync(string selector, string value)
+    parameters:
+    - id: selector
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="FillInput")>
+
+      Public Function FillInputAsync(selector As String, value As String) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: FillInput
+  nameWithType.vb: PlaywrightTools.FillInputAsync(String, String)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync(String, String)
+  name.vb: FillInputAsync(String, String)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync(System.String,System.Int32)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync(System.String,System.Int32)
+  id: WaitForElementAsync(System.String,System.Int32)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: WaitForElementAsync(string, int)
+  nameWithType: PlaywrightTools.WaitForElementAsync(string, int)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync(string, int)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: WaitForElementAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 92
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "WaitForElement")]
+
+      public Task<string> WaitForElementAsync(string selector, int timeoutMs = 10000)
+    parameters:
+    - id: selector
+      type: System.String
+    - id: timeoutMs
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="WaitForElement")>
+
+      Public Function WaitForElementAsync(selector As String, timeoutMs As Integer = 10000) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: WaitForElement
+  nameWithType.vb: PlaywrightTools.WaitForElementAsync(String, Integer)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync(String, Integer)
+  name.vb: WaitForElementAsync(String, Integer)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync(System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync(System.String)
+  id: TakeScreenshotAsync(System.String)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: TakeScreenshotAsync(string?)
+  nameWithType: PlaywrightTools.TakeScreenshotAsync(string?)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TakeScreenshotAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 101
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "TakeScreenshot")]
+
+      public Task<string> TakeScreenshotAsync(string? filename = null)
+    parameters:
+    - id: filename
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="TakeScreenshot")>
+
+      Public Function TakeScreenshotAsync(filename As String = Nothing) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: TakeScreenshot
+  nameWithType.vb: PlaywrightTools.TakeScreenshotAsync(String)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync(String)
+  name.vb: TakeScreenshotAsync(String)
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync(System.String,System.String,System.Int32)
+  commentId: M:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync(System.String,System.String,System.Int32)
+  id: ExecuteBrowserResearchAsync(System.String,System.String,System.Int32)
+  parent: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+  langs:
+  - csharp
+  - vb
+  name: ExecuteBrowserResearchAsync(string, string, int)
+  nameWithType: PlaywrightTools.ExecuteBrowserResearchAsync(string, string, int)
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync(string, string, int)
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ExecuteBrowserResearchAsync
+    path: src/Mcps/ProjectName.Mcp.Playwright/Tools/PlaywrightTools.cs
+    startLine: 116
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Tools
+  syntax:
+    content: >-
+      [McpServerTool(Name = "ExecuteBrowserResearch")]
+
+      public Task<string> ExecuteBrowserResearchAsync(string objective, string startUrl, int maxSteps = 5)
+    parameters:
+    - id: objective
+      type: System.String
+    - id: startUrl
+      type: System.String
+    - id: maxSteps
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <McpServerTool(Name:="ExecuteBrowserResearch")>
+
+      Public Function ExecuteBrowserResearchAsync(objective As String, startUrl As String, maxSteps As Integer = 5) As Task(Of String)
+  overload: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerToolAttribute
+    ctor: ModelContextProtocol.Server.McpServerToolAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: ExecuteBrowserResearch
+  nameWithType.vb: PlaywrightTools.ExecuteBrowserResearchAsync(String, String, Integer)
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync(String, String, Integer)
+  name.vb: ExecuteBrowserResearchAsync(String, String, Integer)
+references:
+- uid: ProjectName.Mcp.Playwright.Tools
+  commentId: N:ProjectName.Mcp.Playwright.Tools
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Tools
+  nameWithType: ProjectName.Mcp.Playwright.Tools
+  fullName: ProjectName.Mcp.Playwright.Tools
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Tools
+    name: Tools
+    href: ProjectName.Mcp.Playwright.Tools.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Tools
+    name: Tools
+    href: ProjectName.Mcp.Playwright.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.#ctor
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.-ctor.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools__ctor_ProjectName_Mcp_Playwright_Configuration_PlaywrightSessionManager_ProjectName_Mcp_Playwright_Configuration_PlaywrightConfig_Microsoft_Extensions_Logging_ILoggerFactory_
+  name: PlaywrightTools
+  nameWithType: PlaywrightTools.PlaywrightTools
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.PlaywrightTools
+  nameWithType.vb: PlaywrightTools.New
+  fullName.vb: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.New
+  name.vb: New
+- uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+  commentId: T:ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+  parent: ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.html
+  name: PlaywrightSessionManager
+  nameWithType: PlaywrightSessionManager
+  fullName: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+- uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+  commentId: T:ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+  parent: ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.html
+  name: PlaywrightConfig
+  nameWithType: PlaywrightConfig
+  fullName: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: ProjectName.Mcp.Playwright.Configuration
+  commentId: N:ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Configuration
+  nameWithType: ProjectName.Mcp.Playwright.Configuration
+  fullName: ProjectName.Mcp.Playwright.Configuration
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.Playwright.Configuration.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.Playwright.Configuration.html
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_NavigateToAsync_System_String_
+  name: NavigateToAsync
+  nameWithType: PlaywrightTools.NavigateToAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_GetPageUrlAsync
+  name: GetPageUrlAsync
+  nameWithType: PlaywrightTools.GetPageUrlAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_GetPageTitleAsync
+  name: GetPageTitleAsync
+  nameWithType: PlaywrightTools.GetPageTitleAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_GetPageContentAsync
+  name: GetPageContentAsync
+  nameWithType: PlaywrightTools.GetPageContentAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_ClickElementAsync_System_String_
+  name: ClickElementAsync
+  nameWithType: PlaywrightTools.ClickElementAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_FillInputAsync_System_String_System_String_
+  name: FillInputAsync
+  nameWithType: PlaywrightTools.FillInputAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_WaitForElementAsync_System_String_System_Int32_
+  name: WaitForElementAsync
+  nameWithType: PlaywrightTools.WaitForElementAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_TakeScreenshotAsync_System_String_
+  name: TakeScreenshotAsync
+  nameWithType: PlaywrightTools.TakeScreenshotAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync
+- uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync*
+  commentId: Overload:ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync
+  href: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync.html#ProjectName_Mcp_Playwright_Tools_PlaywrightTools_ExecuteBrowserResearchAsync_System_String_System_String_System_Int32_
+  name: ExecuteBrowserResearchAsync
+  nameWithType: PlaywrightTools.ExecuteBrowserResearchAsync
+  fullName: ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync
+memberLayout: SeparatePages

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>XML Doc Comment Standard | Tooensure — ProjectName </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="XML Doc Comment Standard | Tooensure — ProjectName ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/xml-doc-comments.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="PMCRO Docs">
+            PMCRO Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="xml-doc-comment-standard">XML Doc Comment Standard</h1>
+
+<p><em>Author: Shawn Bellazan · ThoughtLock: 2026-05-05 · Law Anchor: EC-005, DFX-004</em></p>
+<hr>
+<h2 id="the-identity-declaration-pattern">The Identity Declaration Pattern</h2>
+<p>Every public type in the PMCRO substrate opens its <code>&lt;summary&gt;</code> with the identity declaration. This is not documentation convention. It is Level 2 identity injection — the same mechanism that <code>FileSystemSkillLoader</code> uses to give agents their self-knowledge.</p>
+<p>A class that declares &quot;I AM the PlannerGrpcService&quot; enforces accountability the same way a SKILL.md does. DocFX renders it into the API reference. Developers reading the reference see not just what the type does, but what it is.</p>
+<hr>
+<h2 id="type-level-pattern">Type-Level Pattern</h2>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// I AM the PlannerGrpcService — the gRPC surface of the PLAN phase.
+/// I NEVER allow a BLOCKED plan to proceed to the Maker.
+/// I ALWAYS run the PlannerMicroWorkflow with checkpoint support.
+/// &lt;/summary&gt;
+/// &lt;remarks&gt;
+/// Author: Shawn Bellazan | ThoughtLock: 2026-05-05
+/// Law Anchors: ARCH-003, ARCH-012, EC-001
+/// &lt;/remarks&gt;
+public sealed class PlannerGrpcService : PlannerAgent.PlannerAgentBase
+</code></pre>
+<p><strong>Required elements:</strong></p>
+<ul>
+<li><code>I AM the [TypeName] — [one-phrase role description].</code></li>
+<li>At least one <code>I NEVER</code> statement (the hard boundary).</li>
+<li>At least one <code>I ALWAYS</code> statement (the guaranteed behavior).</li>
+<li><code>&lt;remarks&gt;</code> with author, ThoughtLock date, and Law Anchors for all ARCH/EC laws that govern this type.</li>
+</ul>
+<hr>
+<h2 id="method-level-pattern">Method-Level Pattern</h2>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// Receives an &lt;see cref=&quot;IntentEnvelope&quot;/&gt; and runs the PlannerMicroWorkflow.
+/// Returns an &lt;see cref=&quot;ExecutionPlan&quot;/&gt; sealed with the phase's self-assessment.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;envelope&quot;&gt;
+/// The sealed IntentEnvelope. Must have &lt;c&gt;federation_shielded: true&lt;/c&gt;.
+/// &lt;/param&gt;
+/// &lt;param name=&quot;ct&quot;&gt;Propagates cancellation to the MAF checkpoint layer.&lt;/param&gt;
+/// &lt;returns&gt;
+/// The completed &lt;see cref=&quot;ExecutionPlan&quot;/&gt; with truest intent, steps,
+/// and the TYPE 2 resource readings embedded.
+/// &lt;/returns&gt;
+/// &lt;exception cref=&quot;InvalidOperationException&quot;&gt;
+/// Thrown when &lt;c&gt;federation_shielded&lt;/c&gt; is &lt;c&gt;false&lt;/c&gt; — raw intent is rejected.
+/// &lt;/exception&gt;
+/// &lt;remarks&gt;
+/// Law Anchors: ARCH-003, ARCH-012, EC-001, EC-002
+/// &lt;/remarks&gt;
+public async Task&lt;ExecutionPlan&gt; PlanAsync(IntentEnvelope envelope, CancellationToken ct = default)
+</code></pre>
+<p><strong>Required elements for non-trivial methods:</strong></p>
+<ul>
+<li><code>&lt;param&gt;</code> for every parameter, with constraint context where applicable.</li>
+<li><code>&lt;returns&gt;</code> describing what the return type contains, not just its type name.</li>
+<li><code>&lt;exception&gt;</code> for every exception the method can throw.</li>
+<li><code>&lt;remarks&gt;</code> with Law Anchors for every EC or ARCH law this method enforces.</li>
+</ul>
+<hr>
+<h2 id="interface-pattern">Interface Pattern</h2>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// I AM the IMcpToolExecutor — the sole interface through which TYPE 1 MCP tools
+/// are executed in the PMCRO substrate.
+/// I NEVER expose methods that phase agents can call — only the Orchestrator wires me.
+/// &lt;/summary&gt;
+/// &lt;remarks&gt;
+/// Law Anchor: ARCH-NEW-001
+/// This interface is not registered in phase agent DI containers.
+/// It is registered only in OrchestratorService.
+/// &lt;/remarks&gt;
+public interface IMcpToolExecutor
+</code></pre>
+<hr>
+<h2 id="what-triggers-a-dfx-004-violation">What Triggers a DFX-004 Violation</h2>
+<p>A <code>DFX-004</code> violation occurs when <code>docfx metadata</code> emits a warning for a public member without <code>&lt;summary&gt;</code>. The build does not fail on warnings by default — but the CL-007 acceptance criterion treats warning-free as the standard.</p>
+<p>Run:</p>
+<pre><code class="lang-bash">docfx metadata docfx.json 2&gt;&amp;1 | grep &quot;missing&quot;
+</code></pre>
+<p>Any line containing &quot;missing&quot; with a type name is a DFX-004 violation. Add the identity declaration pattern to that type before committing.</p>
+<hr>
+<h2 id="what-must-not-appear-in-xml-comments">What Must Not Appear in XML Comments</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TODO</code> or <code>TBD</code></td>
+<td>DFX-006: no placeholder content in committed docs</td>
+</tr>
+<tr>
+<td><code>/// See documentation</code></td>
+<td>Unhelpful — state what the member does</td>
+</tr>
+<tr>
+<td><code>/// Gets or sets X</code></td>
+<td>Auto-generated filler — state the constraint</td>
+</tr>
+<tr>
+<td>Second-person address</td>
+<td>The comments are written as the type, not about the type</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="docfx-build.html">DocFX Build (CL-007)</a> — how the comments are validated</li>
+<li><a href="../architecture/laws.html">Architecture → Earned Laws Registry</a> — EC-005 (documentation law)</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/xml-doc-comments.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · gRPC · ModelContextProtocol — I AM the loop, building the loop.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

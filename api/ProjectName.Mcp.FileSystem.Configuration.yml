@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.FileSystem.Configuration
+  commentId: N:ProjectName.Mcp.FileSystem.Configuration
+  id: Configuration
+  parent: ProjectName.Mcp.FileSystem
+  children:
+  - ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp.FileSystem.Configuration
+  nameWithType: ProjectName.Mcp.FileSystem.Configuration
+  fullName: ProjectName.Mcp.FileSystem.Configuration
+  type: Namespace
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+references:
+- uid: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+  commentId: T:ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+  parent: ProjectName.Mcp.FileSystem.Configuration
+  href: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.html
+  name: FileSystemConfig
+  nameWithType: FileSystemConfig
+  fullName: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+- uid: ProjectName.Mcp.FileSystem.Configuration
+  commentId: N:ProjectName.Mcp.FileSystem.Configuration
+  href: ProjectName.html
+  name: ProjectName.Mcp.FileSystem.Configuration
+  nameWithType: ProjectName.Mcp.FileSystem.Configuration
+  fullName: ProjectName.Mcp.FileSystem.Configuration
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.FileSystem.Configuration.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.FileSystem.Configuration.html
+memberLayout: SeparatePages

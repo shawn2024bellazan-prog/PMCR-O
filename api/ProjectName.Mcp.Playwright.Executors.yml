@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.Playwright.Executors
+  commentId: N:ProjectName.Mcp.Playwright.Executors
+  id: Executors
+  parent: ProjectName.Mcp.Playwright
+  children:
+  - ProjectName.Mcp.Playwright.Executors.ActExecutor
+  - ProjectName.Mcp.Playwright.Executors.BrowserAction
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchInput
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchResult
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  - ProjectName.Mcp.Playwright.Executors.CheckExecutor
+  - ProjectName.Mcp.Playwright.Executors.ObserveExecutor
+  - ProjectName.Mcp.Playwright.Executors.PlanExecutor
+  - ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow
+  - ProjectName.Mcp.Playwright.Executors.ReflectExecutor
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp.Playwright.Executors
+  nameWithType: ProjectName.Mcp.Playwright.Executors
+  fullName: ProjectName.Mcp.Playwright.Executors
+  type: Namespace
+  assemblies:
+  - ProjectName.Mcp.Playwright
+references:
+- uid: ProjectName.Mcp.Playwright.Executors.ActExecutor
+  commentId: T:ProjectName.Mcp.Playwright.Executors.ActExecutor
+  href: ProjectName.Mcp.Playwright.Executors.ActExecutor.html
+  name: ActExecutor
+  nameWithType: ActExecutor
+  fullName: ProjectName.Mcp.Playwright.Executors.ActExecutor
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserAction
+  href: ProjectName.Mcp.Playwright.Executors.BrowserAction.html
+  name: BrowserAction
+  nameWithType: BrowserAction
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchInput
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserResearchInput
+  parent: ProjectName.Mcp.Playwright.Executors
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.html
+  name: BrowserResearchInput
+  nameWithType: BrowserResearchInput
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchInput
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchResult
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserResearchResult
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.html
+  name: BrowserResearchResult
+  nameWithType: BrowserResearchResult
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchResult
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  parent: ProjectName.Mcp.Playwright.Executors
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.html
+  name: BrowserResearchState
+  nameWithType: BrowserResearchState
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+- uid: ProjectName.Mcp.Playwright.Executors.CheckExecutor
+  commentId: T:ProjectName.Mcp.Playwright.Executors.CheckExecutor
+  href: ProjectName.Mcp.Playwright.Executors.CheckExecutor.html
+  name: CheckExecutor
+  nameWithType: CheckExecutor
+  fullName: ProjectName.Mcp.Playwright.Executors.CheckExecutor
+- uid: ProjectName.Mcp.Playwright.Executors.ObserveExecutor
+  commentId: T:ProjectName.Mcp.Playwright.Executors.ObserveExecutor
+  href: ProjectName.Mcp.Playwright.Executors.ObserveExecutor.html
+  name: ObserveExecutor
+  nameWithType: ObserveExecutor
+  fullName: ProjectName.Mcp.Playwright.Executors.ObserveExecutor
+- uid: ProjectName.Mcp.Playwright.Executors.PlanExecutor
+  commentId: T:ProjectName.Mcp.Playwright.Executors.PlanExecutor
+  href: ProjectName.Mcp.Playwright.Executors.PlanExecutor.html
+  name: PlanExecutor
+  nameWithType: PlanExecutor
+  fullName: ProjectName.Mcp.Playwright.Executors.PlanExecutor
+- uid: ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow
+  commentId: T:ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow
+  href: ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.html
+  name: PlaywrightMicroWorkflow
+  nameWithType: PlaywrightMicroWorkflow
+  fullName: ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow
+- uid: ProjectName.Mcp.Playwright.Executors.ReflectExecutor
+  commentId: T:ProjectName.Mcp.Playwright.Executors.ReflectExecutor
+  href: ProjectName.Mcp.Playwright.Executors.ReflectExecutor.html
+  name: ReflectExecutor
+  nameWithType: ReflectExecutor
+  fullName: ProjectName.Mcp.Playwright.Executors.ReflectExecutor
+- uid: ProjectName.Mcp.Playwright.Executors
+  commentId: N:ProjectName.Mcp.Playwright.Executors
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Executors
+  nameWithType: ProjectName.Mcp.Playwright.Executors
+  fullName: ProjectName.Mcp.Playwright.Executors
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+memberLayout: SeparatePages

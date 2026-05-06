@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName
+  id: ProjectName
+  children:
+  - ProjectName.Mcp
+  - ProjectName.OrchestrationApi
+  - ProjectName.ServiceDefaults
+  langs:
+  - csharp
+  - vb
+  name: ProjectName
+  type: Namespace
+references:
+- uid: ProjectName.Mcp
+  isExternal: true
+- uid: ProjectName.OrchestrationApi
+  commentId: N:ProjectName.OrchestrationApi
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi
+  nameWithType: ProjectName.OrchestrationApi
+  fullName: ProjectName.OrchestrationApi
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+- uid: ProjectName.ServiceDefaults
+  commentId: N:ProjectName.ServiceDefaults
+  href: ProjectName.html
+  name: ProjectName.ServiceDefaults
+  nameWithType: ProjectName.ServiceDefaults
+  fullName: ProjectName.ServiceDefaults
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.ServiceDefaults
+    name: ServiceDefaults
+    href: ProjectName.ServiceDefaults.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.ServiceDefaults
+    name: ServiceDefaults
+    href: ProjectName.ServiceDefaults.html
+memberLayout: SeparatePages

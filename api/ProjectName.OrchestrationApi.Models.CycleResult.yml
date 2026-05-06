@@ -1,0 +1,793 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.CycleResult
+  commentId: T:ProjectName.OrchestrationApi.Models.CycleResult
+  id: CycleResult
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.CycleResult.Accepted(ProjectName.OrchestrationApi.Models.CycleState)
+  - ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+  - ProjectName.OrchestrationApi.Models.CycleResult.Escalated(System.String,System.String)
+  - ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+  - ProjectName.OrchestrationApi.Models.CycleResult.Message
+  - ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+  - ProjectName.OrchestrationApi.Models.CycleResult.Plan
+  - ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+  - ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+  - ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+  langs:
+  - csharp
+  - vb
+  name: CycleResult
+  nameWithType: CycleResult
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CycleResult
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 139
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public sealed class CycleResult
+    content.vb: Public NotInheritable Class CycleResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+  id: TrailId
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: TrailId
+  nameWithType: CycleResult.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TrailId
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 141
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public string TrailId { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TrailId As String
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.TrailId*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+  id: Outcome
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: Outcome
+  nameWithType: CycleResult.Outcome
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Outcome
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 142
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public string Outcome { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Outcome As String
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.Outcome*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Message
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.Message
+  id: Message
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: CycleResult.Message
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Message
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Message
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 143
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public string? Message { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.Message*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Plan
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.Plan
+  id: Plan
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: Plan
+  nameWithType: CycleResult.Plan
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Plan
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Plan
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 144
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public ExecutionPlan? Plan { get; init; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Models.ExecutionPlan
+    content.vb: Public Property Plan As ExecutionPlan
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.Plan*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+  id: MakerFrame
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: MakerFrame
+  nameWithType: CycleResult.MakerFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: MakerFrame
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 145
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public MakerFrame? MakerFrame { get; init; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Models.MakerFrame
+    content.vb: Public Property MakerFrame As MakerFrame
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+  id: QualityFrame
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: QualityFrame
+  nameWithType: CycleResult.QualityFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: QualityFrame
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 146
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public QualityFrame? QualityFrame { get; init; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Models.QualityFrame
+    content.vb: Public Property QualityFrame As QualityFrame
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+  id: ReflectorFrame
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: ReflectorFrame
+  nameWithType: CycleResult.ReflectorFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ReflectorFrame
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 147
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public ReflectorFrame? ReflectorFrame { get; init; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Models.ReflectorFrame
+    content.vb: Public Property ReflectorFrame As ReflectorFrame
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+  commentId: P:ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+  id: DispatchResults
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: DispatchResults
+  nameWithType: CycleResult.DispatchResults
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: DispatchResults
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 148
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public List<McpToolResult> DispatchResults { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{ProjectName.OrchestrationApi.Models.McpToolResult}
+    content.vb: Public Property DispatchResults As List(Of McpToolResult)
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Accepted(ProjectName.OrchestrationApi.Models.CycleState)
+  commentId: M:ProjectName.OrchestrationApi.Models.CycleResult.Accepted(ProjectName.OrchestrationApi.Models.CycleState)
+  id: Accepted(ProjectName.OrchestrationApi.Models.CycleState)
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: Accepted(CycleState)
+  nameWithType: CycleResult.Accepted(CycleState)
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Accepted(ProjectName.OrchestrationApi.Models.CycleState)
+  type: Method
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Accepted
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 150
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public static CycleResult Accepted(CycleState state)
+    parameters:
+    - id: state
+      type: ProjectName.OrchestrationApi.Models.CycleState
+    return:
+      type: ProjectName.OrchestrationApi.Models.CycleResult
+    content.vb: Public Shared Function Accepted(state As CycleState) As CycleResult
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.Accepted*
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Escalated(System.String,System.String)
+  commentId: M:ProjectName.OrchestrationApi.Models.CycleResult.Escalated(System.String,System.String)
+  id: Escalated(System.String,System.String)
+  parent: ProjectName.OrchestrationApi.Models.CycleResult
+  langs:
+  - csharp
+  - vb
+  name: Escalated(string, string)
+  nameWithType: CycleResult.Escalated(string, string)
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Escalated(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Escalated
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 161
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public static CycleResult Escalated(string trailId, string message)
+    parameters:
+    - id: trailId
+      type: System.String
+    - id: message
+      type: System.String
+    return:
+      type: ProjectName.OrchestrationApi.Models.CycleResult
+    content.vb: Public Shared Function Escalated(trailId As String, message As String) As CycleResult
+  overload: ProjectName.OrchestrationApi.Models.CycleResult.Escalated*
+  nameWithType.vb: CycleResult.Escalated(String, String)
+  fullName.vb: ProjectName.OrchestrationApi.Models.CycleResult.Escalated(String, String)
+  name.vb: Escalated(String, String)
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.TrailId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+  href: ProjectName.OrchestrationApi.Models.CycleResult.TrailId.html#ProjectName_OrchestrationApi_Models_CycleResult_TrailId
+  name: TrailId
+  nameWithType: CycleResult.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.TrailId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Outcome*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+  href: ProjectName.OrchestrationApi.Models.CycleResult.Outcome.html#ProjectName_OrchestrationApi_Models_CycleResult_Outcome
+  name: Outcome
+  nameWithType: CycleResult.Outcome
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Outcome
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Message*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.Message
+  href: ProjectName.OrchestrationApi.Models.CycleResult.Message.html#ProjectName_OrchestrationApi_Models_CycleResult_Message
+  name: Message
+  nameWithType: CycleResult.Message
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Message
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Plan*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.Plan
+  href: ProjectName.OrchestrationApi.Models.CycleResult.Plan.html#ProjectName_OrchestrationApi_Models_CycleResult_Plan
+  name: Plan
+  nameWithType: CycleResult.Plan
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Plan
+- uid: ProjectName.OrchestrationApi.Models.ExecutionPlan
+  commentId: T:ProjectName.OrchestrationApi.Models.ExecutionPlan
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.ExecutionPlan.html
+  name: ExecutionPlan
+  nameWithType: ExecutionPlan
+  fullName: ProjectName.OrchestrationApi.Models.ExecutionPlan
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+  href: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame.html#ProjectName_OrchestrationApi_Models_CycleResult_MakerFrame
+  name: MakerFrame
+  nameWithType: CycleResult.MakerFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame
+- uid: ProjectName.OrchestrationApi.Models.MakerFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.MakerFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.MakerFrame.html
+  name: MakerFrame
+  nameWithType: MakerFrame
+  fullName: ProjectName.OrchestrationApi.Models.MakerFrame
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+  href: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame.html#ProjectName_OrchestrationApi_Models_CycleResult_QualityFrame
+  name: QualityFrame
+  nameWithType: CycleResult.QualityFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.QualityFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.html
+  name: QualityFrame
+  nameWithType: QualityFrame
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+  href: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame.html#ProjectName_OrchestrationApi_Models_CycleResult_ReflectorFrame
+  name: ReflectorFrame
+  nameWithType: CycleResult.ReflectorFrame
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.ReflectorFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.html
+  name: ReflectorFrame
+  nameWithType: ReflectorFrame
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+  href: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults.html#ProjectName_OrchestrationApi_Models_CycleResult_DispatchResults
+  name: DispatchResults
+  nameWithType: CycleResult.DispatchResults
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults
+- uid: System.Collections.Generic.List{ProjectName.OrchestrationApi.Models.McpToolResult}
+  commentId: T:System.Collections.Generic.List{ProjectName.OrchestrationApi.Models.McpToolResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  name: List<McpToolResult>
+  nameWithType: List<McpToolResult>
+  fullName: System.Collections.Generic.List<ProjectName.OrchestrationApi.Models.McpToolResult>
+  nameWithType.vb: List(Of McpToolResult)
+  fullName.vb: System.Collections.Generic.List(Of ProjectName.OrchestrationApi.Models.McpToolResult)
+  name.vb: List(Of McpToolResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: ProjectName.OrchestrationApi.Models.McpToolResult
+    name: McpToolResult
+    href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProjectName.OrchestrationApi.Models.McpToolResult
+    name: McpToolResult
+    href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Accepted*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.Accepted
+  href: ProjectName.OrchestrationApi.Models.CycleResult.Accepted.html#ProjectName_OrchestrationApi_Models_CycleResult_Accepted_ProjectName_OrchestrationApi_Models_CycleState_
+  name: Accepted
+  nameWithType: CycleResult.Accepted
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Accepted
+- uid: ProjectName.OrchestrationApi.Models.CycleState
+  commentId: T:ProjectName.OrchestrationApi.Models.CycleState
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.CycleState.html
+  name: CycleState
+  nameWithType: CycleState
+  fullName: ProjectName.OrchestrationApi.Models.CycleState
+- uid: ProjectName.OrchestrationApi.Models.CycleResult
+  commentId: T:ProjectName.OrchestrationApi.Models.CycleResult
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.CycleResult.html
+  name: CycleResult
+  nameWithType: CycleResult
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult
+- uid: ProjectName.OrchestrationApi.Models.CycleResult.Escalated*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.CycleResult.Escalated
+  href: ProjectName.OrchestrationApi.Models.CycleResult.Escalated.html#ProjectName_OrchestrationApi_Models_CycleResult_Escalated_System_String_System_String_
+  name: Escalated
+  nameWithType: CycleResult.Escalated
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult.Escalated
+memberLayout: SeparatePages

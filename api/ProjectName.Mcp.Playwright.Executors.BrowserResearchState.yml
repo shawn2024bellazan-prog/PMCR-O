@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  id: BrowserResearchState
+  parent: ProjectName.Mcp.Playwright.Executors
+  children:
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.String)
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+  - ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+  langs:
+  - csharp
+  - vb
+  name: BrowserResearchState
+  nameWithType: BrowserResearchState
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  type: Class
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: BrowserResearchState
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 21
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: 'public sealed record BrowserResearchState : IEquatable<BrowserResearchState>'
+    content.vb: Public NotInheritable Class BrowserResearchState Implements IEquatable(Of BrowserResearchState)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserResearchState}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.String)'
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: BrowserResearchState(string, string, string, List<string>, int, bool, string)
+  nameWithType: BrowserResearchState.BrowserResearchState(string, string, string, List<string>, int, bool, string)
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.BrowserResearchState(string, string, string, System.Collections.Generic.List<string>, int, bool, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: .ctor
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 21
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public BrowserResearchState(string Objective, string CurrentUrl, string PageSummary, List<string> StepLog, int StepsRemaining, bool ResearchComplete, string FinalAnswer)
+    parameters:
+    - id: Objective
+      type: System.String
+    - id: CurrentUrl
+      type: System.String
+    - id: PageSummary
+      type: System.String
+    - id: StepLog
+      type: System.Collections.Generic.List{System.String}
+    - id: StepsRemaining
+      type: System.Int32
+    - id: ResearchComplete
+      type: System.Boolean
+    - id: FinalAnswer
+      type: System.String
+    content.vb: Public Sub New(Objective As String, CurrentUrl As String, PageSummary As String, StepLog As List(Of String), StepsRemaining As Integer, ResearchComplete As Boolean, FinalAnswer As String)
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor*
+  nameWithType.vb: BrowserResearchState.New(String, String, String, List(Of String), Integer, Boolean, String)
+  fullName.vb: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.New(String, String, String, System.Collections.Generic.List(Of String), Integer, Boolean, String)
+  name.vb: New(String, String, String, List(Of String), Integer, Boolean, String)
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+  id: Objective
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: Objective
+  nameWithType: BrowserResearchState.Objective
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Objective
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 22
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string Objective { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Objective As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+  id: CurrentUrl
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: CurrentUrl
+  nameWithType: BrowserResearchState.CurrentUrl
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CurrentUrl
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 23
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string CurrentUrl { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CurrentUrl As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+  id: PageSummary
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: PageSummary
+  nameWithType: BrowserResearchState.PageSummary
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: PageSummary
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 24
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string PageSummary { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PageSummary As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+  id: StepLog
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: StepLog
+  nameWithType: BrowserResearchState.StepLog
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: StepLog
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 25
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public List<string> StepLog { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property StepLog As List(Of String)
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+  id: StepsRemaining
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: StepsRemaining
+  nameWithType: BrowserResearchState.StepsRemaining
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: StepsRemaining
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 26
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public int StepsRemaining { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StepsRemaining As Integer
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+  id: ResearchComplete
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: ResearchComplete
+  nameWithType: BrowserResearchState.ResearchComplete
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ResearchComplete
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 27
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public bool ResearchComplete { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ResearchComplete As Boolean
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+  id: FinalAnswer
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+  langs:
+  - csharp
+  - vb
+  name: FinalAnswer
+  nameWithType: BrowserResearchState.FinalAnswer
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: FinalAnswer
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 28
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string FinalAnswer { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FinalAnswer As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer*
+references:
+- uid: ProjectName.Mcp.Playwright.Executors
+  commentId: N:ProjectName.Mcp.Playwright.Executors
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Executors
+  nameWithType: ProjectName.Mcp.Playwright.Executors
+  fullName: ProjectName.Mcp.Playwright.Executors
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserResearchState}
+  commentId: T:System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserResearchState}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BrowserResearchState>
+  nameWithType: IEquatable<BrowserResearchState>
+  fullName: System.IEquatable<ProjectName.Mcp.Playwright.Executors.BrowserResearchState>
+  nameWithType.vb: IEquatable(Of BrowserResearchState)
+  fullName.vb: System.IEquatable(Of ProjectName.Mcp.Playwright.Executors.BrowserResearchState)
+  name.vb: IEquatable(Of BrowserResearchState)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+    name: BrowserResearchState
+    href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+    name: BrowserResearchState
+    href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.#ctor
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.-ctor.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState__ctor_System_String_System_String_System_String_System_Collections_Generic_List_System_String__System_Int32_System_Boolean_System_String_
+  name: BrowserResearchState
+  nameWithType: BrowserResearchState.BrowserResearchState
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.BrowserResearchState
+  nameWithType.vb: BrowserResearchState.New
+  fullName.vb: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_Objective
+  name: Objective
+  nameWithType: BrowserResearchState.Objective
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_CurrentUrl
+  name: CurrentUrl
+  nameWithType: BrowserResearchState.CurrentUrl
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_PageSummary
+  name: PageSummary
+  nameWithType: BrowserResearchState.PageSummary
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_StepLog
+  name: StepLog
+  nameWithType: BrowserResearchState.StepLog
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_StepsRemaining
+  name: StepsRemaining
+  nameWithType: BrowserResearchState.StepsRemaining
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_ResearchComplete
+  name: ResearchComplete
+  nameWithType: BrowserResearchState.ResearchComplete
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+  href: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer.html#ProjectName_Mcp_Playwright_Executors_BrowserResearchState_FinalAnswer
+  name: FinalAnswer
+  nameWithType: BrowserResearchState.FinalAnswer
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer
+memberLayout: SeparatePages

@@ -1,0 +1,38 @@
+{
+  "skill_name": "filesystem",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to see what files are in the src/ProjectName.Core folder before planning a change to TrailFrame.",
+      "expected_output": "A structured tool invocation for list_project scoped to src/ProjectName.Core, followed by the file list output parsed and summarised.",
+      "assertions": [
+        "Response contains a Tool Invocation Required block",
+        "Tool name is list_project",
+        "Input includes root_path",
+        "Response does not fabricate file names before the tool runs"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Find every place in the codebase that references TrailFrame before we modify the model.",
+      "expected_output": "A grep_content invocation targeting TrailFrame across *.cs files, followed by a structured list of matched files and line numbers.",
+      "assertions": [
+        "Response contains a Tool Invocation Required block for grep_content",
+        "pattern is TrailFrame",
+        "file_pattern is *.cs",
+        "Response does not list consumers without running the tool first"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The Checker gave an ACCEPT verdict. Write the updated TrailFrame.cs to disk.",
+      "expected_output": "A write_file invocation with the full file content, followed by a read_file verification confirming the round-trip.",
+      "assertions": [
+        "Response invokes write_file only after confirming Checker ACCEPT",
+        "Response includes a read_file verification step",
+        "overwrite is true or explicitly stated",
+        "file_path is an absolute path"
+      ]
+    }
+  ]
+}

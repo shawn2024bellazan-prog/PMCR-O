@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.Playwright.Configuration
+  commentId: N:ProjectName.Mcp.Playwright.Configuration
+  id: Configuration
+  parent: ProjectName.Mcp.Playwright
+  children:
+  - ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+  - ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp.Playwright.Configuration
+  nameWithType: ProjectName.Mcp.Playwright.Configuration
+  fullName: ProjectName.Mcp.Playwright.Configuration
+  type: Namespace
+  assemblies:
+  - ProjectName.Mcp.Playwright
+references:
+- uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+  commentId: T:ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+  parent: ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.html
+  name: PlaywrightConfig
+  nameWithType: PlaywrightConfig
+  fullName: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+- uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+  commentId: T:ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+  parent: ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.html
+  name: PlaywrightSessionManager
+  nameWithType: PlaywrightSessionManager
+  fullName: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+- uid: ProjectName.Mcp.Playwright.Configuration
+  commentId: N:ProjectName.Mcp.Playwright.Configuration
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Configuration
+  nameWithType: ProjectName.Mcp.Playwright.Configuration
+  fullName: ProjectName.Mcp.Playwright.Configuration
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.Playwright.Configuration.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.Playwright.Configuration.html
+memberLayout: SeparatePages

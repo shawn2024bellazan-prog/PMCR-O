@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor
+  commentId: T:ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor
+  id: IMcpToolExecutor
+  parent: ProjectName.OrchestrationApi.Mcp
+  children:
+  - ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async(ProjectName.OrchestrationApi.Models.McpDispatchDecision,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IMcpToolExecutor
+  nameWithType: IMcpToolExecutor
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor
+  type: Interface
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpToolExecutor.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: IMcpToolExecutor
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpToolExecutor.cs
+    startLine: 30
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    I AM the IMcpToolExecutor.
+
+    I define the contract for TYPE 1 (mutative) tool dispatch via the Orchestrator gate.
+
+    TYPE 2 (read-only) calls are handled natively by MAF's agentic tool loop.
+  example: []
+  syntax:
+    content: public interface IMcpToolExecutor
+    content.vb: Public Interface IMcpToolExecutor
+  derivedClasses:
+  - ProjectName.OrchestrationApi.Mcp.McpToolExecutor
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async(ProjectName.OrchestrationApi.Models.McpDispatchDecision,System.Threading.CancellationToken)
+  commentId: M:ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async(ProjectName.OrchestrationApi.Models.McpDispatchDecision,System.Threading.CancellationToken)
+  id: ExecuteType1Async(ProjectName.OrchestrationApi.Models.McpDispatchDecision,System.Threading.CancellationToken)
+  parent: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor
+  langs:
+  - csharp
+  - vb
+  name: ExecuteType1Async(McpDispatchDecision, CancellationToken)
+  nameWithType: IMcpToolExecutor.ExecuteType1Async(McpDispatchDecision, CancellationToken)
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async(ProjectName.OrchestrationApi.Models.McpDispatchDecision, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/IMcpToolExecutor.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ExecuteType1Async
+    path: src/ProjectName.OrchestrationApi/Mcp/IMcpToolExecutor.cs
+    startLine: 36
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    Executes a mutative (TYPE 1) tool call from a validated Maker dispatch decision.
+
+    Must only be called after Orchestrator gate approval — never from phase agents directly.
+  example: []
+  syntax:
+    content: Task<McpToolResult> ExecuteType1Async(McpDispatchDecision decision, CancellationToken ct = default)
+    parameters:
+    - id: decision
+      type: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+    - id: ct
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{ProjectName.OrchestrationApi.Models.McpToolResult}
+    content.vb: Function ExecuteType1Async(decision As McpDispatchDecision, ct As CancellationToken = Nothing) As Task(Of McpToolResult)
+  overload: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async*
+references:
+- uid: ProjectName.OrchestrationApi.Mcp
+  commentId: N:ProjectName.OrchestrationApi.Mcp
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Mcp
+  nameWithType: ProjectName.OrchestrationApi.Mcp
+  fullName: ProjectName.OrchestrationApi.Mcp
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async
+  href: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async.html#ProjectName_OrchestrationApi_Mcp_IMcpToolExecutor_ExecuteType1Async_ProjectName_OrchestrationApi_Models_McpDispatchDecision_System_Threading_CancellationToken_
+  name: ExecuteType1Async
+  nameWithType: IMcpToolExecutor.ExecuteType1Async
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async
+- uid: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+  commentId: T:ProjectName.OrchestrationApi.Models.McpDispatchDecision
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.McpDispatchDecision.html
+  name: McpDispatchDecision
+  nameWithType: McpDispatchDecision
+  fullName: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{ProjectName.OrchestrationApi.Models.McpToolResult}
+  commentId: T:System.Threading.Tasks.Task{ProjectName.OrchestrationApi.Models.McpToolResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  name: Task<McpToolResult>
+  nameWithType: Task<McpToolResult>
+  fullName: System.Threading.Tasks.Task<ProjectName.OrchestrationApi.Models.McpToolResult>
+  nameWithType.vb: Task(Of McpToolResult)
+  fullName.vb: System.Threading.Tasks.Task(Of ProjectName.OrchestrationApi.Models.McpToolResult)
+  name.vb: Task(Of McpToolResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: ProjectName.OrchestrationApi.Models.McpToolResult
+    name: McpToolResult
+    href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProjectName.OrchestrationApi.Models.McpToolResult
+    name: McpToolResult
+    href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  - name: )
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+memberLayout: SeparatePages

@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.FileSystem.Prompts
+  commentId: N:ProjectName.Mcp.FileSystem.Prompts
+  id: Prompts
+  parent: ProjectName.Mcp.FileSystem
+  children:
+  - ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp.FileSystem.Prompts
+  nameWithType: ProjectName.Mcp.FileSystem.Prompts
+  fullName: ProjectName.Mcp.FileSystem.Prompts
+  type: Namespace
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+references:
+- uid: ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts
+  commentId: T:ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts
+  href: ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.html
+  name: FileSystemPrompts
+  nameWithType: FileSystemPrompts
+  fullName: ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts
+memberLayout: SeparatePages

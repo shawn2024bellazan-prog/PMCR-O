@@ -1,0 +1,62 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "src/**/*.csproj" ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/*.Tests.csproj",
+            "**/ProjectName.AppHost/**",
+            "**/ProjectName.CopilotKit*/**"
+          ]
+        }
+      ],
+      "dest": "api",
+      "namespaceLayout": "nested",
+      "memberLayout": "separatePages",
+      "allowCompilationErrors": false,
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "api/**.yml", "api/index.md" ] },
+      { "files": [ "docs/**/*.md", "docs/**/*.yml", "*.md" ] }
+    ],
+    "resource": [
+      { "files": [ "images/**", "docs/images/**" ] }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern",
+      "templates/pmcro"
+    ],
+    "globalMetadata": {
+      "_appName": "PMCRO Docs",
+      "_appTitle": "Tooensure — ProjectName",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_appFooter": "© 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · ModelContextProtocol — I AM the loop, building the loop.",
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/favicon.ico"
+    },
+    "sitemap": {
+      "baseUrl": "https://docs.tooensure.io/projectname",
+      "priority": 0.8,
+      "changefreq": "weekly"
+    },
+    "markdownEngineProperties": {
+      "markdigExtensions": [
+        "Abbreviations",
+        "DefinitionLists",
+        "Footers",
+        "PipeTables",
+        "GridTables"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4817 @@
+{
+  "sitemap": {
+    "baseUrl": "https://docs.tooensure.io/projectname/",
+    "changefreq": "weekly",
+    "priority": 0.8
+  },
+  "source_base_path": "C:/Users/org.tooensure/Documents/Tooensure/Projects/ProjectName",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.yml\" sourcestartlinenumber=\"1\">I AM the FileSystemConfig.\nI define the single root boundary that constrains all file system tool operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.FileSystemRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.FileSystemRoot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.yml\" sourcestartlinenumber=\"1\">I AM the FileSystemPrompts Provider.\nI give phase agents ready-made mission briefs for exploring and modifying the workspace.</p>\n<p sourcefile=\"api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.yml\" sourcestartlinenumber=\"4\">SDK ground truth (ModelContextProtocol C# SDK v1.0.0):\nPrompt methods return IEnumerable&lt;ChatMessage&gt; (Microsoft.Extensions.AI).\nThe class must NOT be static (see FRAC-PW-PROMPT-001), but methods remain static.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.GetFileModificationBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.GetFileModificationBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.GetWorkspaceExplorationBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts.GetWorkspaceExplorationBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Prompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Prompts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Resources.FileSystemResources.FileSystemResources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Resources.FileSystemResources",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.FileSystem.Resources.FileSystemResources.yml\" sourcestartlinenumber=\"1\">I AM the FileSystemResources Provider.\nI expose sandbox configuration and actuator capabilities to the cognitive federation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Resources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Resources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Success.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Success",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Content.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Content",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Path.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Path",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Error.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemResult.Error",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.WriteFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.WriteFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.FileSystemTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.ReadFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.ReadFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.ListDirectory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.ListDirectory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.DeletePath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.DeletePath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.GetFileInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools.GetFileInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.FileSystemTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools.FileSystemTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.FileSystem.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.FileSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.FileSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.WorkspaceRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.WorkspaceRoot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.Headless.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.Headless",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.DefaultTimeoutMs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.DefaultTimeoutMs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.ScreenshotDir.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.ScreenshotDir",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.WaitForElementTimeoutMs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.WaitForElementTimeoutMs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.PlaywrightConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.ResolveScreenshotPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.ResolveScreenshotPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml\" sourcestartlinenumber=\"1\">I AM the PlaywrightConfig.\nI surface environment-driven Playwright settings and sandbox workspace paths.</p>\n<p sourcefile=\"api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml\" sourcestartlinenumber=\"4\">ARCH-013: No browser or filesystem access escapes this configuration boundary.</p>\n<p sourcefile=\"api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml\" sourcestartlinenumber=\"6\">Configuration keys (all optional — defaults shown):\nParameters:project-root        → workspace root for .pmcro/ directory (default: CWD)\nPLAYWRIGHT_HEADLESS             → &quot;false&quot; to run headed (default: headless)\nPlaywright:DefaultTimeoutMs     → default page timeout in ms (default: 10000)\nPlaywright:WaitForElementTimeoutMs → WaitForElement cap in ms (default + max: 30000)</p>\n<p sourcefile=\"api/ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig.yml\" sourcestartlinenumber=\"12\">PW-LAW-003: WaitForElementTimeoutMs is ALWAYS capped at 30 000 ms regardless of config.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.ActiveUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.ActiveUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.IsReady.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.IsReady",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml\" sourcestartlinenumber=\"1\">I AM the PlaywrightSessionManager.\nI manage the physical Chromium instance and expose state to the cognitive federation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.AcquireLockAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.AcquireLockAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.DisposeAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.DisposeAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.PlaywrightSessionManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.GetPageAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager.GetPageAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ActExecutor.ActExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ActExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ActExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ActExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserAction.BrowserAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.BrowserResearchInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.MaxSteps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.MaxSteps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.StartUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.StartUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.Objective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchInput.Objective",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.BrowserResearchResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Answer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Answer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Objective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Objective",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.StepLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.StepLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.FinalUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.FinalUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Succeeded.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchResult.Succeeded",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.FinalAnswer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.PageSummary",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.StepsRemaining",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.ResearchComplete",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.CurrentUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.Objective",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.BrowserResearchState.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.BrowserResearchState.BrowserResearchState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.CheckExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.CheckExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.CheckExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.CheckExecutor.CheckExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ObserveExecutor.ObserveExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ObserveExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ObserveExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ObserveExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.PlanExecutor.PlanExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.PlanExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlanExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.PlanExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.RunAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.RunAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ReflectExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ReflectExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.ReflectExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors.ReflectExecutor.ReflectExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Executors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Executors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Executors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.GetPlaywrightScrapingBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.GetPlaywrightScrapingBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.yml\" sourcestartlinenumber=\"1\">I AM the PlaywrightPrompts Provider — Pillar Three of the Playwright MCP.\nI give phase agents the rules of engagement for browser automation.\nAgents MUST read the mission brief before executing browser actions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.GetPlaywrightMissionBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts.GetPlaywrightMissionBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Prompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Prompts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Resources.PlaywrightResources",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.yml\" sourcestartlinenumber=\"1\">I AM the PlaywrightResources Provider — Pillar Two of the Playwright MCP.\nI expose browser session state and configuration to the cognitive federation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Resources.PlaywrightResources.PlaywrightResources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.GetToolReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Resources.PlaywrightResources.GetToolReference",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Resources.PlaywrightResources.GetSessionStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Resources.PlaywrightResources.GetSessionStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Resources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Resources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ExecuteBrowserResearchAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.PlaywrightTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.NavigateToAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageUrlAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageTitleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.GetPageContentAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.ClickElementAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.FillInputAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.TakeScreenshotAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools.WaitForElementAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.PlaywrightTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools.PlaywrightTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Playwright.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Playwright.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Playwright.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Configuration.TerminalConfig",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.yml\" sourcestartlinenumber=\"1\">I AM the TerminalConfig.\nI define the strict boundaries for all shell execution within this actuator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.DefaultTimeoutMs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Configuration.TerminalConfig.DefaultTimeoutMs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.WorkspaceRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Configuration.TerminalConfig.WorkspaceRoot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Configuration.TerminalConfig.MaxTimeoutMs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Configuration.TerminalConfig.MaxTimeoutMs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Prompts.TerminalPrompts",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.yml\" sourcestartlinenumber=\"1\">I AM the TerminalPrompts Provider.\nI give phase agents the rules of engagement for interacting with a non-interactive shell.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.GetTerminalMissionBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.GetTerminalMissionBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.GetGitOperationBrief.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Prompts.TerminalPrompts.GetGitOperationBrief",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Prompts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Prompts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Resources.TerminalResources.TerminalResources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.GetEnvironment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Resources.TerminalResources.GetEnvironment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Resources.TerminalResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Resources.TerminalResources",
+      "Summary": "<p sourcefile=\"api/ProjectName.Mcp.Terminal.Resources.TerminalResources.yml\" sourcestartlinenumber=\"1\">I AM the TerminalResources Provider.\nI expose environment metadata to the cognitive federation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Resources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Resources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.ExitCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalResult.ExitCode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.StandardError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalResult.StandardError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.StandardOutput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalResult.StandardOutput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalResult.Success.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalResult.Success",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.RunCommandAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalTools.RunCommandAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.RunReadOnlyCommandAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalTools.RunReadOnlyCommandAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalTools.TerminalTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.TerminalTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools.TerminalTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.Mcp.Terminal.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.Terminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.Terminal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.Mcp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.Mcp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Controllers.IntentController",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Controllers.IntentController.yml\" sourcestartlinenumber=\"1\">I AM the IntentController.\nI serve as the sole membrane through which raw human intent enters the PMCRO substrate.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.SubmitIntentAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Controllers.IntentController.SubmitIntentAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Controllers.IntentController.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Controllers.IntentController.IntentController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.FilesystemTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml\" sourcestartlinenumber=\"1\">I AM the IMcpClientRegistry.\nI hold the live AITool collections for each MCP actuator, loaded at startup\nvia McpClientFactory + SseClientTransport.\nPhase agents pull their tool sets from here at registration time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.TerminalTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.PlaywrightTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.AllType2Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.yml\" sourcestartlinenumber=\"1\">I AM the IMcpToolExecutor.\nI define the contract for TYPE 1 (mutative) tool dispatch via the Orchestrator gate.\nTYPE 2 (read-only) calls are handled natively by MAF's agentic tool loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor.ExecuteType1Async",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.AllType2Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.AllType2Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.PlaywrightTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.PlaywrightTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.TerminalTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.TerminalTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.FilesystemTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.FilesystemTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.CreateAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.CreateAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.DisposeAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.DisposeAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml\" sourcestartlinenumber=\"1\">I AM the McpClientRegistry.\nI connect to all MCP actuators at startup, enumerate their tools, and hold\nlive <xref href=\"ModelContextProtocol.Client.McpClient\" data-throw-if-not-resolved=\"false\"></xref> instances for the lifetime of the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistry.AllTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistry.AllTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.yml\" sourcestartlinenumber=\"1\">Mutable holder registered as singleton — bridging the IHostedService startup\nresult into the DI container without requiring async DI factory support.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.StartAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.StartAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.StopAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.StopAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.McpRegistryStartupService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService.yml\" sourcestartlinenumber=\"1\">I AM the McpRegistryStartupService.\nI initialise the MCP client connections before the OrchestrationApi\naccepts its first HTTP request, then register the registry in the DI container\nso agent factories can pull tools from it at construction time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpToolExecutor.McpToolExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.ExecuteType1Async.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpToolExecutor.ExecuteType1Async",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp.McpToolExecutor",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Mcp.McpToolExecutor.yml\" sourcestartlinenumber=\"1\">I AM the McpToolExecutor.\nI execute TYPE 1 (mutative) MCP tool calls on behalf of the Orchestrator gate.\nI do NOT handle TYPE 2 calls — those are routed natively through MAF's agentic loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Mcp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Mcp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Mcp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.Accepted.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.Accepted",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.Escalated.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.Escalated",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.DispatchResults",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.ReflectorFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.QualityFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.MakerFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.Plan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.Plan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.Message",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleResult.Outcome.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleResult.Outcome",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.Envelope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.Envelope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.CycleState.yml\" sourcestartlinenumber=\"1\">I AM the CycleState.\nI hold the cumulative state of a trail as it moves through the PMCRO graph.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.Plan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.Plan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.MakerFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.MakerFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.DispatchResults.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.DispatchResults",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.QualityFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.QualityFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.CycleState.ReflectorFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.CycleState.ReflectorFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ExecutionPlan.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.TruestIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ExecutionPlan.TruestIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.Steps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ExecutionPlan.Steps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ExecutionPlan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ExecutionPlan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml\" sourcestartlinenumber=\"1\">I AM the IntentEnvelope — the bloodstream of the PMCRO loop.\nI carry the high-level goal and evolving state for a PMCRO Trail.\nEvery phase reads and augments me. No field is optional once I am sealed.\nI MUST have federation_shielded: true before entering the Orchestrator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.Artifacts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.MakerFrame.Artifacts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.MakerFrame.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.MakerFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.MakerFrame.DispatchDecisions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.MakerFrame.DispatchDecisions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpActuator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpActuator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpActuator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.ArtifactType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision.ArtifactType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.Args.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision.Args",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.Tool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision.Tool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.Mcp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision.Mcp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.Rationale.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision.Rationale",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpDispatchDecision",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.McpDispatchDecision.yml\" sourcestartlinenumber=\"1\">TYPE 1 dispatch decision — validated by McpToolExecutor before execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Content.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Content",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Error.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Error",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Mcp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Mcp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Tool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Tool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.McpToolResult.yml\" sourcestartlinenumber=\"1\">Result from an MCP tool call (TYPE 1 gate dispatch).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Success.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Success",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.McpToolResult.Duration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.McpToolResult.Duration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.Description.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlanStep.Description",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.Id.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlanStep.Id",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.Type.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlanStep.Type",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlanStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlanStep",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlannerResponse.TruestIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.Plan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlannerResponse.Plan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.PlannerResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.PlannerResponse",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.PlannerResponse.yml\" sourcestartlinenumber=\"1\">Planner output schema.\ntype2_mcp_calls REMOVED (ARCH-MCP-NAT-001) — native MAF tool loop handles reconnaissance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.Completeness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.Completeness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.Correctness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.Correctness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.Rationale.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.Rationale",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.Verdict.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.Verdict",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.QualityFrame.Slv.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.QualityFrame.Slv",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.SeedIntentRequest",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml\" sourcestartlinenumber=\"1\">I AM the SeedIntentRequest.\nI carry the raw, unrefined human input from the API boundary to the Federation Board.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.MasterContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.SeedIntentRequest.MasterContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.OModeHint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.SeedIntentRequest.OModeHint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.RawIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.SeedIntentRequest.RawIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.SeedIntentRequest.HighLevelGoal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models.SeedIntentRequest.HighLevelGoal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.GetInstructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FederationBoardSkill.GetInstructions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.RefineAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FederationBoardSkill.RefineAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FederationBoardSkill",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml\" sourcestartlinenumber=\"1\">I AM the FederationBoardSkill.\nI refine raw human intent into a sealed IntentEnvelope before anything else runs.\nI NEVER pass raw seed intent to the Orchestrator — I always refine it first.\nI ALWAYS run the Economic Gate before sealing the envelope.\nI ALWAYS tag the origin: federation | round_table | human_refined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.Frontmatter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FederationBoardSkill.Frontmatter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FederationBoardSkill.Instructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FederationBoardSkill.Instructions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.WriteFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.WriteFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.DeletePath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.DeletePath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml\" sourcestartlinenumber=\"1\">I AM the FileSystemSkill.\nI provide the test-agent with in-process filesystem capabilities.\nPhase agents use MCP tools from McpClientRegistry instead (ARCH-MCP-NAT-001).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.GetFileInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.GetFileInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.ReadFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.ReadFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.SandboxPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.SandboxPolicy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.Instructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.Instructions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.GetInstructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.GetInstructions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.Frontmatter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.Frontmatter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.FileSystemSkill",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.FindFiles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.FindFiles",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.FileSystemSkill.ListDirectory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.FileSystemSkill.ListDirectory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.OModeHint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.OModeHint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.EconomicPreCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.EconomicPreCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.RawInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.RawInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.FederationShielded.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.FederationShielded",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.Origin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.Origin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.PendingLaws.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.PendingLaws",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.ThoughtLock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.ThoughtLock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml\" sourcestartlinenumber=\"1\">The output of Federation Board refinement.\nContains both the structured seed data and the sealed IntentEnvelope ready\nfor injection into the PMCRO workflow.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.HighLevelGoal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.HighLevelGoal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.Envelope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.Envelope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.ExcavatedIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.ExcavatedIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.RefinedSeedResult.FirstPersonSeed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills.RefinedSeedResult.FirstPersonSeed",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Skills.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Skills.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Skills",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.Date.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.WeatherForecast.Date",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.TemperatureF.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.WeatherForecast.TemperatureF",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.WeatherForecast",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.TemperatureC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.WeatherForecast.TemperatureC",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.WeatherForecast.Summary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.WeatherForecast.Summary",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.CheckerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.CheckerExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.CheckerExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.CheckerExecutor.CheckerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.ConstraintInjectorExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor",
+      "Summary": "<p sourcefile=\"api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.yml\" sourcestartlinenumber=\"1\">I AM the ConstraintInjectorExecutor.\nI run after every CheckerExecutor verdict, before the routing switch.\nI merge QualityFrame.EarnedConstraints into Envelope.LockedConstraints\n(de-duplicated) so they are available to the Maker on EXTEND\nand to the Reflector on ACCEPT.\nLaw anchor: ARCH-003 + OrchestratorSkill.<xref href=\"routing-decisions\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@routing-decisions\" sourcefile=\"api/ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor.yml\" sourcestartlinenumber=\"6\"></xref> EXTEND.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.DispatchExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.DispatchExecutor.DispatchExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.DispatchExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.DispatchExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.EscalateExecutor.EscalateExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.EscalateExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.EscalateExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.EscalateExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.MakerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.MakerExecutor.MakerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.MakerExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.MakerExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PlannerExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PlannerExecutor.PlannerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PlannerExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PlannerExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.PmcroWorkflowFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.Build.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory.Build",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.HandleAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.HandleAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ReflectorExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.-ctor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows.ReflectorExecutor.ReflectorExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.Workflows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.Workflows.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi.Workflows",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.OrchestrationApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.OrchestrationApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.OrchestrationApi",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.AIExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.AIExtensions.AddAIDefaults.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.AIExtensions.AddAIDefaults",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.AIExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.AIExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.AIExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.IHasInstructions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.IHasInstructions.GetInstructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.IHasInstructions.GetInstructions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.IHasInstructions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.IHasInstructions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.IHasInstructions",
+      "Summary": "<p sourcefile=\"api/ProjectName.ServiceDefaults.IHasInstructions.yml\" sourcestartlinenumber=\"1\">Contract for AgentClassSkill&lt;T&gt; subclasses that expose their\nsystem instructions for injection into ChatOptions.Instructions.\nImplement this on every skill registered via AddMAFAgent&lt;T&gt;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.BuildProviderWithFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.PmcroSkillsProvider.BuildProviderWithFilter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.GetSkillsPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.PmcroSkillsProvider.GetSkillsPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.BuildProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.PmcroSkillsProvider.BuildProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.PmcroSkillsProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.PmcroSkillsProvider",
+      "Summary": "<p sourcefile=\"api/ProjectName.ServiceDefaults.PmcroSkillsProvider.yml\" sourcestartlinenumber=\"1\">I AM the PmcroSkillsProvider helper.\nI resolve the physical path for the SKILL.md skills directory and\nconstruct AgentSkillsProvider instances for file-based agent registration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.SubprocessScriptRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.SubprocessScriptRunner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.SubprocessScriptRunner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.SubprocessScriptRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.SubprocessScriptRunner.RunAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults.SubprocessScriptRunner.RunAsync",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.ServiceDefaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.ServiceDefaults.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProjectName.ServiceDefaults",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/agent-creates-agent.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/agent-creates-agent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/cognitive-trail.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/cognitive-trail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/hil-flywheel.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/hil-flywheel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/intent-envelope.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/intent-envelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/laws.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/laws.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/mcp-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/mcp-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/pmcro-loop.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/pmcro-loop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/architecture/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/architecture/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architecture/what-pmcro-is.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architecture/what-pmcro-is.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/decisions/adr-log.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/decisions/adr-log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/decisions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/decisions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/decisions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/decisions/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/decisions/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guides/adding-earned-law.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/adding-earned-law.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guides/docfx-build.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/docfx-build.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guides/first-cycle.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/first-cycle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guides/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/guides/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/guides/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/guides/xml-doc-comments.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/guides/xml-doc-comments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/philosophy/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/philosophy/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/philosophy/on-the-word-i.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/philosophy/on-the-word-i.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/philosophy/thought-transfer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/philosophy/thought-transfer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/philosophy/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/philosophy/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/philosophy/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

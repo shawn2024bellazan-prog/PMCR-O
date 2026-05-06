@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  id: Models
+  parent: ProjectName.OrchestrationApi
+  children:
+  - ProjectName.OrchestrationApi.Models.CycleResult
+  - ProjectName.OrchestrationApi.Models.CycleState
+  - ProjectName.OrchestrationApi.Models.ExecutionPlan
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope
+  - ProjectName.OrchestrationApi.Models.MakerFrame
+  - ProjectName.OrchestrationApi.Models.McpActuator
+  - ProjectName.OrchestrationApi.Models.McpDispatchDecision
+  - ProjectName.OrchestrationApi.Models.McpToolResult
+  - ProjectName.OrchestrationApi.Models.PlanStep
+  - ProjectName.OrchestrationApi.Models.PlannerResponse
+  - ProjectName.OrchestrationApi.Models.QualityFrame
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame
+  - ProjectName.OrchestrationApi.Models.SeedIntentRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  type: Namespace
+  assemblies:
+  - ProjectName.OrchestrationApi
+references:
+- uid: ProjectName.OrchestrationApi.Models.CycleResult
+  commentId: T:ProjectName.OrchestrationApi.Models.CycleResult
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.CycleResult.html
+  name: CycleResult
+  nameWithType: CycleResult
+  fullName: ProjectName.OrchestrationApi.Models.CycleResult
+- uid: ProjectName.OrchestrationApi.Models.CycleState
+  commentId: T:ProjectName.OrchestrationApi.Models.CycleState
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.CycleState.html
+  name: CycleState
+  nameWithType: CycleState
+  fullName: ProjectName.OrchestrationApi.Models.CycleState
+- uid: ProjectName.OrchestrationApi.Models.ExecutionPlan
+  commentId: T:ProjectName.OrchestrationApi.Models.ExecutionPlan
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.ExecutionPlan.html
+  name: ExecutionPlan
+  nameWithType: ExecutionPlan
+  fullName: ProjectName.OrchestrationApi.Models.ExecutionPlan
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  commentId: T:ProjectName.OrchestrationApi.Models.IntentEnvelope
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.html
+  name: IntentEnvelope
+  nameWithType: IntentEnvelope
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope
+- uid: ProjectName.OrchestrationApi.Models.MakerFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.MakerFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.MakerFrame.html
+  name: MakerFrame
+  nameWithType: MakerFrame
+  fullName: ProjectName.OrchestrationApi.Models.MakerFrame
+- uid: ProjectName.OrchestrationApi.Models.McpActuator
+  commentId: T:ProjectName.OrchestrationApi.Models.McpActuator
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.McpActuator.html
+  name: McpActuator
+  nameWithType: McpActuator
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator
+- uid: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+  commentId: T:ProjectName.OrchestrationApi.Models.McpDispatchDecision
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.McpDispatchDecision.html
+  name: McpDispatchDecision
+  nameWithType: McpDispatchDecision
+  fullName: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+- uid: ProjectName.OrchestrationApi.Models.McpToolResult
+  commentId: T:ProjectName.OrchestrationApi.Models.McpToolResult
+  href: ProjectName.OrchestrationApi.Models.McpToolResult.html
+  name: McpToolResult
+  nameWithType: McpToolResult
+  fullName: ProjectName.OrchestrationApi.Models.McpToolResult
+- uid: ProjectName.OrchestrationApi.Models.PlanStep
+  commentId: T:ProjectName.OrchestrationApi.Models.PlanStep
+  href: ProjectName.OrchestrationApi.Models.PlanStep.html
+  name: PlanStep
+  nameWithType: PlanStep
+  fullName: ProjectName.OrchestrationApi.Models.PlanStep
+- uid: ProjectName.OrchestrationApi.Models.PlannerResponse
+  commentId: T:ProjectName.OrchestrationApi.Models.PlannerResponse
+  href: ProjectName.OrchestrationApi.Models.PlannerResponse.html
+  name: PlannerResponse
+  nameWithType: PlannerResponse
+  fullName: ProjectName.OrchestrationApi.Models.PlannerResponse
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.QualityFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.html
+  name: QualityFrame
+  nameWithType: QualityFrame
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.ReflectorFrame
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.html
+  name: ReflectorFrame
+  nameWithType: ReflectorFrame
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame
+- uid: ProjectName.OrchestrationApi.Models.SeedIntentRequest
+  commentId: T:ProjectName.OrchestrationApi.Models.SeedIntentRequest
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.SeedIntentRequest.html
+  name: SeedIntentRequest
+  nameWithType: SeedIntentRequest
+  fullName: ProjectName.OrchestrationApi.Models.SeedIntentRequest
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+memberLayout: SeparatePages

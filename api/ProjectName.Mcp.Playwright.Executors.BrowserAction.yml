@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  commentId: T:ProjectName.Mcp.Playwright.Executors.BrowserAction
+  id: BrowserAction
+  parent: ProjectName.Mcp.Playwright.Executors
+  children:
+  - ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor(System.String,System.String,System.String)
+  - ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+  - ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+  - ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+  langs:
+  - csharp
+  - vb
+  name: BrowserAction
+  nameWithType: BrowserAction
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  type: Class
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: BrowserAction
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 70
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: 'public sealed record BrowserAction : IEquatable<BrowserAction>'
+    content.vb: Public NotInheritable Class BrowserAction Implements IEquatable(Of BrowserAction)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserAction}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor(System.String,System.String,System.String)
+  commentId: M:ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  langs:
+  - csharp
+  - vb
+  name: BrowserAction(string, string?, string?)
+  nameWithType: BrowserAction.BrowserAction(string, string?, string?)
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.BrowserAction(string, string?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: .ctor
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 70
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public BrowserAction(string Kind, string? Selector, string? Answer)
+    parameters:
+    - id: Kind
+      type: System.String
+    - id: Selector
+      type: System.String
+    - id: Answer
+      type: System.String
+    content.vb: Public Sub New(Kind As String, Selector As String, Answer As String)
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor*
+  nameWithType.vb: BrowserAction.New(String, String, String)
+  fullName.vb: ProjectName.Mcp.Playwright.Executors.BrowserAction.New(String, String, String)
+  name.vb: New(String, String, String)
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+  id: Kind
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: BrowserAction.Kind
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Kind
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 71
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string Kind { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Kind As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+  id: Selector
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  langs:
+  - csharp
+  - vb
+  name: Selector
+  nameWithType: BrowserAction.Selector
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Selector
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 72
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string? Selector { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Selector As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector*
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+  commentId: P:ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+  id: Answer
+  parent: ProjectName.Mcp.Playwright.Executors.BrowserAction
+  langs:
+  - csharp
+  - vb
+  name: Answer
+  nameWithType: BrowserAction.Answer
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+  type: Property
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Answer
+    path: src/Mcps/ProjectName.Mcp.Playwright/Executors/PlaywrightMicroWorkflow.cs
+    startLine: 73
+  assemblies:
+  - ProjectName.Mcp.Playwright
+  namespace: ProjectName.Mcp.Playwright.Executors
+  syntax:
+    content: public string? Answer { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Answer As String
+  overload: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer*
+references:
+- uid: ProjectName.Mcp.Playwright.Executors
+  commentId: N:ProjectName.Mcp.Playwright.Executors
+  href: ProjectName.html
+  name: ProjectName.Mcp.Playwright.Executors
+  nameWithType: ProjectName.Mcp.Playwright.Executors
+  fullName: ProjectName.Mcp.Playwright.Executors
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright
+    name: Playwright
+    href: ProjectName.Mcp.Playwright.html
+  - name: .
+  - uid: ProjectName.Mcp.Playwright.Executors
+    name: Executors
+    href: ProjectName.Mcp.Playwright.Executors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserAction}
+  commentId: T:System.IEquatable{ProjectName.Mcp.Playwright.Executors.BrowserAction}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BrowserAction>
+  nameWithType: IEquatable<BrowserAction>
+  fullName: System.IEquatable<ProjectName.Mcp.Playwright.Executors.BrowserAction>
+  nameWithType.vb: IEquatable(Of BrowserAction)
+  fullName.vb: System.IEquatable(Of ProjectName.Mcp.Playwright.Executors.BrowserAction)
+  name.vb: IEquatable(Of BrowserAction)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: ProjectName.Mcp.Playwright.Executors.BrowserAction
+    name: BrowserAction
+    href: ProjectName.Mcp.Playwright.Executors.BrowserAction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProjectName.Mcp.Playwright.Executors.BrowserAction
+    name: BrowserAction
+    href: ProjectName.Mcp.Playwright.Executors.BrowserAction.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserAction.#ctor
+  href: ProjectName.Mcp.Playwright.Executors.BrowserAction.-ctor.html#ProjectName_Mcp_Playwright_Executors_BrowserAction__ctor_System_String_System_String_System_String_
+  name: BrowserAction
+  nameWithType: BrowserAction.BrowserAction
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.BrowserAction
+  nameWithType.vb: BrowserAction.New
+  fullName.vb: ProjectName.Mcp.Playwright.Executors.BrowserAction.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+  href: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind.html#ProjectName_Mcp_Playwright_Executors_BrowserAction_Kind
+  name: Kind
+  nameWithType: BrowserAction.Kind
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Kind
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+  href: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector.html#ProjectName_Mcp_Playwright_Executors_BrowserAction_Selector
+  name: Selector
+  nameWithType: BrowserAction.Selector
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Selector
+- uid: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer*
+  commentId: Overload:ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+  href: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer.html#ProjectName_Mcp_Playwright_Executors_BrowserAction_Answer
+  name: Answer
+  nameWithType: BrowserAction.Answer
+  fullName: ProjectName.Mcp.Playwright.Executors.BrowserAction.Answer
+memberLayout: SeparatePages

@@ -1,8 +1,42 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.2.4">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <UserSecretsId>28d1a211-bfd5-4ddc-8d1a-bd16cc5fa58f</UserSecretsId>
-  </PropertyGroup>
+	<!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — ASPIRE APPHOST
+    Identity: Distributed Conductor
+    Law Anchor: ARCH-012, BUILD-001
+    ═══════════════════════════════════════════════════════════════
+    
+    ARCHITECTURE NOTE: MAF-Native — no gRPC phase service projects.
+    The old project referenced 5 phase service .csproj files here.
+    In the MAF-native architecture, all phase agents live inside
+    OrchestrationApi. The AppHost only knows about infrastructure
+    (Postgres, Ollama) and the single API surface.
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>32d66d8d-606b-4736-8824-1b898e393e34</UserSecretsId>
+		<IsAspireHost>true</IsAspireHost>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Infrastructure hosting -->
+		<PackageReference Include="Aspire.Hosting.PostgreSQL" />
+		<PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" />
+		<!-- NOTE: No Grpc.Net.Client — the AppHost does not make gRPC calls -->
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- The ONLY project reference — sole external surface (ARCH-012) -->
+		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Filesystem\ProjectName.Mcp.Filesystem.csproj" />
+		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Playwright\ProjectName.Mcp.Playwright.csproj" />
+		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Terminal\ProjectName.Mcp.Terminal.csproj" />
+		<ProjectReference Include="..\ProjectName.OrchestrationApi\ProjectName.OrchestrationApi.csproj" />
+	</ItemGroup>
 
 </Project>

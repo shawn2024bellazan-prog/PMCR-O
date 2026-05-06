@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp
+  id: Mcp
+  parent: ProjectName
+  children:
+  - ProjectName.Mcp.FileSystem
+  - ProjectName.Mcp.Playwright
+  - ProjectName.Mcp.Terminal
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.Mcp
+  type: Namespace
+references:
+- uid: ProjectName.Mcp.FileSystem
+  isExternal: true
+- uid: ProjectName.Mcp.Playwright
+  isExternal: true
+- uid: ProjectName.Mcp.Terminal
+  isExternal: true
+memberLayout: SeparatePages

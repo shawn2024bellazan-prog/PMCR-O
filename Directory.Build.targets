@@ -1,100 +1,58 @@
+<!--
+  ═══════════════════════════════════════════════════════════════
+  PROJECTNAME — Directory.Build.targets ADDITION
+  ═══════════════════════════════════════════════════════════════
+  
+  ADD this target to your existing Directory.Build.targets
+  (or create the file at the solution root if it doesn't exist).
+
+  PURPOSE:
+    AgentSkillsProvider resolves skills at runtime from a filesystem path.
+    PmcroSkillsProvider.Build() uses Parameters:project-root (the solution root)
+    to find skills/ at dev time — so no copy is needed during local development.
+
+    However, when published or run inside a container (Docker), the solution root
+    is NOT the working directory. This target copies the entire skills/ folder
+    into each service's build output so the fallback path also works.
+
+  LAW SUB-LAW-001: SKILL.md files must be present in build output.
+
+  SCOPE:
+    Only copies for projects that reference ProjectName.ServiceDefaults,
+    i.e. the projects that actually register MAF agents. AppHost and MCPs
+    are excluded via the Condition below.
+  ═══════════════════════════════════════════════════════════════
+-->
+
 <Project>
+
 	<!--
-    ═══════════════════════════════════════════════════════════════
-    PROJECTNAME COGNITIVE SUBSTRATE — BUILD TARGETS
-    ═══════════════════════════════════════════════════════════════
-    Identity: Security, Verification & Identity Bridge
-    Law Anchor: F-GOV-001, SUB-LAW-001, MAAI-001
-    ThoughtLock: 2026-05-01
-
-    FRACTURE FIXED: FRAC-TARGETS-001
-      Symptom: SkillLoader.Load() fell through to repo-root walk-up
-               (search path #3) in all environments. In Docker and
-               after dotnet publish the walk-up fails silently,
-               causing agents to boot with "SKILL.md not found"
-               minimal identity. Level 2 identity injection broken.
-      Root Cause: Directory.Build.targets was missing the SKILL.md
-                  auto-copy target. The Cognitive Architect skill
-                  (Section IV, Level 2) explicitly requires this
-                  bridge. Without it SkillLoader path #1
-                  ({BaseDirectory}/Skills/{agentName}/SKILL.md)
-                  is always empty.
-      Fix: Added CopySkillMd target below. It fires AfterTargets
-           "Build" for every project that has a SKILL.md in its
-           output directory or in the repo skills tree. Each
-           phase service csproj already has a <Content> item that
-           copies its own SKILL.md — this target handles the
-           shared skills/phase-agents/{role}/SKILL.md path that
-           SkillLoader uses as its canonical source.
-    ═══════════════════════════════════════════════════════════════
+    CopySkillsToOutput: copies skills/** into the build output directory.
+    Condition: only runs for the OrchestrationApi (or any future service that
+    uses AddMAFAgent). Adjust the condition to match your project names.
   -->
-
-	<PropertyGroup>
-		<!-- Enable NuGet Audit to detect vulnerable packages -->
-		<NuGetAudit>true</NuGetAudit>
-		<NuGetAuditMode>all</NuGetAuditMode>
-		<NuGetAuditLevel>moderate</NuGetAuditLevel>
-	</PropertyGroup>
-
-	<!-- ── F-GOV-001 Compliance Check ─────────────────────────────────────── -->
-	<Target Name="VerifyCpmCompliance" BeforeTargets="PrepareForBuild">
-		<Error Condition="'$(ManagePackageVersionsCentrally)' != 'true'"
-			   Text="[F-GOV-001 VIOLATION] Central Package Management must be enabled in Directory.Build.props." />
-	</Target>
-
-	<!-- ── SKILL.md Identity Bridge (SUB-LAW-001, MAAI-001) ───────────────── -->
-	<!--
-    This target fires after every project build. For phase-agent projects
-    (Planner, Maker, Checker, Reflector) it copies the SKILL.md from the
-    repo skills tree into the build output under Skills/{AgentRole}/SKILL.md.
-    This satisfies SkillLoader search path #1, which is the highest-priority
-    path and is the only one guaranteed to work after dotnet publish / Docker.
-
-    HOW IT WORKS:
-    Each phase service csproj sets <AgentSkillRole> in a PropertyGroup.
-    We use Task Batching (%) to copy to both naming conventions:
-    1. Skills/role-agent/SKILL.md
-    2. Skills/role/SKILL.md
-  -->
-	<Target Name="CopySkillMd" AfterTargets="Build"
-			Condition="'$(AgentSkillRole)' != ''">
+	<Target Name="CopySkillsToOutput"
+			AfterTargets="Build"
+			Condition="'$(IsAspireHost)' != 'true' And '$(AssemblyName)' != 'ProjectName.Mcp.Filesystem' And '$(AssemblyName)' != 'ProjectName.Mcp.Terminal' And '$(AssemblyName)' != 'ProjectName.Mcp.Playwright'">
 
 		<PropertyGroup>
-			<!-- Repo root = Path where this .targets file lives -->
-			<_SkillsRepoRoot>$(MSBuildThisFileDirectory)</_SkillsRepoRoot>
-			<_SkillSourceFile>$(_SkillsRepoRoot)skills\phase-agents\$(AgentSkillRole)\SKILL.md</_SkillSourceFile>
+			<!-- Resolve the solution root as two levels above the project directory -->
+			<SolutionRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), 'global.json'))</SolutionRoot>
+			<SkillsSourceDir>$(SolutionRoot)\skills\</SkillsSourceDir>
+			<SkillsOutputDir>$(OutputPath)skills\</SkillsOutputDir>
 		</PropertyGroup>
 
-		<!-- Define destinations in an ItemGroup to solve MSB3094 (1-to-N copy) -->
+		<Message Text="[PMCRO] Copying skills from $(SkillsSourceDir) to $(SkillsOutputDir)" Importance="normal" />
+
 		<ItemGroup>
-			<_SkillDestinations Include="$(OutputPath)Skills\$(AgentSkillRole)-agent\" />
-			<_SkillDestinations Include="$(OutputPath)Skills\$(AgentSkillRole)\" />
+			<SkillFiles Include="$(SkillsSourceDir)**\*" />
 		</ItemGroup>
 
-		<!-- Alert if the source identity file is missing from the repo tree -->
-		<Warning Condition="!Exists('$(_SkillSourceFile)')"
-				 Text="[SUB-LAW-001 WARNING] SKILL.md not found at '$(_SkillSourceFile)'. Agent '$(AgentSkillRole)' will boot with minimal identity. Create skills\phase-agents\$(AgentSkillRole)\SKILL.md." />
+		<Copy SourceFiles="@(SkillFiles)"
+			  DestinationFiles="@(SkillFiles->'$(SkillsOutputDir)%(RecursiveDir)%(Filename)%(Extension)')"
+			  SkipUnchangedFiles="true"
+			  Condition="Exists('$(SkillsSourceDir)')" />
 
-		<MakeDir Condition="Exists('$(_SkillSourceFile)')"
-				 Directories="@(_SkillDestinations)" />
-
-		<!-- Task Batching: Runs once for each item in _SkillDestinations -->
-		<Copy Condition="Exists('$(_SkillSourceFile)')"
-			  SourceFiles="$(_SkillSourceFile)"
-			  DestinationFolder="%(_SkillDestinations.Identity)"
-			  SkipUnchangedFiles="true" />
-
-		<Message Condition="Exists('$(_SkillSourceFile)')"
-				 Text="[SUB-LAW-001] SKILL.md copied → $(OutputPath)Skills\$(AgentSkillRole)*\SKILL.md"
-				 Importance="normal" />
 	</Target>
-
-	<!-- ── Playwright MCP SKILL.md (separate role path) ───────────────────── -->
-	<!--
-    The Playwright MCP is not a phase-agent so it lives at a different
-    skills path. Its csproj sets <AgentSkillRole>playwright-mcp</AgentSkillRole>
-    and the source is skills/phase-agents/playwright-mcp/SKILL.md.
-    The same CopySkillMd target above handles it automatically.
-  -->
 
 </Project>

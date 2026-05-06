@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.ServiceDefaults
+  commentId: N:ProjectName.ServiceDefaults
+  id: ServiceDefaults
+  parent: ProjectName
+  children:
+  - ProjectName.ServiceDefaults.AIExtensions
+  - ProjectName.ServiceDefaults.IHasInstructions
+  - ProjectName.ServiceDefaults.PmcroSkillsProvider
+  - ProjectName.ServiceDefaults.SubprocessScriptRunner
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.ServiceDefaults
+  nameWithType: ProjectName.ServiceDefaults
+  fullName: ProjectName.ServiceDefaults
+  type: Namespace
+  assemblies:
+  - ProjectName.ServiceDefaults
+references:
+- uid: ProjectName.ServiceDefaults.AIExtensions
+  commentId: T:ProjectName.ServiceDefaults.AIExtensions
+  href: ProjectName.ServiceDefaults.AIExtensions.html
+  name: AIExtensions
+  nameWithType: AIExtensions
+  fullName: ProjectName.ServiceDefaults.AIExtensions
+- uid: ProjectName.ServiceDefaults.IHasInstructions
+  commentId: T:ProjectName.ServiceDefaults.IHasInstructions
+  parent: ProjectName.ServiceDefaults
+  href: ProjectName.ServiceDefaults.IHasInstructions.html
+  name: IHasInstructions
+  nameWithType: IHasInstructions
+  fullName: ProjectName.ServiceDefaults.IHasInstructions
+- uid: ProjectName.ServiceDefaults.PmcroSkillsProvider
+  commentId: T:ProjectName.ServiceDefaults.PmcroSkillsProvider
+  href: ProjectName.ServiceDefaults.PmcroSkillsProvider.html
+  name: PmcroSkillsProvider
+  nameWithType: PmcroSkillsProvider
+  fullName: ProjectName.ServiceDefaults.PmcroSkillsProvider
+- uid: ProjectName.ServiceDefaults.SubprocessScriptRunner
+  commentId: T:ProjectName.ServiceDefaults.SubprocessScriptRunner
+  href: ProjectName.ServiceDefaults.SubprocessScriptRunner.html
+  name: SubprocessScriptRunner
+  nameWithType: SubprocessScriptRunner
+  fullName: ProjectName.ServiceDefaults.SubprocessScriptRunner
+- uid: ProjectName.ServiceDefaults
+  commentId: N:ProjectName.ServiceDefaults
+  href: ProjectName.html
+  name: ProjectName.ServiceDefaults
+  nameWithType: ProjectName.ServiceDefaults
+  fullName: ProjectName.ServiceDefaults
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.ServiceDefaults
+    name: ServiceDefaults
+    href: ProjectName.ServiceDefaults.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.ServiceDefaults
+    name: ServiceDefaults
+    href: ProjectName.ServiceDefaults.html
+memberLayout: SeparatePages

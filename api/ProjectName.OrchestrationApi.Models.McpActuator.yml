@@ -1,0 +1,154 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.McpActuator
+  commentId: T:ProjectName.OrchestrationApi.Models.McpActuator
+  id: McpActuator
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.McpActuator.filesystem
+  - ProjectName.OrchestrationApi.Models.McpActuator.playwright
+  - ProjectName.OrchestrationApi.Models.McpActuator.terminal
+  langs:
+  - csharp
+  - vb
+  name: McpActuator
+  nameWithType: McpActuator
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator
+  type: Enum
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: McpActuator
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 24
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonStringEnumConverter))]
+
+      public enum McpActuator
+    content.vb: >-
+      <JsonConverter(GetType(JsonStringEnumConverter))>
+
+      Public Enum McpActuator
+- uid: ProjectName.OrchestrationApi.Models.McpActuator.filesystem
+  commentId: F:ProjectName.OrchestrationApi.Models.McpActuator.filesystem
+  id: filesystem
+  parent: ProjectName.OrchestrationApi.Models.McpActuator
+  langs:
+  - csharp
+  - vb
+  name: filesystem
+  nameWithType: McpActuator.filesystem
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator.filesystem
+  type: Field
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: filesystem
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 25
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: filesystem = 0
+    return:
+      type: ProjectName.OrchestrationApi.Models.McpActuator
+- uid: ProjectName.OrchestrationApi.Models.McpActuator.terminal
+  commentId: F:ProjectName.OrchestrationApi.Models.McpActuator.terminal
+  id: terminal
+  parent: ProjectName.OrchestrationApi.Models.McpActuator
+  langs:
+  - csharp
+  - vb
+  name: terminal
+  nameWithType: McpActuator.terminal
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator.terminal
+  type: Field
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: terminal
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 25
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: terminal = 1
+    return:
+      type: ProjectName.OrchestrationApi.Models.McpActuator
+- uid: ProjectName.OrchestrationApi.Models.McpActuator.playwright
+  commentId: F:ProjectName.OrchestrationApi.Models.McpActuator.playwright
+  id: playwright
+  parent: ProjectName.OrchestrationApi.Models.McpActuator
+  langs:
+  - csharp
+  - vb
+  name: playwright
+  nameWithType: McpActuator.playwright
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator.playwright
+  type: Field
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: playwright
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 25
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: playwright = 2
+    return:
+      type: ProjectName.OrchestrationApi.Models.McpActuator
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: ProjectName.OrchestrationApi.Models.McpActuator
+  commentId: T:ProjectName.OrchestrationApi.Models.McpActuator
+  parent: ProjectName.OrchestrationApi.Models
+  href: ProjectName.OrchestrationApi.Models.McpActuator.html
+  name: McpActuator
+  nameWithType: McpActuator
+  fullName: ProjectName.OrchestrationApi.Models.McpActuator
+memberLayout: SeparatePages

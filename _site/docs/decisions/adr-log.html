@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ADR Log | Tooensure — ProjectName </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ADR Log | Tooensure — ProjectName ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/decisions/adr-log.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="PMCRO Docs">
+            PMCRO Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="adr-log">ADR Log</h1>
+
+<p><em>Author: Shawn Bellazan · ThoughtLock: 2026-05-05</em></p>
+<hr>
+<h2 id="adr-001--federation-board-as-mandatory-upstream-gate">ADR-001 — Federation Board as Mandatory Upstream Gate</h2>
+<p><strong>Status:</strong> Accepted<br>
+<strong>Date:</strong> 2026-05-05<br>
+<strong>Author:</strong> Shawn Bellazan<br>
+<strong>Law Anchor:</strong> ARCH-016, ARCH-027</p>
+<h3 id="context">Context</h3>
+<p>Raw human intent is structurally unreliable. Voice-to-text artifacts, emotional noise, scope creep, and potentially malicious framing all arrive at the system boundary. Allowing raw intent to reach the Orchestrator means the cognitive loop runs on garbage. Every downstream phase inherits that noise.</p>
+<h3 id="decision">Decision</h3>
+<p>The Federation Board is mandatory. Raw intent never reaches the Orchestrator. Every intent passes through the Strange Loop refinement (SURFACE → EXCAVATE → ELEVATE → SHIELD) before entering the cognitive loop. The OrchestrationApi controller enforces this at the boundary: <code>federation_shielded: false</code> is rejected.</p>
+<h3 id="consequences">Consequences</h3>
+<p><strong>Positive:</strong> Every downstream agent operates on a verified, well-formed intent. The economic gate runs once, before the loop, not distributed across phases.<br>
+<strong>Negative:</strong> Every intent incurs the Federation Board refinement cost, even simple intents that appear unambiguous. EC-001 mitigates this by ensuring discovery verbs pass the economic gate without deep refinement.<br>
+<strong>Neutral:</strong> The Federation Board must be updated when new O-Mode types are added.</p>
+<hr>
+<h2 id="adr-002--orchestrator-only-type-1-mcp-dispatch-arch-new-001">ADR-002 — Orchestrator-Only TYPE 1 MCP Dispatch (ARCH-NEW-001)</h2>
+<p><strong>Status:</strong> Accepted<br>
+<strong>Date:</strong> 2026-05-05<br>
+<strong>Author:</strong> Shawn Bellazan<br>
+<strong>Law Anchor:</strong> ARCH-NEW-001, EC-002</p>
+<h3 id="context-1">Context</h3>
+<p>Fracture FRAC-007: The <code>DispatchExecutor</code> in <code>PmcroWorkflow.cs</code> was a no-op stub. The Maker produced <code>McpDispatchDecision</code> objects correctly but the Orchestrator never executed them. TYPE 1 tools (WriteFile, RunCommand) were planned and approved but never fired. The Checker's physical verification always failed because no file was ever written.</p>
+<p>Additionally, multiple early fractures (FRAC-MAKER-TYPE1-001) showed phase agents attempting to call TYPE 1 tools directly, bypassing the Orchestrator gate.</p>
+<h3 id="decision-1">Decision</h3>
+<p>TYPE 1 tools (world-changing, side-effecting) are called by one and only one node: the Orchestrator's <code>DispatchExecutor</code>. <code>IMcpToolExecutor</code> is not injected into phase agents. Phase agents return <code>McpDispatchDecision</code> and the Orchestrator executes it. TYPE 2 tools (read, compile, score, analyse) are called natively by phase agents during their own MicroWorkflows.</p>
+<h3 id="consequences-1">Consequences</h3>
+<p><strong>Positive:</strong> One accountable point for all world-changing actions. The Trail records exactly which Orchestrator cycle, which Maker decision, and which tool execution produced any file system or shell change.<br>
+<strong>Negative:</strong> Cognitive services cannot directly execute their own plans. They must express intent as a <code>McpDispatchDecision</code> and wait for the Orchestrator.<br>
+<strong>Neutral:</strong> <code>IMcpToolExecutor</code> is a DI service registered only in <code>OrchestratorService</code>. Phase agents' DI containers do not include it.</p>
+<hr>
+<h2 id="adr-003--cognitive-trail-as-primary-data-structure-and-commercial-product">ADR-003 — Cognitive Trail as Primary Data Structure and Commercial Product</h2>
+<p><strong>Status:</strong> Accepted<br>
+<strong>Date:</strong> 2026-05-05<br>
+<strong>Author:</strong> Shawn Bellazan<br>
+<strong>Law Anchor:</strong> ARCH-003</p>
+<h3 id="context-2">Context</h3>
+<p>Agent frameworks typically produce ephemeral outputs — responses, function results, tool call chains. These outputs are not persistent, not attributed, not transferable. The system has no memory of its own operation beyond the current context window.</p>
+<h3 id="decision-2">Decision</h3>
+<p>Every PMCRO cycle produces a Cognitive Trail — a typed, immutable, agent-attributed record of the full execution from Federation Board to Reflector. The Trail is the primary data structure. It is also the commercial product: transferable, licensable expertise encoded as a constraint set and behavioral record.</p>
+<h3 id="consequences-2">Consequences</h3>
+<p><strong>Positive:</strong> Full audit trail for every autonomous action. The Trail enables debugging, compliance review, and the HIL Flywheel (corrections become TrailFrames become constraints). The Trail enables commercial transfer of domain expertise.<br>
+<strong>Negative:</strong> Trail persistence requires EF Core + PostgreSQL. The substrate has a storage dependency that purely stateless agents do not have.<br>
+<strong>Neutral:</strong> Trail size grows with cycle count. Archival strategy for long-running trails is a future concern.</p>
+<hr>
+<h2 id="adr-004--docfx-2785-as-documentation-pipeline">ADR-004 — DocFX 2.78.5 as Documentation Pipeline</h2>
+<p><strong>Status:</strong> Accepted<br>
+<strong>Date:</strong> 2026-05-05<br>
+<strong>Author:</strong> Shawn Bellazan<br>
+<strong>Law Anchor:</strong> EC-005, DFX-001 through DFX-010</p>
+<h3 id="context-3">Context</h3>
+<p>The PMCRO substrate uses XML doc comments with I AM identity declarations on every public type. These declarations need to be rendered into searchable, navigable documentation that reflects the actual source — not aspirational state. Manual documentation diverges. Generated documentation cannot diverge.</p>
+<h3 id="decision-3">Decision</h3>
+<p>DocFX 2.78.5 is the documentation pipeline. XML comments generate <code>api/*.yml</code>. Conceptual docs live in <code>docs/**/*.md</code>. The DocFX build is the CL-007 acceptance criterion — a cycle that produces or modifies source code does not ACCEPT until <code>docfx metadata</code> and <code>docfx build</code> both exit 0.</p>
+<h3 id="consequences-3">Consequences</h3>
+<p><strong>Positive:</strong> Documentation and source are structurally coupled. A public type without <code>&lt;summary&gt;</code> causes a DocFX warning. The build enforces documentation discipline without requiring manual review.<br>
+<strong>Negative:</strong> The source must compile before <code>docfx metadata</code> can run. DocFX build is a dependency on <code>dotnet build</code>.<br>
+<strong>Neutral:</strong> <code>api/*.yml</code> and <code>_site/</code> are generated outputs. Both are excluded from source control.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/decisions/adr-log.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · gRPC · ModelContextProtocol — I AM the loop, building the loop.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

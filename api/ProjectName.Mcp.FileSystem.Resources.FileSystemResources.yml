@@ -1,0 +1,531 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  commentId: T:ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  id: FileSystemResources
+  parent: ProjectName.Mcp.FileSystem.Resources
+  children:
+  - ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)
+  - ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities
+  - ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus
+  langs:
+  - csharp
+  - vb
+  name: FileSystemResources
+  nameWithType: FileSystemResources
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  type: Class
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: FileSystemResources
+    path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+    startLine: 19
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+  namespace: ProjectName.Mcp.FileSystem.Resources
+  summary: >-
+    I AM the FileSystemResources Provider.
+
+    I expose sandbox configuration and actuator capabilities to the cognitive federation.
+  example: []
+  syntax:
+    content: >-
+      [McpServerResourceType]
+
+      public sealed class FileSystemResources
+    content.vb: >-
+      <McpServerResourceType>
+
+      Public NotInheritable Class FileSystemResources
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerResourceTypeAttribute
+    ctor: ModelContextProtocol.Server.McpServerResourceTypeAttribute.#ctor
+    arguments: []
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)
+  commentId: M:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)
+  id: '#ctor(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)'
+  parent: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  langs:
+  - csharp
+  - vb
+  name: FileSystemResources(FileSystemConfig)
+  nameWithType: FileSystemResources.FileSystemResources(FileSystemConfig)
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.FileSystemResources(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: .ctor
+    path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+    startLine: 19
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+  namespace: ProjectName.Mcp.FileSystem.Resources
+  summary: >-
+    I AM the FileSystemResources Provider.
+
+    I expose sandbox configuration and actuator capabilities to the cognitive federation.
+  example: []
+  syntax:
+    content: public FileSystemResources(FileSystemConfig config)
+    parameters:
+    - id: config
+      type: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+    content.vb: Public Sub New(config As FileSystemConfig)
+  overload: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor*
+  nameWithType.vb: FileSystemResources.New(FileSystemConfig)
+  fullName.vb: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.New(ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig)
+  name.vb: New(FileSystemConfig)
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus
+  commentId: M:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus
+  id: GetStatus
+  parent: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  langs:
+  - csharp
+  - vb
+  name: GetStatus()
+  nameWithType: FileSystemResources.GetStatus()
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus()
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: GetStatus
+    path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+    startLine: 27
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+  namespace: ProjectName.Mcp.FileSystem.Resources
+  summary: Returns the live operational health and active boundary of the filesystem sandbox.
+  example: []
+  syntax:
+    content: >-
+      [McpServerResource(UriTemplate = "filesystem://status", Name = "FileSystemStatus", Title = "FileSystem Status", MimeType = "application/json")]
+
+      public string GetStatus()
+    return:
+      type: System.String
+    content.vb: >-
+      <McpServerResource(UriTemplate:="filesystem://status", Name:="FileSystemStatus", Title:="FileSystem Status", MimeType:="application/json")>
+
+      Public Function GetStatus() As String
+  overload: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerResourceAttribute
+    ctor: ModelContextProtocol.Server.McpServerResourceAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: UriTemplate
+      type: System.String
+      value: filesystem://status
+    - name: Name
+      type: System.String
+      value: FileSystemStatus
+    - name: Title
+      type: System.String
+      value: FileSystem Status
+    - name: MimeType
+      type: System.String
+      value: application/json
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities
+  commentId: M:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities
+  id: GetCapabilities
+  parent: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+  langs:
+  - csharp
+  - vb
+  name: GetCapabilities()
+  nameWithType: FileSystemResources.GetCapabilities()
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities()
+  type: Method
+  source:
+    remote:
+      path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: GetCapabilities
+    path: src/Mcps/ProjectName.Mcp.Filesystem/Resources/FileSystemResources.cs
+    startLine: 46
+  assemblies:
+  - ProjectName.Mcp.Filesystem
+  namespace: ProjectName.Mcp.FileSystem.Resources
+  summary: >-
+    Returns the capability manifest for this actuator, explicitly distinguishing
+
+    TYPE 1 and TYPE 2 tools.
+  example: []
+  syntax:
+    content: >-
+      [McpServerResource(UriTemplate = "filesystem://capabilities", Name = "FileSystemCapabilities", Title = "FileSystem Capabilities", MimeType = "application/json")]
+
+      public string GetCapabilities()
+    return:
+      type: System.String
+    content.vb: >-
+      <McpServerResource(UriTemplate:="filesystem://capabilities", Name:="FileSystemCapabilities", Title:="FileSystem Capabilities", MimeType:="application/json")>
+
+      Public Function GetCapabilities() As String
+  overload: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities*
+  attributes:
+  - type: ModelContextProtocol.Server.McpServerResourceAttribute
+    ctor: ModelContextProtocol.Server.McpServerResourceAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: UriTemplate
+      type: System.String
+      value: filesystem://capabilities
+    - name: Name
+      type: System.String
+      value: FileSystemCapabilities
+    - name: Title
+      type: System.String
+      value: FileSystem Capabilities
+    - name: MimeType
+      type: System.String
+      value: application/json
+references:
+- uid: ProjectName.Mcp.FileSystem.Resources
+  commentId: N:ProjectName.Mcp.FileSystem.Resources
+  href: ProjectName.html
+  name: ProjectName.Mcp.FileSystem.Resources
+  nameWithType: ProjectName.Mcp.FileSystem.Resources
+  fullName: ProjectName.Mcp.FileSystem.Resources
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Resources
+    name: Resources
+    href: ProjectName.Mcp.FileSystem.Resources.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Resources
+    name: Resources
+    href: ProjectName.Mcp.FileSystem.Resources.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor*
+  commentId: Overload:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.#ctor
+  href: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.-ctor.html#ProjectName_Mcp_FileSystem_Resources_FileSystemResources__ctor_ProjectName_Mcp_FileSystem_Configuration_FileSystemConfig_
+  name: FileSystemResources
+  nameWithType: FileSystemResources.FileSystemResources
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.FileSystemResources
+  nameWithType.vb: FileSystemResources.New
+  fullName.vb: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.New
+  name.vb: New
+- uid: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+  commentId: T:ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+  parent: ProjectName.Mcp.FileSystem.Configuration
+  href: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig.html
+  name: FileSystemConfig
+  nameWithType: FileSystemConfig
+  fullName: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+- uid: ProjectName.Mcp.FileSystem.Configuration
+  commentId: N:ProjectName.Mcp.FileSystem.Configuration
+  href: ProjectName.html
+  name: ProjectName.Mcp.FileSystem.Configuration
+  nameWithType: ProjectName.Mcp.FileSystem.Configuration
+  fullName: ProjectName.Mcp.FileSystem.Configuration
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.FileSystem.Configuration.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.Mcp
+    name: Mcp
+    href: ProjectName.Mcp.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem
+    name: FileSystem
+    href: ProjectName.Mcp.FileSystem.html
+  - name: .
+  - uid: ProjectName.Mcp.FileSystem.Configuration
+    name: Configuration
+    href: ProjectName.Mcp.FileSystem.Configuration.html
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus*
+  commentId: Overload:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus
+  href: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus.html#ProjectName_Mcp_FileSystem_Resources_FileSystemResources_GetStatus
+  name: GetStatus
+  nameWithType: FileSystemResources.GetStatus
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetStatus
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities*
+  commentId: Overload:ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities
+  href: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities.html#ProjectName_Mcp_FileSystem_Resources_FileSystemResources_GetCapabilities
+  name: GetCapabilities
+  nameWithType: FileSystemResources.GetCapabilities
+  fullName: ProjectName.Mcp.FileSystem.Resources.FileSystemResources.GetCapabilities
+memberLayout: SeparatePages

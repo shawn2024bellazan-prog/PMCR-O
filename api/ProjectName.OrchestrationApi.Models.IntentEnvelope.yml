@@ -1,0 +1,1164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  commentId: T:ProjectName.OrchestrationApi.Models.IntentEnvelope
+  id: IntentEnvelope
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+  - ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+  langs:
+  - csharp
+  - vb
+  name: IntentEnvelope
+  nameWithType: IntentEnvelope
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: IntentEnvelope
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 46
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    I AM the IntentEnvelope — the bloodstream of the PMCRO loop.
+
+    I carry the high-level goal and evolving state for a PMCRO Trail.
+
+    Every phase reads and augments me. No field is optional once I am sealed.
+
+    I MUST have federation_shielded: true before entering the Orchestrator.
+  example: []
+  syntax:
+    content: public sealed class IntentEnvelope
+    content.vb: Public NotInheritable Class IntentEnvelope
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+  id: TrailId
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: TrailId
+  nameWithType: IntentEnvelope.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TrailId
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 52
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Unique trail identifier. Format: PMCRO-YYYYMMDD-[6-char hex].
+
+    Immutable once set by the Federation Board.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("trail_id")]
+
+      public string TrailId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("trail_id")>
+
+      Public Property TrailId As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: trail_id
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+  id: Origin
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: IntentEnvelope.Origin
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Origin
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 60
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Intent origin tag. One of: federation | round_table | human_refined.
+
+    Set by FederationBoardSkill. NEVER "raw".
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("origin")]
+
+      public string Origin { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("origin")>
+
+      Public Property Origin As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: origin
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+  id: HighLevelGoal
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: HighLevelGoal
+  nameWithType: IntentEnvelope.HighLevelGoal
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: HighLevelGoal
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 66
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: The immutable goal. Set once at Federation Board. NEVER changed by loop phases.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("high_level_goal")]
+
+      public string HighLevelGoal { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("high_level_goal")>
+
+      Public Property HighLevelGoal As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: high_level_goal
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+  id: CurrentIntent
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: CurrentIntent
+  nameWithType: IntentEnvelope.CurrentIntent
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CurrentIntent
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 73
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    The current cycle's specific target. Updated by Planner (truest_intent promotion)
+
+    and by Reflector (next_cycle_seed promotion) between cycles.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("current_intent")]
+
+      public string CurrentIntent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("current_intent")>
+
+      Public Property CurrentIntent As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: current_intent
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+  id: OMode
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: OMode
+  nameWithType: IntentEnvelope.OMode
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: OMode
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 80
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    O-Mode classification. Set by Federation Board. Validated by Orchestrator.
+
+    One of: O-Output | O-Optimize | O-Orchestrate | O-Chain | O-Tree | O-Graph.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("o_mode")]
+
+      public string OMode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("o_mode")>
+
+      Public Property OMode As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: o_mode
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+  id: EconomicCheck
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: EconomicCheck
+  nameWithType: IntentEnvelope.EconomicCheck
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: EconomicCheck
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 87
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Economic gate status. Set by Federation Board. "passed" | "failed".
+
+    Orchestrator routes INTERRUPT if "failed".
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("economic_check")]
+
+      public string EconomicCheck { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("economic_check")>
+
+      Public Property EconomicCheck As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: economic_check
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+  id: AocInvited
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: AocInvited
+  nameWithType: IntentEnvelope.AocInvited
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: AocInvited
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 93
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: ArchitectOfCognition invitation flag. Always true — ARCH-008.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("aoc_invited")]
+
+      public bool AocInvited { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("aoc_invited")>
+
+      Public Property AocInvited As Boolean
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: aoc_invited
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+  id: LockedConstraints
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: LockedConstraints
+  nameWithType: IntentEnvelope.LockedConstraints
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LockedConstraints
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 101
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Constraints locked into this cycle. Populated by ConstraintInjectorExecutor
+
+    from QualityFrame.EarnedConstraints after each Checker verdict.
+
+    The Orchestrator injects these into each new cycle's envelope on EXTEND/LOOP.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("locked_constraints")]
+
+      public List<string> LockedConstraints { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonPropertyName("locked_constraints")>
+
+      Public Property LockedConstraints As List(Of String)
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: locked_constraints
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+  id: LoopCount
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: LoopCount
+  nameWithType: IntentEnvelope.LoopCount
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LoopCount
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 109
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Counts the number of times this trail has looped.
+
+    Incremented by PlannerExecutor at the start of each cycle.
+
+    Orchestrator routes ESCALATE when loop_count &gt; 3.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("loop_count")]
+
+      public int LoopCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonPropertyName("loop_count")>
+
+      Public Property LoopCount As Integer
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: loop_count
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+  id: FederationShielded
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: FederationShielded
+  nameWithType: IntentEnvelope.FederationShielded
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: FederationShielded
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 117
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Federation shield. MUST be true before entering the Orchestrator.
+
+    FederationBoardSkill always seals with true.
+
+    IntentController rejects envelopes with false at the API boundary.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("federation_shielded")]
+
+      public bool FederationShielded { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("federation_shielded")>
+
+      Public Property FederationShielded As Boolean
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: federation_shielded
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+  id: MasterContext
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: MasterContext
+  nameWithType: IntentEnvelope.MasterContext
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: MasterContext
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 125
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Master context from previous sessions or identity injection.
+
+    Injected by company-identity-agent at activation time.
+
+    Preserved across cycles — never cleared by the loop.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("master_context")]
+
+      public string MasterContext { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("master_context")>
+
+      Public Property MasterContext As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: master_context
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+  id: CycleId
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: CycleId
+  nameWithType: IntentEnvelope.CycleId
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CycleId
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 132
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Per-cycle unique identifier. Survives EXTEND (same cycle continues).
+
+    Reset on LOOP (new cycle begins from Planner).
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cycle_id")]
+
+      public string CycleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("cycle_id")>
+
+      Public Property CycleId As String
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cycle_id
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+  id: CreatedAt
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: IntentEnvelope.CreatedAt
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CreatedAt
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 138
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: UTC timestamp of envelope creation by Federation Board.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("created_at")]
+
+      public DateTimeOffset CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonPropertyName("created_at")>
+
+      Public Property CreatedAt As DateTimeOffset
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: created_at
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+  commentId: P:ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+  id: PendingLaws
+  parent: ProjectName.OrchestrationApi.Models.IntentEnvelope
+  langs:
+  - csharp
+  - vb
+  name: PendingLaws
+  nameWithType: IntentEnvelope.PendingLaws
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: PendingLaws
+    path: src/ProjectName.OrchestrationApi/Models/IntentEnvelope.cs
+    startLine: 145
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  summary: >-
+    Unratified constraints surfaced by the Federation Board during refinement.
+
+    The Reflector promotes these to earned laws (EC-NNN) at cycle close.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pending_laws")]
+
+      public List<string> PendingLaws { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonPropertyName("pending_laws")>
+
+      Public Property PendingLaws As List(Of String)
+  overload: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pending_laws
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_TrailId
+  name: TrailId
+  nameWithType: IntentEnvelope.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.TrailId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_Origin
+  name: Origin
+  nameWithType: IntentEnvelope.Origin
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.Origin
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_HighLevelGoal
+  name: HighLevelGoal
+  nameWithType: IntentEnvelope.HighLevelGoal
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.HighLevelGoal
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_CurrentIntent
+  name: CurrentIntent
+  nameWithType: IntentEnvelope.CurrentIntent
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CurrentIntent
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_OMode
+  name: OMode
+  nameWithType: IntentEnvelope.OMode
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.OMode
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_EconomicCheck
+  name: EconomicCheck
+  nameWithType: IntentEnvelope.EconomicCheck
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.EconomicCheck
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_AocInvited
+  name: AocInvited
+  nameWithType: IntentEnvelope.AocInvited
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.AocInvited
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_LockedConstraints
+  name: LockedConstraints
+  nameWithType: IntentEnvelope.LockedConstraints
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.LockedConstraints
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_LoopCount
+  name: LoopCount
+  nameWithType: IntentEnvelope.LoopCount
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.LoopCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_FederationShielded
+  name: FederationShielded
+  nameWithType: IntentEnvelope.FederationShielded
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.FederationShielded
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_MasterContext
+  name: MasterContext
+  nameWithType: IntentEnvelope.MasterContext
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.MasterContext
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_CycleId
+  name: CycleId
+  nameWithType: IntentEnvelope.CycleId
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CycleId
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_CreatedAt
+  name: CreatedAt
+  nameWithType: IntentEnvelope.CreatedAt
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.CreatedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+  href: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws.html#ProjectName_OrchestrationApi_Models_IntentEnvelope_PendingLaws
+  name: PendingLaws
+  nameWithType: IntentEnvelope.PendingLaws
+  fullName: ProjectName.OrchestrationApi.Models.IntentEnvelope.PendingLaws
+memberLayout: SeparatePages

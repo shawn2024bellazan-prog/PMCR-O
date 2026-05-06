@@ -1,0 +1,29 @@
+- name: Home
+  href: index.md
+- name: Architecture
+  href: docs/architecture/
+  topicHref: docs/architecture/index.md
+- name: MAF Integration
+  href: docs/maf/
+  topicHref: docs/maf/index.md
+- name: MCP Actuators
+  href: docs/mcp/
+  topicHref: docs/mcp/index.md
+- name: Substrate
+  href: docs/substrate/
+  topicHref: docs/substrate/index.md
+- name: Fracture Log
+  href: docs/fractures/
+  topicHref: docs/fractures/index.md
+- name: Guides
+  href: docs/guides/
+  topicHref: docs/guides/index.md
+- name: Philosophy
+  href: docs/philosophy/
+  topicHref: docs/philosophy/index.md
+- name: Decisions
+  href: docs/decisions/
+  topicHref: docs/decisions/index.md
+- name: API Reference
+  href: api/
+  topicHref: api/index.md

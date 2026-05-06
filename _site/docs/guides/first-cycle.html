@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>First Cycle Walkthrough | Tooensure — ProjectName </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="First Cycle Walkthrough | Tooensure — ProjectName ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/first-cycle.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="PMCRO Docs">
+            PMCRO Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="first-cycle-walkthrough">First Cycle Walkthrough</h1>
+
+<p><em>Author: Shawn Bellazan · ThoughtLock: 2026-05-05</em></p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>.NET 10 SDK installed (<code>dotnet --version</code> → 10.x)</li>
+<li>Aspire AppHost running (<code>dotnet run --project src/ProjectName.AppHost</code>)</li>
+<li>All MCP services registered and healthy in Aspire dashboard</li>
+<li><code>Parameters:project-root</code> configured in <code>appsettings.Development.json</code></li>
+</ul>
+<h2 id="what-the-end-of-this-guide-looks-like">What the End of This Guide Looks Like</h2>
+<p>A complete PMCRO cycle has run from raw seed intent through Federation Board → Orchestrator → Planner → Maker → Checker → Reflector, returned an ACCEPT verdict, and produced at least one crystallized <code>LockedThought</code> in the Trail.</p>
+<hr>
+<h2 id="steps">Steps</h2>
+<h3 id="1-confirm-the-aspire-host-is-running">1. Confirm the Aspire Host Is Running</h3>
+<pre><code class="lang-bash">dotnet run --project src/ProjectName.AppHost
+</code></pre>
+<p>Navigate to the Aspire dashboard (default: <code>https://localhost:15888</code>). Confirm all services show healthy:</p>
+<ul>
+<li><code>projectname-orchestrationapi</code></li>
+<li><code>projectname-mcp-filesystem</code></li>
+<li><code>projectname-mcp-terminal</code></li>
+<li><code>projectname-mcp-playwright</code> (if configured)</li>
+</ul>
+<h3 id="2-submit-a-seed-intent">2. Submit a Seed Intent</h3>
+<p>The OrchestrationApi is the sole external HTTP surface (ARCH-012). Submit a seed intent via the <code>/api/intent</code> endpoint:</p>
+<pre><code class="lang-bash">curl -X POST https://localhost:[port]/api/intent \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{ &quot;seed_intent&quot;: &quot;List all SKILL.md files in the skills directory&quot; }'
+</code></pre>
+<p>The API returns <code>202 Accepted</code> with a <code>trail_id</code>. This is request/forget — the cycle runs asynchronously (FL-EXT-002).</p>
+<pre><code class="lang-json">{ &quot;trail_id&quot;: &quot;PMCRO-20260505-A3F9C1&quot;, &quot;status&quot;: &quot;accepted&quot; }
+</code></pre>
+<h3 id="3-observe-the-federation-board-refinement">3. Observe the Federation Board Refinement</h3>
+<p>In the CopilotKit AGUI (if running) or via the Aspire structured logs, observe the Federation Board running the four stages:</p>
+<pre><code>SURFACE:   &quot;List all SKILL.md files in the skills directory&quot;
+EXCAVATE:  Enumerate all agent skill definition files in the workspace skills tree.
+ELEVATE:   I list all SKILL.md files under skills/ so that the full agent skill inventory is known.
+SHIELD:    { federation_shielded: true, o_mode: &quot;O-Observe&quot;, economic_check: true }
+</code></pre>
+<p>EC-001 applies: <code>list</code> is an economically justified verb. The gate passes.</p>
+<h3 id="4-observe-the-planner">4. Observe the Planner</h3>
+<p>The Planner surfaces the truest intent and produces an ExecutionPlan. For this intent, the plan is cognitive-only:</p>
+<pre><code>dispatch_decisions: []    ← no world changes needed
+artifacts: [directory listing as structured string]
+</code></pre>
+<p>The Planner calls <code>ListDirectory</code> via <code>Mcp.FileSystem</code> (TYPE 2, read) natively during the MicroWorkflow. This call does not appear in <code>dispatch_decisions</code> — EC-002 applies.</p>
+<h3 id="5-observe-the-maker">5. Observe the Maker</h3>
+<p>The Maker produces the artifact — a structured listing of all <code>SKILL.md</code> files with their paths and names. <code>dispatch_decisions</code> is empty. The Orchestrator's DispatchExecutor finds nothing to execute.</p>
+<h3 id="6-observe-the-checker">6. Observe the Checker</h3>
+<p>The Checker scores the artifact. EC-003 applies: this is a cognitive-only cycle (<code>dispatch_decisions: []</code>, <code>dispatch_results: []</code>). Physical disk verification is skipped. The composite score reflects:</p>
+<ul>
+<li>Correctness: does the listing match the directory structure?</li>
+<li>Completeness: are all planned steps addressed?</li>
+<li>Compliance: EC-001 through EC-005 respected?</li>
+</ul>
+<p>If composite ≥ 0.85, the verdict is ACCEPT — not LOOP.</p>
+<h3 id="7-observe-the-reflector">7. Observe the Reflector</h3>
+<p>The Reflector crystallizes the constraint earned this cycle and seeds the next cycle. For a well-formed cognitive-only cycle, the SLV is high (new information produced) and the LockedThought is concise:</p>
+<pre><code class="lang-json">{
+  &quot;locked_thought&quot;: &quot;A ListDirectory call on skills/ returns N SKILL.md files.&quot;,
+  &quot;slv&quot;: 0.72,
+  &quot;verdict&quot;: &quot;ACCEPT&quot;
+}
+</code></pre>
+<hr>
+<h2 id="verification">Verification</h2>
+<p>Confirm the cycle completed by querying the trail:</p>
+<pre><code class="lang-bash">curl https://localhost:[port]/api/trail/PMCRO-20260505-A3F9C1
+</code></pre>
+<p>Expect:</p>
+<ul>
+<li><code>status: &quot;accepted&quot;</code></li>
+<li><code>frames</code> array with IntentEnvelope, ExecutionPlan, MakerFrame, QualityFrame, ReflectorFrame all present</li>
+<li><code>verdict: &quot;ACCEPT&quot;</code> in the QualityFrame</li>
+<li><code>locked_thought</code> in the ReflectorFrame</li>
+</ul>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong><code>federation_shielded: false</code> rejection at controller boundary</strong><br>
+The intent was submitted directly to the Orchestrator, bypassing the Federation Board. Submit through <code>/api/intent</code> only — the controller calls <code>FederationBoardSkill</code> automatically.</p>
+<p><strong>LOOP verdict on a cognitive-only cycle</strong><br>
+EC-003 is not active in the Checker's earned-laws resource. Verify <code>OrchestratorSkill.cs</code> includes EC-003 in its resource injection. Verify the Aspire service was restarted after the last skill change.</p>
+<p><strong><code>ROUND_TABLE_NOT_ECONOMICALLY_JUSTIFIED</code> from Federation Board</strong><br>
+EC-001 is not active. Verify the <code>RunEconomicGate</code> allowlist in <code>FederationBoardSkill.cs</code> includes <code>list</code> and analysis verbs. This fracture was resolved in trail 121E0F — if it recurs, check the build version.</p>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="adding-earned-law.html">Adding an Earned Law</a> — if this walkthrough surfaces a new fracture</li>
+<li><a href="../architecture/pmcro-loop.html">Architecture → The PMCRO Loop</a> — phase-by-phase reference</li>
+<li><a href="../architecture/laws.html">Architecture → Earned Laws Registry</a> — active constraints</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/first-cycle.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · gRPC · ModelContextProtocol — I AM the loop, building the loop.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

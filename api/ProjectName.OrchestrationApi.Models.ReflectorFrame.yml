@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.ReflectorFrame
+  id: ReflectorFrame
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+  - ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+  langs:
+  - csharp
+  - vb
+  name: ReflectorFrame
+  nameWithType: ReflectorFrame
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: ReflectorFrame
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 125
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public sealed class ReflectorFrame
+    content.vb: Public NotInheritable Class ReflectorFrame
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+  id: TrailId
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: TrailId
+  nameWithType: ReflectorFrame.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TrailId
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 127
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("trail_id")]
+
+      public string TrailId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("trail_id")>
+
+      Public Property TrailId As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: trail_id
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+  id: CycleId
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: CycleId
+  nameWithType: ReflectorFrame.CycleId
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CycleId
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 128
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("cycle_id")]
+
+      public string CycleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("cycle_id")>
+
+      Public Property CycleId As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cycle_id
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+  id: LearningFrames
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: LearningFrames
+  nameWithType: ReflectorFrame.LearningFrames
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LearningFrames
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 129
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("learning_frames")]
+
+      public List<string> LearningFrames { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonPropertyName("learning_frames")>
+
+      Public Property LearningFrames As List(Of String)
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: learning_frames
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+  id: CrystallisedConstraint
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: CrystallisedConstraint
+  nameWithType: ReflectorFrame.CrystallisedConstraint
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: CrystallisedConstraint
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 130
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("crystallised_constraint")]
+
+      public string CrystallisedConstraint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("crystallised_constraint")>
+
+      Public Property CrystallisedConstraint As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: crystallised_constraint
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+  id: LawCode
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: LawCode
+  nameWithType: ReflectorFrame.LawCode
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LawCode
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 131
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("law_code")]
+
+      public string LawCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("law_code")>
+
+      Public Property LawCode As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: law_code
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+  id: Slv
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: Slv
+  nameWithType: ReflectorFrame.Slv
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Slv
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 132
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("slv")]
+
+      public double Slv { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("slv")>
+
+      Public Property Slv As Double
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: slv
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+  id: NextCycleSeed
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: NextCycleSeed
+  nameWithType: ReflectorFrame.NextCycleSeed
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: NextCycleSeed
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 133
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("next_cycle_seed")]
+
+      public string NextCycleSeed { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("next_cycle_seed")>
+
+      Public Property NextCycleSeed As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: next_cycle_seed
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+  commentId: P:ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+  id: LockedCoT
+  parent: ProjectName.OrchestrationApi.Models.ReflectorFrame
+  langs:
+  - csharp
+  - vb
+  name: LockedCoT
+  nameWithType: ReflectorFrame.LockedCoT
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LockedCoT
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 134
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("locked_cot")]
+
+      public string LockedCoT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("locked_cot")>
+
+      Public Property LockedCoT As String
+  overload: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: locked_cot
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_TrailId
+  name: TrailId
+  nameWithType: ReflectorFrame.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.TrailId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_CycleId
+  name: CycleId
+  nameWithType: ReflectorFrame.CycleId
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.CycleId
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_LearningFrames
+  name: LearningFrames
+  nameWithType: ReflectorFrame.LearningFrames
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LearningFrames
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_CrystallisedConstraint
+  name: CrystallisedConstraint
+  nameWithType: ReflectorFrame.CrystallisedConstraint
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.CrystallisedConstraint
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_LawCode
+  name: LawCode
+  nameWithType: ReflectorFrame.LawCode
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LawCode
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_Slv
+  name: Slv
+  nameWithType: ReflectorFrame.Slv
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.Slv
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_NextCycleSeed
+  name: NextCycleSeed
+  nameWithType: ReflectorFrame.NextCycleSeed
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.NextCycleSeed
+- uid: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+  href: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT.html#ProjectName_OrchestrationApi_Models_ReflectorFrame_LockedCoT
+  name: LockedCoT
+  nameWithType: ReflectorFrame.LockedCoT
+  fullName: ProjectName.OrchestrationApi.Models.ReflectorFrame.LockedCoT
+memberLayout: SeparatePages

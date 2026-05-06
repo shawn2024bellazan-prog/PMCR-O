@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding an Earned Law | Tooensure — ProjectName </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding an Earned Law | Tooensure — ProjectName ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/adding-earned-law.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="PMCRO Docs">
+            PMCRO Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="adding-an-earned-law">Adding an Earned Law</h1>
+
+<p><em>Author: Shawn Bellazan · ThoughtLock: 2026-05-05</em></p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A fracture has occurred: a cycle failed at a specific point for a known reason.</li>
+<li>The fix has been applied: the code, skill, or configuration is corrected.</li>
+<li>The substrate is running and CL-007 passes: <code>docfx build</code> exits 0.</li>
+</ul>
+<h2 id="what-the-end-of-this-guide-looks-like">What the End of This Guide Looks Like</h2>
+<p>The fracture is permanently recorded, the law is ratified, and the constraint is injected into every future cycle. The same fracture cannot recur.</p>
+<hr>
+<h2 id="steps">Steps</h2>
+<h3 id="1-record-the-fracture">1. Record the Fracture</h3>
+<p>Open <code>skills/pmcro-framework/references/fractures.md</code>. Add an entry:</p>
+<pre><code class="lang-markdown">## FRAC-NNN — [Short symptom description]
+**Date:** YYYY-MM-DD
+**Trail:** [trail_id]
+**Service:** [service or component where fracture occurred]
+**Symptom:** [What the cycle did wrong — specific, observable, not &quot;it failed&quot;]
+**Root Cause:** [Why — the structural reason, not just the proximate error]
+**Fix:** [What was changed and where]
+</code></pre>
+<p>The fracture entry is immutable once committed. No fracture is ever deleted. The history of fractures is the history of how the system learned.</p>
+<h3 id="2-ratify-the-law">2. Ratify the Law</h3>
+<p>Determine the law category:</p>
+<ul>
+<li><strong>New behavior pattern not covered by any existing law</strong> → assign <code>EC-NNN</code> (next available number) and add to <code>laws.md</code>.</li>
+<li><strong>Extends an existing law</strong> → add a note to the existing entry in <code>laws.md</code>.</li>
+</ul>
+<p>Write the law in first person, present tense:</p>
+<pre><code class="lang-markdown">## EC-NNN — [Law Title]
+**Fracture:** FRAC-NNN
+**Trail:** [trail_id]
+**Symptom:** [one-sentence summary of what failed]
+
+**Laws:**
+- I ALWAYS [positive behavior].
+- I NEVER [negative behavior].
+</code></pre>
+<h3 id="3-inject-into-orchestratorskill">3. Inject into OrchestratorSkill</h3>
+<p>Open <code>src/ProjectName.OrchestrationApi/Skills/OrchestratorSkill.cs</code>. Add the new law to the <code>earned-laws</code> resource block:</p>
+<pre><code class="lang-csharp">// EC-NNN — [Law Title]
+// Fracture: FRAC-NNN | Trail: [trail_id]
+// [One-line summary]
+I ALWAYS [behavior].
+I NEVER [anti-behavior].
+</code></pre>
+<h3 id="4-add-to-pmcroworkflow-law-header">4. Add to PmcroWorkflow Law Header</h3>
+<p>Open <code>src/ProjectName.OrchestrationApi/Workflows/PmcroWorkflow.cs</code>. Add <code>EC-NNN</code> to the Law Anchor header comment.</p>
+<h3 id="5-update-the-architecture-doc">5. Update the Architecture Doc</h3>
+<p>Open <code>docs/architecture/laws.md</code>. Add the full law entry (same content as step 2, without the markdown heading format — use the existing registry format).</p>
+<h3 id="6-run-cl-007">6. Run CL-007</h3>
+<pre><code class="lang-powershell">.\07-docfx-build.ps1
+</code></pre>
+<p>All three stages must exit 0. If the DocFX build fails after adding the law:</p>
+<ul>
+<li>New <code>.md</code> file added without a <code>toc.yml</code> entry → add the entry (DFX-005).</li>
+<li>New public type in changed C# without <code>&lt;summary&gt;</code> → add the XML doc comment (EC-005, DFX-004).</li>
+</ul>
+<hr>
+<h2 id="verification">Verification</h2>
+<p>Confirm the law is active in the running substrate:</p>
+<pre><code class="lang-bash">curl -X POST https://localhost:[port]/api/intent \
+  -d '{ &quot;seed_intent&quot;: &quot;[an intent that would have triggered the original fracture]&quot; }'
+</code></pre>
+<p>The cycle should complete without hitting the fracture. The QualityFrame should show no LOOP verdict caused by the previously unfixed behavior.</p>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong>The same fracture recurs after law ratification</strong><br>
+The law was added to <code>laws.md</code> but not injected into <code>OrchestratorSkill.cs</code>. Verify the <code>earned-laws</code> resource block contains the new law text. Restart the OrchestrationApi service.</p>
+<p><strong>DocFX build fails after adding the law doc</strong><br>
+Missing <code>toc.yml</code> entry. Add the new <code>.md</code> file to the appropriate <code>toc.yml</code> before committing.</p>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../architecture/laws.html">Architecture → Earned Laws Registry</a> — current active laws</li>
+<li><a href="../architecture/what-pmcro-is.html">Architecture → What PMCRO Is</a> — Primitive 4: Constraint Accumulation as Learning</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/shawn2024bellazan-prog/PMCR-O/blob/master/docs/guides/adding-earned-law.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Tooensure LLC. Built with DocFX 2.78.5 · .NET 10 · Aspire · gRPC · ModelContextProtocol — I AM the loop, building the loop.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder
+  commentId: T:ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder
+  id: McpClientRegistryHolder
+  parent: ProjectName.OrchestrationApi.Mcp
+  children:
+  - ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+  langs:
+  - csharp
+  - vb
+  name: McpClientRegistryHolder
+  nameWithType: McpClientRegistryHolder
+  fullName: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/McpRegistryStartupService.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: McpClientRegistryHolder
+    path: src/ProjectName.OrchestrationApi/Mcp/McpRegistryStartupService.cs
+    startLine: 45
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  summary: >-
+    Mutable holder registered as singleton — bridging the IHostedService startup
+
+    result into the DI container without requiring async DI factory support.
+  example: []
+  syntax:
+    content: public sealed class McpClientRegistryHolder
+    content.vb: Public NotInheritable Class McpClientRegistryHolder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+  commentId: P:ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+  id: Registry
+  parent: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder
+  langs:
+  - csharp
+  - vb
+  name: Registry
+  nameWithType: McpClientRegistryHolder.Registry
+  fullName: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Mcp/McpRegistryStartupService.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Registry
+    path: src/ProjectName.OrchestrationApi/Mcp/McpRegistryStartupService.cs
+    startLine: 49
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Mcp
+  syntax:
+    content: public IMcpClientRegistry Registry { get; set; }
+    parameters: []
+    return:
+      type: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+    content.vb: Public Property Registry As IMcpClientRegistry
+  overload: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry*
+references:
+- uid: ProjectName.OrchestrationApi.Mcp
+  commentId: N:ProjectName.OrchestrationApi.Mcp
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Mcp
+  nameWithType: ProjectName.OrchestrationApi.Mcp
+  fullName: ProjectName.OrchestrationApi.Mcp
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Mcp
+    name: Mcp
+    href: ProjectName.OrchestrationApi.Mcp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry*
+  commentId: Overload:ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+  href: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry.html#ProjectName_OrchestrationApi_Mcp_McpClientRegistryHolder_Registry
+  name: Registry
+  nameWithType: McpClientRegistryHolder.Registry
+  fullName: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder.Registry
+- uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  commentId: T:ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+  parent: ProjectName.OrchestrationApi.Mcp
+  href: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry.html
+  name: IMcpClientRegistry
+  nameWithType: IMcpClientRegistry
+  fullName: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+memberLayout: SeparatePages

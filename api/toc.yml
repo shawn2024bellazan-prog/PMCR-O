@@ -1,0 +1,286 @@
+### YamlMime:TableOfContent
+items:
+- uid: ProjectName
+  name: ProjectName
+  type: Namespace
+  items:
+  - uid: ProjectName.Mcp
+    name: Mcp
+    type: Namespace
+    items:
+    - uid: ProjectName.Mcp.FileSystem
+      name: FileSystem
+      type: Namespace
+      items:
+      - uid: ProjectName.Mcp.FileSystem.Configuration
+        name: Configuration
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.FileSystem.Configuration.FileSystemConfig
+          name: FileSystemConfig
+          type: Class
+      - uid: ProjectName.Mcp.FileSystem.Prompts
+        name: Prompts
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.FileSystem.Prompts.FileSystemPrompts
+          name: FileSystemPrompts
+          type: Class
+      - uid: ProjectName.Mcp.FileSystem.Resources
+        name: Resources
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.FileSystem.Resources.FileSystemResources
+          name: FileSystemResources
+          type: Class
+      - uid: ProjectName.Mcp.FileSystem.Tools
+        name: Tools
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.FileSystem.Tools.FileSystemResult
+          name: FileSystemResult
+          type: Class
+        - uid: ProjectName.Mcp.FileSystem.Tools.FileSystemTools
+          name: FileSystemTools
+          type: Class
+    - uid: ProjectName.Mcp.Playwright
+      name: Playwright
+      type: Namespace
+      items:
+      - uid: ProjectName.Mcp.Playwright.Configuration
+        name: Configuration
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightConfig
+          name: PlaywrightConfig
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Configuration.PlaywrightSessionManager
+          name: PlaywrightSessionManager
+          type: Class
+      - uid: ProjectName.Mcp.Playwright.Executors
+        name: Executors
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Playwright.Executors.ActExecutor
+          name: ActExecutor
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.BrowserAction
+          name: BrowserAction
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchInput
+          name: BrowserResearchInput
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchResult
+          name: BrowserResearchResult
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.BrowserResearchState
+          name: BrowserResearchState
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.CheckExecutor
+          name: CheckExecutor
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.ObserveExecutor
+          name: ObserveExecutor
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.PlanExecutor
+          name: PlanExecutor
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.PlaywrightMicroWorkflow
+          name: PlaywrightMicroWorkflow
+          type: Class
+        - uid: ProjectName.Mcp.Playwright.Executors.ReflectExecutor
+          name: ReflectExecutor
+          type: Class
+      - uid: ProjectName.Mcp.Playwright.Prompts
+        name: Prompts
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Playwright.Prompts.PlaywrightPrompts
+          name: PlaywrightPrompts
+          type: Class
+      - uid: ProjectName.Mcp.Playwright.Resources
+        name: Resources
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Playwright.Resources.PlaywrightResources
+          name: PlaywrightResources
+          type: Class
+      - uid: ProjectName.Mcp.Playwright.Tools
+        name: Tools
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Playwright.Tools.PlaywrightTools
+          name: PlaywrightTools
+          type: Class
+    - uid: ProjectName.Mcp.Terminal
+      name: Terminal
+      type: Namespace
+      items:
+      - uid: ProjectName.Mcp.Terminal.Configuration
+        name: Configuration
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Terminal.Configuration.TerminalConfig
+          name: TerminalConfig
+          type: Class
+      - uid: ProjectName.Mcp.Terminal.Prompts
+        name: Prompts
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Terminal.Prompts.TerminalPrompts
+          name: TerminalPrompts
+          type: Class
+      - uid: ProjectName.Mcp.Terminal.Resources
+        name: Resources
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Terminal.Resources.TerminalResources
+          name: TerminalResources
+          type: Class
+      - uid: ProjectName.Mcp.Terminal.Tools
+        name: Tools
+        type: Namespace
+        items:
+        - uid: ProjectName.Mcp.Terminal.Tools.TerminalResult
+          name: TerminalResult
+          type: Class
+        - uid: ProjectName.Mcp.Terminal.Tools.TerminalTools
+          name: TerminalTools
+          type: Class
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    type: Namespace
+    items:
+    - uid: ProjectName.OrchestrationApi.Controllers
+      name: Controllers
+      type: Namespace
+      items:
+      - uid: ProjectName.OrchestrationApi.Controllers.IntentController
+        name: IntentController
+        type: Class
+    - uid: ProjectName.OrchestrationApi.Mcp
+      name: Mcp
+      type: Namespace
+      items:
+      - uid: ProjectName.OrchestrationApi.Mcp.IMcpClientRegistry
+        name: IMcpClientRegistry
+        type: Interface
+      - uid: ProjectName.OrchestrationApi.Mcp.IMcpToolExecutor
+        name: IMcpToolExecutor
+        type: Interface
+      - uid: ProjectName.OrchestrationApi.Mcp.McpClientRegistry
+        name: McpClientRegistry
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Mcp.McpClientRegistryHolder
+        name: McpClientRegistryHolder
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Mcp.McpRegistryStartupService
+        name: McpRegistryStartupService
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Mcp.McpToolExecutor
+        name: McpToolExecutor
+        type: Class
+    - uid: ProjectName.OrchestrationApi.Models
+      name: Models
+      type: Namespace
+      items:
+      - uid: ProjectName.OrchestrationApi.Models.CycleResult
+        name: CycleResult
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.CycleState
+        name: CycleState
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.ExecutionPlan
+        name: ExecutionPlan
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.IntentEnvelope
+        name: IntentEnvelope
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.MakerFrame
+        name: MakerFrame
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.McpActuator
+        name: McpActuator
+        type: Enum
+      - uid: ProjectName.OrchestrationApi.Models.McpDispatchDecision
+        name: McpDispatchDecision
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.McpToolResult
+        name: McpToolResult
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.PlanStep
+        name: PlanStep
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.PlannerResponse
+        name: PlannerResponse
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.QualityFrame
+        name: QualityFrame
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.ReflectorFrame
+        name: ReflectorFrame
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Models.SeedIntentRequest
+        name: SeedIntentRequest
+        type: Class
+    - uid: ProjectName.OrchestrationApi.Skills
+      name: Skills
+      type: Namespace
+      items:
+      - uid: ProjectName.OrchestrationApi.Skills.FederationBoardSkill
+        name: FederationBoardSkill
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Skills.FileSystemSkill
+        name: FileSystemSkill
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Skills.RefinedSeedResult
+        name: RefinedSeedResult
+        type: Class
+    - uid: ProjectName.OrchestrationApi.Workflows
+      name: Workflows
+      type: Namespace
+      items:
+      - uid: ProjectName.OrchestrationApi.Workflows.CheckerExecutor
+        name: CheckerExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.ConstraintInjectorExecutor
+        name: ConstraintInjectorExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.DispatchExecutor
+        name: DispatchExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.EscalateExecutor
+        name: EscalateExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.MakerExecutor
+        name: MakerExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.PlannerExecutor
+        name: PlannerExecutor
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.PmcroWorkflowFactory
+        name: PmcroWorkflowFactory
+        type: Class
+      - uid: ProjectName.OrchestrationApi.Workflows.ReflectorExecutor
+        name: ReflectorExecutor
+        type: Class
+    - uid: ProjectName.OrchestrationApi.WeatherForecast
+      name: WeatherForecast
+      type: Class
+  - uid: ProjectName.ServiceDefaults
+    name: ServiceDefaults
+    type: Namespace
+    items:
+    - uid: ProjectName.ServiceDefaults.AIExtensions
+      name: AIExtensions
+      type: Class
+    - uid: ProjectName.ServiceDefaults.IHasInstructions
+      name: IHasInstructions
+      type: Interface
+    - uid: ProjectName.ServiceDefaults.PmcroSkillsProvider
+      name: PmcroSkillsProvider
+      type: Class
+    - uid: ProjectName.ServiceDefaults.SubprocessScriptRunner
+      name: SubprocessScriptRunner
+      type: Class
+memberLayout: SeparatePages

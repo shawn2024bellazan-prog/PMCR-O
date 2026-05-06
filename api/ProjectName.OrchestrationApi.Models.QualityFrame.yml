@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame
+  commentId: T:ProjectName.OrchestrationApi.Models.QualityFrame
+  id: QualityFrame
+  parent: ProjectName.OrchestrationApi.Models
+  children:
+  - ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+  - ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+  - ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+  - ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+  - ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+  - ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+  - ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+  - ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+  langs:
+  - csharp
+  - vb
+  name: QualityFrame
+  nameWithType: QualityFrame
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame
+  type: Class
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: QualityFrame
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 105
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: public sealed class QualityFrame
+    content.vb: Public NotInheritable Class QualityFrame
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+  id: TrailId
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: TrailId
+  nameWithType: QualityFrame.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: TrailId
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 107
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("trail_id")]
+
+      public string TrailId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("trail_id")>
+
+      Public Property TrailId As String
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: trail_id
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+  id: Verdict
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: Verdict
+  nameWithType: QualityFrame.Verdict
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Verdict
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 108
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("verdict")]
+
+      public required string Verdict { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("verdict")>
+
+      Public Property Verdict As String
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: verdict
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+  id: Rationale
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: Rationale
+  nameWithType: QualityFrame.Rationale
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Rationale
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 109
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("rationale")]
+
+      public required string Rationale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("rationale")>
+
+      Public Property Rationale As String
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: rationale
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+  id: Correctness
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: Correctness
+  nameWithType: QualityFrame.Correctness
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Correctness
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 110
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("correctness")]
+
+      public double Correctness { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("correctness")>
+
+      Public Property Correctness As Double
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: correctness
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+  id: Completeness
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: Completeness
+  nameWithType: QualityFrame.Completeness
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Completeness
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 111
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("completeness")]
+
+      public double Completeness { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("completeness")>
+
+      Public Property Completeness As Double
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: completeness
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+  id: LawCompliance
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: LawCompliance
+  nameWithType: QualityFrame.LawCompliance
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: LawCompliance
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 112
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("law_compliance")]
+
+      public double LawCompliance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("law_compliance")>
+
+      Public Property LawCompliance As Double
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: law_compliance
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+  id: Slv
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: Slv
+  nameWithType: QualityFrame.Slv
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: Slv
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 118
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("slv")]
+
+      public double Slv { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("slv")>
+
+      Public Property Slv As Double
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.Slv*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: slv
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+  commentId: P:ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+  id: EarnedConstraints
+  parent: ProjectName.OrchestrationApi.Models.QualityFrame
+  langs:
+  - csharp
+  - vb
+  name: EarnedConstraints
+  nameWithType: QualityFrame.EarnedConstraints
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+  type: Property
+  source:
+    remote:
+      path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+      branch: master
+      repo: https://github.com/shawn2024bellazan-prog/PMCR-O.git
+    id: EarnedConstraints
+    path: src/ProjectName.OrchestrationApi/Models/CycleModels.cs
+    startLine: 120
+  assemblies:
+  - ProjectName.OrchestrationApi
+  namespace: ProjectName.OrchestrationApi.Models
+  syntax:
+    content: >-
+      [JsonPropertyName("earned_constraints")]
+
+      public List<string> EarnedConstraints { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonPropertyName("earned_constraints")>
+
+      Public Property EarnedConstraints As List(Of String)
+  overload: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: earned_constraints
+references:
+- uid: ProjectName.OrchestrationApi.Models
+  commentId: N:ProjectName.OrchestrationApi.Models
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Models
+  nameWithType: ProjectName.OrchestrationApi.Models
+  fullName: ProjectName.OrchestrationApi.Models
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Models
+    name: Models
+    href: ProjectName.OrchestrationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId.html#ProjectName_OrchestrationApi_Models_QualityFrame_TrailId
+  name: TrailId
+  nameWithType: QualityFrame.TrailId
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.TrailId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict.html#ProjectName_OrchestrationApi_Models_QualityFrame_Verdict
+  name: Verdict
+  nameWithType: QualityFrame.Verdict
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Verdict
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale.html#ProjectName_OrchestrationApi_Models_QualityFrame_Rationale
+  name: Rationale
+  nameWithType: QualityFrame.Rationale
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Rationale
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness.html#ProjectName_OrchestrationApi_Models_QualityFrame_Correctness
+  name: Correctness
+  nameWithType: QualityFrame.Correctness
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Correctness
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness.html#ProjectName_OrchestrationApi_Models_QualityFrame_Completeness
+  name: Completeness
+  nameWithType: QualityFrame.Completeness
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Completeness
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance.html#ProjectName_OrchestrationApi_Models_QualityFrame_LawCompliance
+  name: LawCompliance
+  nameWithType: QualityFrame.LawCompliance
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.LawCompliance
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.Slv*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.Slv.html#ProjectName_OrchestrationApi_Models_QualityFrame_Slv
+  name: Slv
+  nameWithType: QualityFrame.Slv
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.Slv
+- uid: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints*
+  commentId: Overload:ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+  href: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints.html#ProjectName_OrchestrationApi_Models_QualityFrame_EarnedConstraints
+  name: EarnedConstraints
+  nameWithType: QualityFrame.EarnedConstraints
+  fullName: ProjectName.OrchestrationApi.Models.QualityFrame.EarnedConstraints
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+memberLayout: SeparatePages

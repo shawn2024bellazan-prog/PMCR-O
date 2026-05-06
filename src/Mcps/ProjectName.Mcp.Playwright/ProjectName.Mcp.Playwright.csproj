@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — PLAYWRIGHT MCP ACTUATOR
+    ═══════════════════════════════════════════════════════════════
+    Identity : Browser Automation Actuator
+    Law Anchor: ARCH-013, SUB-LAW-002, SUB-LAW-003, SUB-LAW-004
+    ThoughtLock: 2026-05-01
+    Port      : :7224  (registered in AppHost.cs as "playwright-mcp")
+
+    TYPE 2 MCP — informs cognition. OrchestratorService dispatches to
+    this actuator via HTTP JSON-RPC (TYPE 1 dispatch, ARCH-NEW-001).
+
+    FIX (FRAC-TARGETS-001 — SKILL.md copy):
+      <AgentSkillRole>playwright-mcp</AgentSkillRole> activates CopySkillMd
+      in Directory.Build.targets. Copies skills/playwright-mcp/SKILL.md to
+      output at:
+        Skills/playwright-mcp-agent/SKILL.md
+        Skills/playwright-mcp/SKILL.md         ← SkillLoader canonical path
+      The manual <Content> item below is kept as IDE hot-reload fallback
+      (FRAC-PW-SKILL-001).
+
+    PACKAGE NOTES:
+      Microsoft.Agents.AI and Microsoft.Agents.AI.Hosting arrive
+      TRANSITIVELY from ProjectNmae.ServiceDefaults — do NOT add them here.
+      Microsoft.Agents.AI.Workflows is needed here directly (WorkflowBuilder,
+      Executor<TIn,TOut>, InProcessExecution, StreamingRun, WatchStreamAsync).
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+	<PropertyGroup>
+		<UserSecretsId>b3f1e2d4-9c7a-4e2b-a8f0-1d6c3e5f7b9a</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
+		<!-- Activates CopySkillMd target in Directory.Build.targets (FRAC-TARGETS-001) -->
+		<AgentSkillRole>playwright-mcp</AgentSkillRole>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- MCP server host -->
+		<PackageReference Include="Microsoft.Agents.AI" />
+		<PackageReference Include="Microsoft.Agents.AI.Hosting" />
+		<PackageReference Include="ModelContextProtocol.AspNetCore" />
+
+		<!-- MAF: WorkflowBuilder, Executor<TIn,TOut>, InProcessExecution, StreamingRun.
+         Microsoft.Agents.AI + .Hosting arrive transitively from ServiceDefaults. -->
+		<PackageReference Include="Microsoft.Agents.AI.Workflows" />
+
+		<!-- Playwright browser automation -->
+		<PackageReference Include="Microsoft.Playwright" />
+
+		<!-- Container tooling -->
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\ProjectName.ServiceDefaults\ProjectName.ServiceDefaults.csproj" />
+	</ItemGroup>
+
+	<!-- SUB-LAW-004: Belt-and-suspenders SKILL.md copy (hot-reload fallback).
+       FIX FRAC-PW-SKILL-001: this Content item was documented but never added.
+       Now present. CopySkillMd target in Directory.Build.targets also handles this. -->
+	<ItemGroup>
+		<Content Include="SKILL.md">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<TargetPath>Skills\playwright-mcp\SKILL.md</TargetPath>
+		</Content>
+	</ItemGroup>
+
+</Project>

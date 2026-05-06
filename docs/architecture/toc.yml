@@ -1,0 +1,18 @@
+- name: Architecture Overview
+  href: index.md
+- name: What PMCRO Is
+  href: what-pmcro-is.md
+- name: The PMCRO Loop
+  href: pmcro-loop.md
+- name: The IntentEnvelope
+  href: intent-envelope.md
+- name: The Cognitive Trail
+  href: cognitive-trail.md
+- name: MCP Type Classification
+  href: mcp-types.md
+- name: The HIL Flywheel
+  href: hil-flywheel.md
+- name: The Agent-Creates-Agent Pattern
+  href: agent-creates-agent.md
+- name: Earned Laws Registry
+  href: laws.md

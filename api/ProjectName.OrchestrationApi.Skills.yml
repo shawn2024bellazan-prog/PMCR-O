@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectName.OrchestrationApi.Skills
+  commentId: N:ProjectName.OrchestrationApi.Skills
+  id: Skills
+  parent: ProjectName.OrchestrationApi
+  children:
+  - ProjectName.OrchestrationApi.Skills.FederationBoardSkill
+  - ProjectName.OrchestrationApi.Skills.FileSystemSkill
+  - ProjectName.OrchestrationApi.Skills.RefinedSeedResult
+  langs:
+  - csharp
+  - vb
+  name: ProjectName.OrchestrationApi.Skills
+  nameWithType: ProjectName.OrchestrationApi.Skills
+  fullName: ProjectName.OrchestrationApi.Skills
+  type: Namespace
+  assemblies:
+  - ProjectName.OrchestrationApi
+references:
+- uid: ProjectName.OrchestrationApi.Skills.FederationBoardSkill
+  commentId: T:ProjectName.OrchestrationApi.Skills.FederationBoardSkill
+  parent: ProjectName.OrchestrationApi.Skills
+  href: ProjectName.OrchestrationApi.Skills.FederationBoardSkill.html
+  name: FederationBoardSkill
+  nameWithType: FederationBoardSkill
+  fullName: ProjectName.OrchestrationApi.Skills.FederationBoardSkill
+- uid: ProjectName.OrchestrationApi.Skills.FileSystemSkill
+  commentId: T:ProjectName.OrchestrationApi.Skills.FileSystemSkill
+  href: ProjectName.OrchestrationApi.Skills.FileSystemSkill.html
+  name: FileSystemSkill
+  nameWithType: FileSystemSkill
+  fullName: ProjectName.OrchestrationApi.Skills.FileSystemSkill
+- uid: ProjectName.OrchestrationApi.Skills.RefinedSeedResult
+  commentId: T:ProjectName.OrchestrationApi.Skills.RefinedSeedResult
+  href: ProjectName.OrchestrationApi.Skills.RefinedSeedResult.html
+  name: RefinedSeedResult
+  nameWithType: RefinedSeedResult
+  fullName: ProjectName.OrchestrationApi.Skills.RefinedSeedResult
+- uid: ProjectName.OrchestrationApi.Skills
+  commentId: N:ProjectName.OrchestrationApi.Skills
+  href: ProjectName.html
+  name: ProjectName.OrchestrationApi.Skills
+  nameWithType: ProjectName.OrchestrationApi.Skills
+  fullName: ProjectName.OrchestrationApi.Skills
+  spec.csharp:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Skills
+    name: Skills
+    href: ProjectName.OrchestrationApi.Skills.html
+  spec.vb:
+  - uid: ProjectName
+    name: ProjectName
+    href: ProjectName.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi
+    name: OrchestrationApi
+    href: ProjectName.OrchestrationApi.html
+  - name: .
+  - uid: ProjectName.OrchestrationApi.Skills
+    name: Skills
+    href: ProjectName.OrchestrationApi.Skills.html
+memberLayout: SeparatePages
