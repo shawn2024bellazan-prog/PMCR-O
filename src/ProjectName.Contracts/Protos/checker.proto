@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Contracts";
+package checker;
+
+service Checker {
+  rpc ExecuteCheck (CheckerRequest) returns (CheckerResponse);
+}
+
+message CheckerRequest {
+  string trail_id = 1;
+  string cycle_state_json = 2; // Contains Envelope + Plan + MakerFrame + DispatchResults
+  string scale = 3;
+}
+
+message CheckerResponse {
+  bool success = 1;
+  string quality_frame_json = 2; // Returns QualityFrame (with ACCEPT/LOOP/ESCALATE verdict)
+  string error_message = 3;
+}

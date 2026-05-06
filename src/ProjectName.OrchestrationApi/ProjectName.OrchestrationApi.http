@@ -19,11 +19,7 @@
 POST {{baseAddress}}/intent/submit
 Content-Type: application/json
 
-{
-  "rawIntent": "List all files in the project root directory.",
-  "highLevelGoal": "Workspace Reconnaissance",
-  "oModeHint": "O-Output"
-}
+{"RawIntent": "List all SKILL.md files in the skills directory and summarize what each one covers."}
 
 ### [L1] Read Core Identity
 # I verify the substrate can read and understand its own configuration.

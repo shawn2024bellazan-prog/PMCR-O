@@ -27,23 +27,26 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<!-- ASP.NET Core full framework surface (implicit from Sdk.Web) -->
 		<PackageReference Include="Grpc.AspNetCore" />
+		<PackageReference Include="Grpc.Net.ClientFactory" />
 
-		<!-- MAF agent runtime (AIAgent, ChatClientAgent, AgentSession) -->
 		<PackageReference Include="Microsoft.Agents.AI" />
 		<PackageReference Include="Microsoft.Agents.AI.Hosting" />
 		<PackageReference Include="Microsoft.Agents.AI.Workflows" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+		<!-- FIX HERE -->
 		<PackageReference Include="ModelContextProtocol" />
 		<PackageReference Include="Scalar.AspNetCore" />
 
-		<!-- MCP server surface — exposes tools to any MCP client -->
 		<PackageReference Include="Serilog.AspNetCore" />
 		<PackageReference Include="Serilog.Sinks.Console" />
 		<PackageReference Include="System.Text.Json" />
-
-		<!-- JSON source generation for IntentEnvelope serialization is handled inherently in modern .NET -->
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ProjectName.Core\ProjectName.Core.csproj" />
+		<ProjectReference Include="..\ProjectName.Contracts\ProjectName.Contracts.csproj" />
+		<ProjectReference Include="..\ProjectName.Skills\ProjectName.Skills.csproj" />
+		<ProjectReference Include="..\ProjectName.ServiceDefaults\ProjectName.ServiceDefaults.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

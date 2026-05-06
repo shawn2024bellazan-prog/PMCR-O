@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Agents.AI" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Reference the Core data shapes (IntentEnvelope, CycleState, etc.) -->
+		<ProjectReference Include="..\ProjectName.Core\ProjectName.Core.csproj" />
+	</ItemGroup>
+
+	<!-- Copy physical Markdown/Scripts to the build output -->
+	<ItemGroup>
+		<None Update="..\..\skills\**\*.*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>skills\%(RecursiveDir)%(Filename)%(Extension)</Link>
+		</None>
+	</ItemGroup>
+
+</Project>

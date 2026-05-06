@@ -1,10 +1,22 @@
 <Solution>
-  <Folder Name="/mcps/">
+  <Folder Name="/src/">
+    <Project Path="src/ProjectName.AppHost/ProjectName.AppHost.csproj" />
+    <Project Path="src/ProjectName.Contracts/ProjectName.Contracts.csproj" />
+    <Project Path="src/ProjectName.Core/ProjectName.Core.csproj" />
+    <Project Path="src/ProjectName.OrchestrationApi/ProjectName.OrchestrationApi.csproj" />
+    <Project Path="src/ProjectName.ServiceDefaults/ProjectName.ServiceDefaults.csproj" />
+    <Project Path="src/ProjectName.Skills/ProjectName.Skills.csproj" />
+  </Folder>
+  <Folder Name="/src/Mcps/">
     <Project Path="src/Mcps/ProjectName.Mcp.Filesystem/ProjectName.Mcp.Filesystem.csproj" />
     <Project Path="src/Mcps/ProjectName.Mcp.Playwright/ProjectName.Mcp.Playwright.csproj" />
     <Project Path="src/Mcps/ProjectName.Mcp.Terminal/ProjectName.Mcp.Terminal.csproj" />
   </Folder>
-  <Project Path="src/ProjectName.AppHost/ProjectName.AppHost.csproj" Id="41e3d9b8-5ed0-41ea-9473-ff97b688c02e" />
-  <Project Path="src/ProjectName.OrchestrationApi/ProjectName.OrchestrationApi.csproj" />
-  <Project Path="src/ProjectName.ServiceDefaults/ProjectName.ServiceDefaults.csproj" Id="936a0ea8-9609-4750-b762-074ad7a3cb53" />
+  <Folder Name="/src/Services/">
+    <Project Path="src/Services/ProjectName.CheckerService/ProjectName.CheckerService.csproj" />
+    <Project Path="src/Services/ProjectName.MakerService/ProjectName.MakerService.csproj" />
+    <Project Path="src/Services/ProjectName.OrchestratorService/ProjectName.OrchestratorService.csproj" />
+    <Project Path="src/Services/ProjectName.PlannerService/ProjectName.PlannerService.csproj" />
+    <Project Path="src/Services/ProjectName.ReflectorService/ProjectName.ReflectorService.csproj" />
+  </Folder>
 </Solution>

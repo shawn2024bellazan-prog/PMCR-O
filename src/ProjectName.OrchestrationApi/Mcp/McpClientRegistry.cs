@@ -1,179 +1,87 @@
-﻿// ═══════════════════════════════════════════════════════════════════════════════
-// PROJECTNAME COGNITIVE SUBSTRATE — ORCHESTRATION API
-// File       : Mcp/McpClientRegistry.cs
-// Identity   : Native MCP Client Pool — Startup Bootstrapper
-// Law Anchor : ARCH-NEW-001, ARCH-MCP-NAT-001, FRAC-CTX-001
-// ThoughtLock: 2026-05-05 → MAF+MCP
-// ═══════════════════════════════════════════════════════════════════════════════
-//
-// HOW THIS WORKS:
-//   1. At application startup, CreateAsync() is called once.
-//   2. For each MCP actuator (filesystem, terminal, playwright), we create an
-//      McpClient using HttpClientTransport pointing at the Aspire service URL.
-//   3. ListToolsAsync() fetches the tool manifest from each MCP server.
-//   4. The tools are stored as IReadOnlyList<AITool> and injected into agent
-//      registrations via ChatClientAgentOptions.Tools.
-//   5. MAF's ChatClientAgent loop then owns all tool invocation — when the
-//      model emits a tool_calls block, MAF calls the MCP client, returns the
-//      result, and re-calls the model. Zero manual dispatch for TYPE 2.
-//
-// SDK API (ModelContextProtocol 1.x — verified against official docs):
-//   Transport : HttpClientTransport + HttpClientTransportOptions  (ModelContextProtocol.Client)
-//   Factory   : McpClient.CreateAsync(transport, ...)             (static on McpClient)
-//   Client    : McpClient (concrete class — IMcpClient was removed in 1.x)
-//
-//   DOES NOT EXIST in 1.x (all prior errors were caused by these):
-//     SseClientTransport, SseClientTransportOptions  → CS0246
-//     ModelContextProtocol.Protocol.Transport        → CS0234
-//     McpClientFactory                               → CS0103
-//     IMcpClient                                     → CS0246
-//
-// RESILIENCE:
-//   Each actuator connect is attempted independently. If one fails (e.g. playwright
-//   not running), the others still load. The registry returns an empty list for
-//   failed actuators, and agents that depend on them degrade gracefully rather than
-//   crashing the entire OrchestrationApi.
-// ═══════════════════════════════════════════════════════════════════════════════
-
+﻿using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
-using ModelContextProtocol.Client; // HttpClientTransport, HttpClientTransportOptions, McpClient, McpClientTool
+using ModelContextProtocol.Client;
+using System.Collections.Concurrent;
 
 namespace ProjectName.OrchestrationApi.Mcp;
 
 /// <summary>
 /// I AM the McpClientRegistry.
-/// I connect to all MCP actuators at startup, enumerate their tools, and hold
-/// live <see cref="McpClient"/> instances for the lifetime of the application.
+/// I establish native connections to MCP Actuators and discover their tools.
 /// </summary>
-public sealed class McpClientRegistry : IMcpClientRegistry
+public sealed class McpClientRegistry : IAsyncDisposable
 {
-    private readonly List<McpClient> _clients = [];
-    private IReadOnlyList<AITool> _filesystemTools = [];
-    private IReadOnlyList<AITool> _terminalTools = [];
-    private IReadOnlyList<AITool> _playwrightTools = [];
+    private readonly ConcurrentDictionary<string, McpClient> _clients = new();
+    public List<AITool> AllDiscoveredTools { get; private set; } = [];
 
-    public IReadOnlyList<AITool> FilesystemTools => _filesystemTools;
-    public IReadOnlyList<AITool> TerminalTools => _terminalTools;
-    public IReadOnlyList<AITool> PlaywrightTools => _playwrightTools;
+    public List<AITool> Type2Tools => AllDiscoveredTools
+        .Where(t => !IsType1(t.Name))
+        .ToList();
 
-    // TYPE 2 = ReadFile, ListDirectory, GetFileInfo, RunReadOnlyCommand, NavigateTo, GetPageContent, TakeScreenshot
-    // This allowlist matches ARCH-NEW-001 TYPE 2 definitions.
-    private static readonly HashSet<string> Type2ToolNames = new(StringComparer.OrdinalIgnoreCase)
-    {
-        "ReadFile", "ListDirectory", "GetFileInfo",         // filesystem TYPE 2
-        "RunReadOnlyCommand",                                // terminal TYPE 2
-        "NavigateTo", "GetPageContent", "TakeScreenshot"    // playwright TYPE 2
-    };
-
-    public IReadOnlyList<AITool> AllType2Tools =>
-        _filesystemTools.Concat(_terminalTools).Concat(_playwrightTools)
-            .Where(t => Type2ToolNames.Contains(t.Name))
-            .ToList();
-
-    public IReadOnlyList<AITool> AllTools =>
-        _filesystemTools.Concat(_terminalTools).Concat(_playwrightTools).ToList();
-
-    private McpClientRegistry() { }
-
-    /// <summary>
-    /// Factory — connects to all MCP actuators, enumerates tools, returns a ready registry.
-    /// Call once at startup via McpRegistryStartupService (IHostedService).
-    /// </summary>
-    public static async Task<McpClientRegistry> CreateAsync(
-        IConfiguration configuration,
-        ILogger<McpClientRegistry> logger,
+    public async Task InitialiseAsync(
+        string filesystemUrl,
+        string terminalUrl,
+        string playwrightUrl,
         CancellationToken ct = default)
     {
-        var registry = new McpClientRegistry();
+        await ConnectActuator("filesystem", filesystemUrl, ct);
+        await ConnectActuator("terminal", terminalUrl, ct);
+        await ConnectActuator("playwright", playwrightUrl, ct);
 
-        // Resolve base URLs from Aspire service discovery / appsettings.
-        // Aspire injects: services__projectname-mcp-filesystem__http__0
-        // IConfiguration surfaces as: services:projectname-mcp-filesystem:http:0
-        var filesystemUrl = ResolveServiceUrl(configuration, "projectname-mcp-filesystem",
-            fallback: "http://localhost:5010");
-        var terminalUrl = ResolveServiceUrl(configuration, "projectname-mcp-terminal",
-            fallback: "http://localhost:5011");
-        var playwrightUrl = ResolveServiceUrl(configuration, "projectname-mcp-playwright",
-            fallback: "http://localhost:5012");
-
-        registry._filesystemTools = await registry.LoadToolsAsync(
-            "filesystem", filesystemUrl, logger, ct);
-
-        registry._terminalTools = await registry.LoadToolsAsync(
-            "terminal", terminalUrl, logger, ct);
-
-        registry._playwrightTools = await registry.LoadToolsAsync(
-            "playwright", playwrightUrl, logger, ct);
-
-        logger.LogInformation(
-            "[McpClientRegistry] Loaded: filesystem={Fs} terminal={Term} playwright={Pw} tools",
-            registry._filesystemTools.Count,
-            registry._terminalTools.Count,
-            registry._playwrightTools.Count);
-
-        return registry;
-    }
-
-    private async Task<IReadOnlyList<AITool>> LoadToolsAsync(
-        string name, string baseUrl, ILogger logger, CancellationToken ct)
-    {
-        try
+        var allTools = new List<AITool>();
+        foreach (var entry in _clients)
         {
-            logger.LogInformation("[McpClientRegistry] Connecting to {Name} at {Url}", name, baseUrl);
-
-            // HttpClientTransport is the correct HTTP client transport in ModelContextProtocol 1.x.
-            // McpClient.CreateAsync is the static factory (McpClientFactory was removed in 1.x).
-            var transport = new HttpClientTransport(new HttpClientTransportOptions
-            {
-                Endpoint = new Uri($"{baseUrl}/mcp"),
-            });
-
-            var client = await McpClient.CreateAsync(transport, cancellationToken: ct);
-            _clients.Add(client);
-
+            var client = entry.Value;
             var tools = await client.ListToolsAsync(cancellationToken: ct);
-            var aiTools = tools.Cast<AITool>().ToList();
 
-            // AITool exposes .Name and .Description directly — no .Metadata wrapper.
-            logger.LogInformation(
-                "[McpClientRegistry] {Name}: {Count} tools — [{Names}]",
-                name, aiTools.Count, string.Join(", ", aiTools.Select(t => t.Name)));
-
-            return aiTools;
+            foreach (var toolDef in tools)
+            {
+                var tool = AIFunctionFactory.Create(
+                    async (Dictionary<string, object?> args) =>
+                        await client.CallToolAsync(toolDef.Name, args,
+                            cancellationToken: CancellationToken.None),
+                    toolDef.Name,
+                    toolDef.Description
+                );
+                allTools.Add(tool);
+            }
         }
-        catch (Exception ex)
-        {
-            logger.LogWarning(
-                ex,
-                "[McpClientRegistry] Failed to connect to {Name} MCP at {Url}. " +
-                "Tools for this actuator will be unavailable. " +
-                "Agents will degrade gracefully (TYPE 2 calls to {Name} will return errors).",
-                name, baseUrl, name);
-            return [];
-        }
+        AllDiscoveredTools = allTools;
     }
 
-    /// <summary>
-    /// Resolves the Aspire service URL from configuration.
-    /// Aspire injects: services__projectname-mcp-filesystem__http__0 as env var.
-    /// IConfiguration maps __ → :, so the key is: services:projectname-mcp-filesystem:http:0
-    /// </summary>
-    private static string ResolveServiceUrl(
-        IConfiguration configuration, string serviceName, string fallback)
+    private async Task ConnectActuator(string name, string url, CancellationToken ct)
     {
-        var value = configuration[$"services:{serviceName}:http:0"]
-                 ?? configuration[$"services:{serviceName}:https:0"]
-                 ?? fallback;
+        // SDK 1.x: HttpClientTransport handles both SSE and Streamable HTTP automatically.
+        // No separate McpClientFactory — CreateAsync is a static method on McpClient itself.
+        var transport = new HttpClientTransport(new HttpClientTransportOptions
+        {
+            Endpoint = new Uri(url)
+        });
 
-        return value.TrimEnd('/');
+        var client = await McpClient.CreateAsync(transport, cancellationToken: ct);
+        _clients[name] = client;
+    }
+
+    public async Task<string> CallToolAsync(
+        string actuator, string toolName,
+        Dictionary<string, object?> args, CancellationToken ct)
+    {
+        if (!_clients.TryGetValue(actuator.ToLowerInvariant(), out var client))
+            throw new ArgumentException($"Actuator {actuator} not connected.");
+
+        var result = await client.CallToolAsync(toolName, args, cancellationToken: ct);
+        return System.Text.Json.JsonSerializer.Serialize(result);
+    }
+
+    private static bool IsType1(string toolName)
+    {
+        string[] type1Verbs = ["Write", "Delete", "RunCommand", "Click", "Fill", "Submit"];
+        return type1Verbs.Any(v => toolName.Contains(v, StringComparison.OrdinalIgnoreCase));
     }
 
     public async ValueTask DisposeAsync()
     {
-        foreach (var client in _clients)
-        {
+        foreach (var client in _clients.Values)
             await client.DisposeAsync();
-        }
-        _clients.Clear();
     }
 }

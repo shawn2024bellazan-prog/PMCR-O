@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Contracts";
+package reflector;
+
+service Reflector {
+  rpc ExecuteReflect (ReflectorRequest) returns (ReflectorResponse);
+}
+
+message ReflectorRequest {
+  string trail_id = 1;
+  string cycle_state_json = 2; // Contains full evidence chain
+  string scale = 3;
+}
+
+message ReflectorResponse {
+  bool success = 1;
+  string reflector_frame_json = 2; // Returns ReflectorFrame (with SLV & Earned Constraints)
+  string error_message = 3;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Contracts";
+package planner;
+
+service Planner {
+  rpc ExecutePlan (PlannerRequest) returns (PlannerGrpcResponse); // Renamed
+}
+
+message PlannerRequest {
+  string trail_id = 1;
+  string cycle_state_json = 2; 
+  string scale = 3;
+}
+
+message PlannerGrpcResponse { // Renamed from PlannerResponse
+  bool success = 1;
+  string plan_frame_json = 2; 
+  string error_message = 3;
+}

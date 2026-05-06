@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Contracts";
+package maker;
+
+service Maker {
+  rpc ExecuteMake (MakerRequest) returns (MakerResponse);
+}
+
+message MakerRequest {
+  string trail_id = 1;
+  string cycle_state_json = 2; // Contains IntentEnvelope + ExecutionPlan
+  string scale = 3;
+}
+
+message MakerResponse {
+  bool success = 1;
+  string maker_frame_json = 2; // Returns MakerFrame (with DispatchDecisions)
+  string error_message = 3;
+}

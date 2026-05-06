@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Contracts";
+package orchestrator;
+
+service Orchestrator {
+  // The REST API calls this to kick off the entire PMCRO loop
+  rpc ExecuteMacroLoop (OrchestrationRequest) returns (OrchestrationResponse);
+}
+
+message OrchestrationRequest {
+  string intent_envelope_json = 1; // The sealed envelope from the Federation Board
+}
+
+message OrchestrationResponse {
+  string cycle_result_json = 1;    // The final CycleResult (ACCEPT, ESCALATE, etc.)
+}

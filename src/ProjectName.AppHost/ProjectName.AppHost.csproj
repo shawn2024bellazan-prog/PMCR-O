@@ -1,20 +1,4 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.2.4">
-
-	<!--
-    ═══════════════════════════════════════════════════════════════
-    PROJECTNAME COGNITIVE SUBSTRATE — ASPIRE APPHOST
-    Identity: Distributed Conductor
-    Law Anchor: ARCH-012, BUILD-001
-    ═══════════════════════════════════════════════════════════════
-    
-    ARCHITECTURE NOTE: MAF-Native — no gRPC phase service projects.
-    The old project referenced 5 phase service .csproj files here.
-    In the MAF-native architecture, all phase agents live inside
-    OrchestrationApi. The AppHost only knows about infrastructure
-    (Postgres, Ollama) and the single API surface.
-    ═══════════════════════════════════════════════════════════════
-  -->
-
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net10.0</TargetFramework>
@@ -25,18 +9,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!-- Infrastructure hosting -->
 		<PackageReference Include="Aspire.Hosting.PostgreSQL" />
 		<PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" />
-		<!-- NOTE: No Grpc.Net.Client — the AppHost does not make gRPC calls -->
 	</ItemGroup>
 
 	<ItemGroup>
-		<!-- The ONLY project reference — sole external surface (ARCH-012) -->
 		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Filesystem\ProjectName.Mcp.Filesystem.csproj" />
 		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Playwright\ProjectName.Mcp.Playwright.csproj" />
 		<ProjectReference Include="..\Mcps\ProjectName.Mcp.Terminal\ProjectName.Mcp.Terminal.csproj" />
 		<ProjectReference Include="..\ProjectName.OrchestrationApi\ProjectName.OrchestrationApi.csproj" />
+		<ProjectReference Include="..\Services\ProjectName.CheckerService\ProjectName.CheckerService.csproj" />
+		<ProjectReference Include="..\Services\ProjectName.MakerService\ProjectName.MakerService.csproj" />
+		<ProjectReference Include="..\Services\ProjectName.OrchestratorService\ProjectName.OrchestratorService.csproj" />
+		<ProjectReference Include="..\Services\ProjectName.PlannerService\ProjectName.PlannerService.csproj" />
+		<ProjectReference Include="..\Services\ProjectName.ReflectorService\ProjectName.ReflectorService.csproj" />
 	</ItemGroup>
-
 </Project>

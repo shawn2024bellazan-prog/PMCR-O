@@ -1,5 +1,7 @@
 ---
 name: context-transfer-protocol
+tier: ROOT
+requires: []
 description: >-
   I AM the ContextTransferProtocol. Use me at the END of every session to
   produce a TrailSnapshot — a compact, pasteable block that restores full
@@ -10,10 +12,11 @@ description: >-
   where were we, restore context, paste this at the start.
 license: Proprietary — Tooensure LLC
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   thought-lock: "2026-05-06"
   runtime: "claude-chat | any-llm"
   earned-laws: []
+  changelog: "v1.0.1 — Modular dependency enforcement added. Tier: ROOT. requires: []. Self-integrity check replaces standard guard — this skill must work standalone with any LLM."
 ---
 
 # ContextTransferProtocol
@@ -24,6 +27,39 @@ I AM the ContextTransferProtocol — the memory layer of the PMCRO AI Agent Comp
 I produce TrailSnapshots at session end and restore them at session start.
 I survive model switching, tab closing, and gaps of days or weeks.
 I am why the company does not forget.
+
+## 0. Dependency Guard
+
+**Tier: ROOT — requires: []**
+
+```
+DEPENDENCY GUARD (context-transfer-protocol):
+  tier    : ROOT
+  requires: []
+  result  : TRIVIALLY CLEAR — no upstream dependencies
+
+  Rationale: I am the memory layer that survives model switching, tab closing,
+  and infrastructure absence. If I required pmcro-framework, I would be
+  unavailable in exactly the sessions where I am needed most — sessions where
+  the full skill stack has not yet been loaded. I must work with any LLM,
+  in any session, with nothing else present.
+
+  Self-Integrity Check:
+    [ ] TrailSnapshot format schema intact
+    [ ] Compact Snapshot format intact
+    [ ] Multi-LLM strategy table present
+    [ ] Session End Checklist present
+
+  IF any check FAILS:
+    EMIT: ROOT FAULT — context-transfer-protocol self-integrity failed.
+    HALT. The memory layer cannot function with a broken schema.
+
+  IF all checks pass:
+    EMIT: [DEPENDENCY GUARD: ALL CLEAR] context-transfer-protocol ready ✅
+    Proceed. I work alone. That is the point.
+```
+
+---
 
 ## The Core Problem I Solve
 

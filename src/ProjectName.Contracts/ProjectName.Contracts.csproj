@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.Net.Client" />
+		<PackageReference Include="Grpc.Tools">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Google.Protobuf"  />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\orchestrator.proto" GrpcServices="Both" />
+		<Protobuf Include="Protos\planner.proto" GrpcServices="Both" />
+		<Protobuf Include="Protos\maker.proto" GrpcServices="Both" />
+		<Protobuf Include="Protos\checker.proto" GrpcServices="Both" />
+		<Protobuf Include="Protos\reflector.proto" GrpcServices="Both" />
+	</ItemGroup>
+
+</Project>

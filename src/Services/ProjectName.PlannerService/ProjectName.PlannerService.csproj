@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<!--
+    ═══════════════════════════════════════════════════════════════
+    PROJECTNAME COGNITIVE SUBSTRATE — PLANNER SERVICE
+    Identity : The Strategist Lobe (Cognitive)
+    Law Anchor: ARCH-012, ARCH-017, MAF-004
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>projectname-planner-service</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Standard gRPC Server hosting -->
+		<PackageReference Include="Grpc.AspNetCore" />
+		<!-- MAF SDK — AgentClassSkill execution -->
+		<PackageReference Include="Microsoft.Agents.AI" />
+		<PackageReference Include="OllamaSharp" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- 1. THE BRAINS: Contains PlannerSkill.cs -->
+		<ProjectReference Include="..\..\ProjectName.Skills\ProjectName.Skills.csproj" />
+		<!-- 2. THE SHAPES: Contains IntentEnvelope, CycleState, etc. -->
+		<ProjectReference Include="..\..\ProjectName.Core\ProjectName.Core.csproj" />
+		<!-- 3. THE PROTOCOL: Contains the compiled gRPC PlannerBase -->
+		<ProjectReference Include="..\..\ProjectName.Contracts\ProjectName.Contracts.csproj" />
+		<!-- 4. INFRASTRUCTURE: Standard Aspire discovery and telemetry -->
+		<ProjectReference Include="..\..\ProjectName.ServiceDefaults\ProjectName.ServiceDefaults.csproj" />
+	</ItemGroup>
+
+</Project>
