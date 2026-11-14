@@ -6,7 +6,7 @@ on:
       - fix/playwright-service-defaults-path
   pull_request:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -52,3 +52,4 @@ jobs:
           docker build --progress=plain \
             --file src/Mcps/ProjectName.Mcp.Playwright/Dockerfile \
             --tag pmcro-playwright-mcp:ci .
+          docker run --rm --entrypoint dotnet pmcro-playwright-mcp:ci --list-runtimes
