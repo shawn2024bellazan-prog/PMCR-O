@@ -58,7 +58,7 @@
 	<ItemGroup>
 		<Content Include="SKILL.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<TargetPath>Skills\playwright-mcp\SKILL.md</TargetPath>
+			<TargetPath>Skills/playwright-mcp/SKILL.md</TargetPath>
 		</Content>
 	</ItemGroup>
 
