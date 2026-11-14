@@ -3,7 +3,12 @@ var builder = DistributedApplication.CreateBuilder(args);
 var projectRoot = builder.Configuration["Parameters:project-root"]
                   ?? Path.GetFullPath(Path.Combine(builder.AppHostDirectory, "..", ".."));
 
+// Preserve the existing PostgreSQL 17 data-volume layout across the Aspire 13.4+
+// default-image change to PostgreSQL 18. Set the image before WithDataVolume so
+// Aspire selects the matching data directory. Major-version migration requires
+// an explicit backup and PostgreSQL upgrade procedure.
 var postgres = builder.AddPostgres("postgres")
+    .WithImageTag("17.6")
     .WithDataVolume()
     .AddDatabase("pmcro-substrate");
 
