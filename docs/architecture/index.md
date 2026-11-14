@@ -18,3 +18,4 @@ The architecture section documents what the PMCRO Cognitive Substrate is, how it
 | [The HIL Flywheel](hil-flywheel.md) | How human corrections teach the loop to replace human corrections |
 | [The Agent-Creates-Agent Pattern](agent-creates-agent.md) | A cycle whose artifact is a new sovereign agent |
 | [Earned Laws Registry](laws.md) | EC-001 through EC-005 — every constraint, every fracture that earned it |
+| [Cross-Platform and Host Portability](host-portability.md) | Proposed host-independent deployment contract, host capability negotiation, and portability conformance criteria |

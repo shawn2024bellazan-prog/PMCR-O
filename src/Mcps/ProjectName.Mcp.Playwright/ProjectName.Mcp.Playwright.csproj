@@ -12,8 +12,8 @@
     this actuator via HTTP JSON-RPC (TYPE 1 dispatch, ARCH-NEW-001).
 
     FIX (FRAC-TARGETS-001 — SKILL.md copy):
-      <AgentSkillRole>playwright-mcp</AgentSkillRole> activates CopySkillMd
-      in Directory.Build.targets. Copies skills/playwright-mcp/SKILL.md to
+      <AgentSkillRole>playwright-mcp</AgentSkillRole> is handled by the project-local SKILL.md Content item; the shared
+      CopySkillsToOutput target copies the root skills/ tree to eligible services.
       output at:
         Skills/playwright-mcp-agent/SKILL.md
         Skills/playwright-mcp/SKILL.md         ← SkillLoader canonical path
@@ -22,7 +22,7 @@
 
     PACKAGE NOTES:
       Microsoft.Agents.AI and Microsoft.Agents.AI.Hosting arrive
-      TRANSITIVELY from ProjectNmae.ServiceDefaults — do NOT add them here.
+      TRANSITIVELY from ProjectName.ServiceDefaults — do NOT add them here.
       Microsoft.Agents.AI.Workflows is needed here directly (WorkflowBuilder,
       Executor<TIn,TOut>, InProcessExecution, StreamingRun, WatchStreamAsync).
     ═══════════════════════════════════════════════════════════════
@@ -32,7 +32,7 @@
 		<UserSecretsId>b3f1e2d4-9c7a-4e2b-a8f0-1d6c3e5f7b9a</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<DockerfileContext>..\..\..</DockerfileContext>
-		<!-- Activates CopySkillMd target in Directory.Build.targets (FRAC-TARGETS-001) -->
+		<!-- Retained metadata; shared service skill copy excludes MCP actuator projects -->
 		<AgentSkillRole>playwright-mcp</AgentSkillRole>
 	</PropertyGroup>
 
@@ -58,7 +58,7 @@
 
 	<!-- SUB-LAW-004: Belt-and-suspenders SKILL.md copy (hot-reload fallback).
        FIX FRAC-PW-SKILL-001: this Content item was documented but never added.
-       Now present. CopySkillMd target in Directory.Build.targets also handles this. -->
+       Now present. The local content item is the authoritative copy path for this MCP project. -->
 	<ItemGroup>
 		<Content Include="SKILL.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

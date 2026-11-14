@@ -18,8 +18,17 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Aspire & Infrastructure -->
-    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="13.2.4" />
-    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="13.2.4" />
+    <PackageVersion Include="Aspire.Hosting" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Hosting.AppHost" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.linux-x64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.linux-arm64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.linux-musl-x64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.osx-x64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.osx-arm64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.win-x64" Version="13.6.5" />
+    <PackageVersion Include="Aspire.Dashboard.Sdk.win-arm64" Version="13.6.5" />
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.Ollama" Version="13.2.1-beta.532" />
     <PackageVersion Include="CommunityToolkit.Aspire.OllamaSharp" Version="13.2.1-beta.532" />
     <PackageVersion Include="Google.Protobuf" Version="3.35.0-rc1" />
@@ -38,6 +47,8 @@
     <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.5.0" />
     <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="10.5.0" />
     <PackageVersion Include="Microsoft.Playwright" Version="1.60.0" />
+    <PackageVersion Include="MessagePack" Version="2.5.301" />
+    <PackageVersion Include="Microsoft.OpenApi" Version="2.7.5" />
     <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <!-- API & Documentation -->
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
@@ -56,6 +67,6 @@
     <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
     <PackageVersion Include="Serilog.AspNetCore" Version="10.0.0" />
     <PackageVersion Include="Serilog.Sinks.Console" Version="6.1.1" />
-    <PackageVersion Include="System.Text.Json" Version="11.0.0-preview.3.26207.106" />
+    <PackageVersion Include="System.Text.Json" Version="11.0.0" />
   </ItemGroup>
 </Project>

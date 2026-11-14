@@ -16,3 +16,5 @@
   href: agent-creates-agent.md
 - name: Earned Laws Registry
   href: laws.md
+- name: Cross-Platform and Host Portability
+  href: host-portability.md
