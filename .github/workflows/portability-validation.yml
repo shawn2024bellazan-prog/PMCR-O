@@ -1,0 +1,54 @@
+name: Portability validation
+
+on:
+  push:
+    branches:
+      - fix/playwright-service-defaults-path
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dotnet-build:
+    name: .NET 10 build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Restore solution
+        run: dotnet restore ProjectName.Template.slnx
+      - name: Build solution
+        run: dotnet build ProjectName.Template.slnx --configuration Release --no-restore
+      - name: Verify skills copied to Orchestration API output
+        shell: pwsh
+        run: |
+          $skills = Join-Path $PWD "src/ProjectName.OrchestrationApi/bin/Release/net10.0/skills"
+          if (-not (Test-Path $skills -PathType Container)) {
+            throw "Expected skills output directory was not created: $skills"
+          }
+          $files = Get-ChildItem $skills -File -Recurse
+          if ($files.Count -eq 0) {
+            throw "Skills output directory is empty: $skills"
+          }
+          Write-Host "Verified $($files.Count) copied skill files."
+
+  playwright-container-build:
+    name: Playwright MCP container build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Playwright MCP image
+        run: |
+          docker build --progress=plain \
+            --file src/Mcps/ProjectName.Mcp.Playwright/Dockerfile \
+            --tag pmcro-playwright-mcp:ci .
