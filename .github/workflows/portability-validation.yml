@@ -53,3 +53,10 @@ jobs:
             --file src/Mcps/ProjectName.Mcp.Playwright/Dockerfile \
             --tag pmcro-playwright-mcp:ci .
           docker run --rm --entrypoint dotnet pmcro-playwright-mcp:ci --list-runtimes
+      - name: Launch Chromium smoke test
+        run: |
+          docker run --rm --entrypoint /bin/bash pmcro-playwright-mcp:ci -lc '
+            chrome="$(find /ms-playwright /root/.cache/ms-playwright -type f -name chrome -perm -u+x -print -quit 2>/dev/null)"
+            test -n "$chrome"
+            "$chrome" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --dump-dom about:blank | grep -q "<html"
+          '
