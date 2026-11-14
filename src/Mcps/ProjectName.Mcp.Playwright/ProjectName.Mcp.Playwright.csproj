@@ -12,13 +12,9 @@
     this actuator via HTTP JSON-RPC (TYPE 1 dispatch, ARCH-NEW-001).
 
     FIX (FRAC-TARGETS-001 — SKILL.md copy):
-      <AgentSkillRole>playwright-mcp</AgentSkillRole> is handled by the project-local SKILL.md Content item; the shared
-      CopySkillsToOutput target copies the root skills/ tree to eligible services.
-      output at:
-        Skills/playwright-mcp-agent/SKILL.md
-        Skills/playwright-mcp/SKILL.md         ← SkillLoader canonical path
-      The manual <Content> item below is kept as IDE hot-reload fallback
-      (FRAC-PW-SKILL-001).
+      This MCP project is excluded from the shared CopySkillsToOutput target.
+      Its project-local Content item copies SKILL.md to Skills/playwright-mcp/.
+      The local Content item is the authoritative copy path for this actuator.
 
     PACKAGE NOTES:
       Microsoft.Agents.AI and Microsoft.Agents.AI.Hosting arrive
@@ -32,7 +28,7 @@
 		<UserSecretsId>b3f1e2d4-9c7a-4e2b-a8f0-1d6c3e5f7b9a</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<DockerfileContext>..\..\..</DockerfileContext>
-		<!-- Retained metadata; shared service skill copy excludes MCP actuator projects -->
+		<!-- Retained skill-role metadata; this MCP project includes its own SKILL.md. -->
 		<AgentSkillRole>playwright-mcp</AgentSkillRole>
 	</PropertyGroup>
 
