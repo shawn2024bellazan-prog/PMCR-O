@@ -31,9 +31,12 @@ RUN dotnet publish "ProjectName.Mcp.Playwright.csproj" \
 
 # ── Stage 2: Runtime ─────────────────────────────────────────────────────────
 # Playwright base image — includes all required system libs for Chromium.
-FROM mcr.microsoft.com/playwright/dotnet:v1.50.0-noble AS runtime
+FROM mcr.microsoft.com/playwright/dotnet:v1.60.0-noble AS runtime
 
 WORKDIR /home/app
+
+# The service targets net10.0; fail the image build if the base image lacks the ASP.NET Core 10 runtime.
+RUN dotnet --list-runtimes && dotnet --list-runtimes | grep -q "Microsoft.AspNetCore.App 10\."
 
 # Copy published output
 COPY --from=build /app/publish .
