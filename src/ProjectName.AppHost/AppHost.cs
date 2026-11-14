@@ -7,8 +7,21 @@ var postgres = builder.AddPostgres("postgres")
     .WithDataVolume()
     .AddDatabase("pmcro-substrate");
 
-var ollama = builder.AddOllama("ollama")
-    .WithGPUSupport()
+var ollama = builder.AddOllama("ollama");
+
+// GPU is an explicit host capability, not a universal deployment assumption.
+// Default to CPU-compatible hosting; opt in with Parameters:ollama-gpu-enabled=true
+// only when the selected host has a compatible GPU runtime and device access.
+var ollamaGpuEnabled = bool.TryParse(
+    builder.Configuration["Parameters:ollama-gpu-enabled"],
+    out var configuredGpuEnabled) && configuredGpuEnabled;
+
+if (ollamaGpuEnabled)
+{
+    ollama.WithGPUSupport();
+}
+
+ollama
     .WithDataVolume()
     .WithEnvironment("OLLAMA_NUM_CTX", "8192")
     .WithLifetime(ContainerLifetime.Persistent);
