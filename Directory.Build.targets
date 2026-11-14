@@ -1,58 +1,23 @@
 <!--
-  ═══════════════════════════════════════════════════════════════
-  PROJECTNAME — Directory.Build.targets ADDITION
-  ═══════════════════════════════════════════════════════════════
-  
-  ADD this target to your existing Directory.Build.targets
-  (or create the file at the solution root if it doesn't exist).
-
-  PURPOSE:
-    AgentSkillsProvider resolves skills at runtime from a filesystem path.
-    PmcroSkillsProvider.Build() uses Parameters:project-root (the solution root)
-    to find skills/ at dev time — so no copy is needed during local development.
-
-    However, when published or run inside a container (Docker), the solution root
-    is NOT the working directory. This target copies the entire skills/ folder
-    into each service's build output so the fallback path also works.
-
-  LAW SUB-LAW-001: SKILL.md files must be present in build output.
-
-  SCOPE:
-    Only copies for projects that reference ProjectName.ServiceDefaults,
-    i.e. the projects that actually register MAF agents. AppHost and MCPs
-    are excluded via the Condition below.
-  ═══════════════════════════════════════════════════════════════
+  AgentSystem skill asset copy for published service outputs.
+  Keep paths platform-neutral; MSBuild accepts forward slashes on Windows and Unix.
 -->
-
 <Project>
-
-	<!--
-    CopySkillsToOutput: copies skills/** into the build output directory.
-    Condition: only runs for the OrchestrationApi (or any future service that
-    uses AddMAFAgent). Adjust the condition to match your project names.
-  -->
-	<Target Name="CopySkillsToOutput"
-			AfterTargets="Build"
-			Condition="'$(IsAspireHost)' != 'true' And '$(AssemblyName)' != 'ProjectName.Mcp.Filesystem' And '$(AssemblyName)' != 'ProjectName.Mcp.Terminal' And '$(AssemblyName)' != 'ProjectName.Mcp.Playwright'">
-
-		<PropertyGroup>
-			<!-- Resolve the solution root as two levels above the project directory -->
-			<SolutionRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), 'global.json'))</SolutionRoot>
-			<SkillsSourceDir>$(SolutionRoot)\skills\</SkillsSourceDir>
-			<SkillsOutputDir>$(OutputPath)skills\</SkillsOutputDir>
-		</PropertyGroup>
-
-		<Message Text="[PMCRO] Copying skills from $(SkillsSourceDir) to $(SkillsOutputDir)" Importance="normal" />
-
-		<ItemGroup>
-			<SkillFiles Include="$(SkillsSourceDir)**\*" />
-		</ItemGroup>
-
-		<Copy SourceFiles="@(SkillFiles)"
-			  DestinationFiles="@(SkillFiles->'$(SkillsOutputDir)%(RecursiveDir)%(Filename)%(Extension)')"
-			  SkipUnchangedFiles="true"
-			  Condition="Exists('$(SkillsSourceDir)')" />
-
-	</Target>
-
+  <Target Name="CopySkillsToOutput"
+          AfterTargets="Build"
+          Condition="'$(IsAspireHost)' != 'true' And '$(AssemblyName)' != 'ProjectName.Mcp.Filesystem' And '$(AssemblyName)' != 'ProjectName.Mcp.Terminal' And '$(AssemblyName)' != 'ProjectName.Mcp.Playwright'">
+    <PropertyGroup>
+      <SolutionRoot>$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildProjectDirectory)', 'global.json'))</SolutionRoot>
+      <SkillsSourceDir>$(SolutionRoot)/skills/</SkillsSourceDir>
+      <SkillsOutputDir>$(OutputPath)skills/</SkillsOutputDir>
+    </PropertyGroup>
+    <Message Text="[PMCRO] Copying skills from $(SkillsSourceDir) to $(SkillsOutputDir)" Importance="normal" />
+    <ItemGroup>
+      <SkillFiles Include="$(SkillsSourceDir)**/*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SkillFiles)"
+          DestinationFiles="@(SkillFiles->'$(SkillsOutputDir)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true"
+          Condition="Exists('$(SkillsSourceDir)')" />
+  </Target>
 </Project>
