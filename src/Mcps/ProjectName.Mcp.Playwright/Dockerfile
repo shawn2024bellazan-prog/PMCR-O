@@ -16,8 +16,8 @@ COPY ["Directory.Packages.props", "./"]
 # Copy csproj files and restore (cached unless csproj or Packages changes)
 COPY ["src/Mcps/ProjectName.Mcp.Playwright/ProjectName.Mcp.Playwright.csproj",
       "src/Mcps/ProjectName.Mcp.Playwright/"]
-COPY ["src/ProjectNmae.ServiceDefaults/ProjectNmae.ServiceDefaults.csproj",
-      "src/ProjectNmae.ServiceDefaults/"]
+COPY ["src/ProjectName.ServiceDefaults/ProjectName.ServiceDefaults.csproj",
+      "src/ProjectName.ServiceDefaults/"]
 
 RUN dotnet restore "src/Mcps/ProjectName.Mcp.Playwright/ProjectName.Mcp.Playwright.csproj"
 
