@@ -82,7 +82,7 @@ public sealed class ReflectorGrpcService(
         // FIX (FRAC-REFLECTOR-HALLUCINATION-001): Build a grounded cycle evidence summary.
         // This gives the model concrete facts about what actually happened so it doesn't
         // fabricate unrelated constraints or seeds.
-        var intent = state.Plan?.TruestIntent ?? state.Envelope?.Intent ?? "unknown";
+        var intent = state.Plan?.TruestIntent ?? state.Envelope?.CurrentIntent ?? "unknown";
 
         var dispatchSummaryLines = (state.DispatchResults ?? []).Select(r =>
         {
