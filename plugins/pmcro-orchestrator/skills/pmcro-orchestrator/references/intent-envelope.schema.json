@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PMCR-O Intent Envelope",
+  "type": "object",
+  "required": ["trail_id", "origin", "high_level_goal", "current_intent", "o_mode", "cycle", "max_cycles", "loop_count", "max_loops", "aoc_invited", "aoc_participation", "economic_check"],
+  "properties": {
+    "trail_id": { "type": "string" },
+    "origin": { "enum": ["federation", "human", "loop", "api", "round_table"] },
+    "high_level_goal": { "type": "string", "description": "Original refined intent. Never mutated across cycles." },
+    "current_intent": { "type": "string" },
+    "o_mode": { "type": "string", "description": "Free-string cycle-level O-Mode, e.g. O-Output, O-Optimize, O-Orchestrate, O-Chain, O-Tree, O-Graph." },
+    "cycle": { "type": "integer", "minimum": 1 },
+    "max_cycles": { "type": "integer", "minimum": 1 },
+    "loop_count": { "type": "integer", "minimum": 0 },
+    "max_loops": { "type": "integer", "minimum": 0 },
+    "locked_constraints": { "type": "array", "items": { "type": "string" } },
+    "quality_history": { "type": "array", "items": { "type": "number" } },
+    "aoc_invited": { "const": true },
+    "aoc_participation": { "const": "participant" },
+    "economic_check": { "enum": ["PASSED", "BLOCKED"] }
+  }
+}

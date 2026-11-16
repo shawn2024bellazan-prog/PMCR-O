@@ -1,0 +1,8 @@
+{
+  "name": "pmcro-orchestrator",
+  "version": "0.1.0",
+  "description": "PMCR-O Orchestrator role charter: holds the high-level goal, runs the Economic Gate, detects O-Mode, routes to the Planner, and decides EXTEND / ACCEPT / LOOP / ESCALATE / INTERRUPT / STANDBY / BLOCKED after every Checker verdict.",
+  "author": { "name": "Shawn Bellazan", "url": "https://github.com/shawn2024bellazan-prog" },
+  "license": "MIT",
+  "keywords": ["pmcro", "orchestrator", "governance", "agents", "trail"]
+}

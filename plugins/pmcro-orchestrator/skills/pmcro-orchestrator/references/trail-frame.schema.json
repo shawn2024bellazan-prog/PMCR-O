@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PMCR-O Trail Frame (Orchestrator)",
+  "type": "object",
+  "required": ["frame_id", "trail_id", "speaker", "role", "thought_type", "intent", "reasoning", "evidence", "decision", "timestamp", "disposition"],
+  "properties": {
+    "frame_id": { "type": "string" },
+    "trail_id": { "type": "string" },
+    "speaker": { "const": "orchestrator" },
+    "role": { "const": "operator" },
+    "thought_type": { "enum": ["gate", "omode", "route", "decide"] },
+    "intent": { "type": "string" },
+    "reasoning": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "decision": { "enum": ["EXTEND", "ACCEPT", "LOOP", "ESCALATE", "INTERRUPT", "STANDBY", "BLOCKED", "ROUTE"] },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "disposition": { "type": "string" }
+  },
+  "additionalProperties": true
+}
