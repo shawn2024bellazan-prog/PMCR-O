@@ -1,0 +1,9 @@
+{
+  "name": "reasoning-skills",
+  "version": "0.1.0",
+  "description": "A library of agent skills where each skill encodes one LLM reasoning technique, so agents can invoke the right reasoning strategy for each task.",
+  "license": "MIT",
+  "author": { "name": "Shawn Bellazan" },
+  "skills": "./skills/",
+  "keywords": ["reasoning", "chain-of-thought", "react", "agent-skills", "prompting"]
+}
